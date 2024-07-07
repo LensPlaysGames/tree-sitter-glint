@@ -2,6 +2,11 @@
 (string) @string
 (bool_value) @constant.builtin
 
+(declaration name: (identifier) @function
+             type: (type_function))
+(declaration name: (identifier) @function
+             type: (type_pointer (type_function)))
+
 [
   ;; Function attributes
   "discardable"

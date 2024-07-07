@@ -27,6 +27,9 @@ module.exports = grammar({
             optional($._soft_expression_separator)
         )),
 
+        // TODO: Prefix Unary Expressions
+        // TODO: Binary Expressions
+        // TODO: Member Access with "."
         _expression_notype: $ => prec(1, choice(
             $.bool_value,
             $._expression_declaration,
@@ -86,14 +89,14 @@ module.exports = grammar({
         ),
 
         _expression_call0: $ => prec(20, seq(
-            $._expression,
+            field("callee", $._expression),
             repeat1($._expr_soft)
         )),
 
         _expression_call1: $ => prec(20, seq(
-            $._expression,
+            field("callee", $._expression),
             "(",
-            $._expr_soft,
+            repeat($._expr_soft),
             ")"
         )),
 
@@ -238,18 +241,18 @@ module.exports = grammar({
             $._number_oct,
         ),
 
-        _expression_separator: $ => choice(
-            $._hard_expression_separator,
-            $._soft_expression_separator
-        ),
-
         storage_specifier: $ => choice(
             "external",
             "export"
         ),
 
+        _expression_separator: $ => choice(
+            $._hard_expression_separator,
+            $._soft_expression_separator
+        ),
         _hard_expression_separator: $ => token(";"),
         _soft_expression_separator: $ => token(","),
+
         identifier: $ => token(/[a-z][a-z0-9_]*/i),
         _number_dec: $ => token(/\d+/),
         _number_hex: $ => token(/0x[0-9a-f]+/i),
