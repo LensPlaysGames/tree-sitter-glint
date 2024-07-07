@@ -27,15 +27,27 @@ module.exports = grammar({
             optional($._soft_expression_separator)
         )),
 
-        _expression: $ => prec(1, choice(
+        _expression_notype: $ => prec(1, choice(
             $._expression_declaration,
             $._expression_paren,
-            $.expression_return,
+            $.expression_subscript,
             $.expression_call,
-            $._expression_type,
+            $.expression_return,
             $.identifier,
             $.number_literal
         )),
+
+        _expression: $ => prec(1, choice(
+            $._expression_notype,
+            $._expression_type,
+        )),
+
+        expression_subscript: $ => seq(
+            $._expression,
+            "[",
+            $._expression_notype,
+            "]"
+        ),
 
         expression_return: $ => seq(
             "return",
@@ -142,12 +154,12 @@ module.exports = grammar({
             $.type_fixed_array
         ),
 
-        type_dynamic_array: $ => seq(
+        type_dynamic_array: $ => prec(10, seq(
             "[",
             $._expression_type,
             optional($._expression),
             "]"
-        ),
+        )),
 
         type_fixed_array: $ => prec(10, seq(
             "[",
@@ -218,7 +230,7 @@ module.exports = grammar({
 
         _hard_expression_separator: $ => token(";"),
         _soft_expression_separator: $ => token(","),
-        identifier: $ => token(/[a-z][a-z0-9]*/i),
+        identifier: $ => token(/[a-z][a-z0-9_]*/i),
         _number_dec: $ => token(/\d+/),
         _number_hex: $ => token(/0x[0-9a-f]+/i),
         _number_oct: $ => token(/0[0-7]+/),

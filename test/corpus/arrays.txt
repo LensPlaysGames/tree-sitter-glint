@@ -1,0 +1,45 @@
+;; Ensure that a fixed-size array doesn't get parsed as a sized dynamic
+;; array.
+================
+Fixed Array
+================
+
+[Byte 8];
+
+---
+
+(source_file
+ (type_fixed_array
+  (type_primitive)
+  (number_literal)))
+
+
+================
+Dynamic Array vs Subscript
+================
+
+foo: [Byte];
+foo[0];
+foo [Byte];
+foo [ident_t];
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_dynamic_array
+   (type_primitive)))
+ (expression_subscript
+  (identifier)
+  (number_literal))
+ (expression_call
+  (identifier)
+  (type_dynamic_array
+   (type_primitive)))
+ ;; Note that the last dynamic array is incorrectly parsed as a subscript;
+ ;; without semantic analysis, there is no way of knowing whether that form
+ ;; is a subscript or a call.
+ (expression_subscript
+  (identifier)
+  (identifier)))
