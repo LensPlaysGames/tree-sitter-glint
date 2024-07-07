@@ -34,6 +34,10 @@
             "named": true
           },
           {
+            "type": "type_identifier",
+            "named": true
+          },
+          {
             "type": "type_pointer",
             "named": true
           },
@@ -96,6 +100,10 @@
             "named": true
           },
           {
+            "type": "expression_return",
+            "named": true
+          },
+          {
             "type": "identifier",
             "named": true
           },
@@ -117,6 +125,10 @@
           },
           {
             "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_identifier",
             "named": true
           },
           {
@@ -170,6 +182,10 @@
           "named": true
         },
         {
+          "type": "expression_return",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         },
@@ -191,6 +207,81 @@
         },
         {
           "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "expression_return",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "declaration_type_inferred",
+          "named": true
+        },
+        {
+          "type": "expression_call",
+          "named": true
+        },
+        {
+          "type": "expression_return",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "type_dynamic_array",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_fixed_array",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
           "named": true
         },
         {
@@ -254,6 +345,10 @@
           "named": true
         },
         {
+          "type": "expression_return",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         },
@@ -279,6 +374,10 @@
         },
         {
           "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
           "named": true
         },
         {
@@ -326,6 +425,10 @@
           "named": true
         },
         {
+          "type": "expression_return",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         },
@@ -347,6 +450,10 @@
         },
         {
           "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
           "named": true
         },
         {
@@ -402,6 +509,10 @@
           "named": true
         },
         {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
           "type": "type_pointer",
           "named": true
         },
@@ -449,6 +560,10 @@
           "named": true
         },
         {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
           "type": "type_pointer",
           "named": true
         },
@@ -462,6 +577,21 @@
         },
         {
           "type": "type_struct",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_identifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]
@@ -489,6 +619,10 @@
         },
         {
           "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
           "named": true
         },
         {
@@ -540,6 +674,10 @@
           "named": true
         },
         {
+          "type": "type_identifier",
+          "named": true
+        },
+        {
           "type": "type_pointer",
           "named": true
         },
@@ -579,6 +717,10 @@
           "named": true
         },
         {
+          "type": "expression_return",
+          "named": true
+        },
+        {
           "type": "identifier",
           "named": true
         },
@@ -600,6 +742,10 @@
         },
         {
           "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_identifier",
           "named": true
         },
         {
@@ -654,6 +800,10 @@
     "named": false
   },
   {
+    "type": "Byte",
+    "named": false
+  },
+  {
     "type": "[",
     "named": false
   },
@@ -690,6 +840,10 @@
     "named": false
   },
   {
+    "type": "csize",
+    "named": false
+  },
+  {
     "type": "cuint",
     "named": false
   },
@@ -703,6 +857,14 @@
   },
   {
     "type": "cushort",
+    "named": false
+  },
+  {
+    "type": "cusize",
+    "named": false
+  },
+  {
+    "type": "discardable",
     "named": false
   },
   {
@@ -723,6 +885,10 @@
   },
   {
     "type": "module",
+    "named": false
+  },
+  {
+    "type": "return",
     "named": false
   },
   {

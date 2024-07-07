@@ -1,0 +1,165 @@
+================
+Simple Declaration
+================
+
+x: int;
+x :int;
+x : int;
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_primitive))
+ (declaration
+  (identifier)
+  (type_primitive))
+ (declaration
+  (identifier)
+  (type_primitive)))
+
+
+================
+Function Declaration, Simple
+================
+
+x: int();
+x :int();
+x : int();
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_primitive)))
+ (declaration
+  (identifier)
+  (type_function
+   (type_primitive)))
+ (declaration
+  (identifier)
+  (type_function
+   (type_primitive))))
+
+
+================
+Function Declaration, Single Named Parameter
+================
+
+x: int(a :int);
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_primitive)
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+
+================
+Function Declaration, Single Unnamed Parameter
+================
+
+x: int(:int);
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_primitive)
+   (type_primitive))))
+
+
+================
+Function Declaration, Two Named Parameters
+================
+
+x: int(a :int  b: int);
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_primitive)
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+
+================
+Function Declaration, Two Unnamed Parameters
+================
+
+x: int(:int :int);
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_primitive)
+   (type_primitive)
+   (type_primitive))))
+
+
+================
+Function Declaration, Pointer Return
+================
+
+x: int.ptr();
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_pointer
+    (type_primitive)))))
+
+
+================
+Function Declaration, Reference Return
+================
+
+x: int.ref();
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_reference
+    (type_primitive)))))
+
+
+================
+Function Declaration, Dynamic Array Return
+================
+
+x: [int]();
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function
+   (type_dynamic_array
+    (type_primitive)))))

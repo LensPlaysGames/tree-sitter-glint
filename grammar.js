@@ -27,14 +27,20 @@ module.exports = grammar({
             optional($._soft_expression_separator)
         )),
 
-        _expression: $ => prec(0, choice(
+        _expression: $ => prec(1, choice(
             $._expression_declaration,
             $._expression_paren,
+            $.expression_return,
             $.expression_call,
             $._expression_type,
             $.identifier,
             $.number_literal
         )),
+
+        expression_return: $ => seq(
+            "return",
+            $._expression
+        ),
 
         _expression_paren: $ => seq(
             "(",
@@ -47,12 +53,12 @@ module.exports = grammar({
             $._expression_call1
         ),
 
-        _expression_call0: $ => prec(2, seq(
+        _expression_call0: $ => prec(20, seq(
             $._expression,
             repeat1($._expr_soft)
         )),
 
-        _expression_call1: $ => prec(2, seq(
+        _expression_call1: $ => prec(20, seq(
             $._expression,
             "(",
             $._expr_soft,
@@ -65,7 +71,7 @@ module.exports = grammar({
         ),
 
         // Precedence to "beat" type expression
-        declaration: $ => prec(2, seq(
+        declaration: $ => prec(20, seq(
             optional($.storage_specifier),
             field("name", $.identifier),
             ":",
@@ -93,24 +99,29 @@ module.exports = grammar({
         _expression_type1: $ => choice(
             $._type_array,
             $.type_ffi,
+            $.type_identifier,
             $.type_pointer,
             $.type_primitive,
             $.type_reference,
             $.type_struct
         ),
 
-        _type: $ => prec(1, choice(
+        _type: $ => prec(10, choice(
             $._type_array,
             $.type_ffi,
             $.type_function,
+            $.type_identifier,
             $.type_pointer,
             $.type_primitive,
             $.type_reference,
             $.type_struct
         )),
 
+        type_identifier: $ => $.identifier,
+
         type_primitive: $ => choice(
             choice("bool", "boolean", "Bool", "Boolean"),
+            "Byte",
             "int",
             "uint",
             "void"
@@ -138,7 +149,7 @@ module.exports = grammar({
             "]"
         ),
 
-        type_fixed_array: $ => prec(1, seq(
+        type_fixed_array: $ => prec(10, seq(
             "[",
             $._expression_type,
             $.number_literal,
@@ -153,7 +164,9 @@ module.exports = grammar({
             "clong",
             "culong",
             "clonglong",
-            "culonglong"
+            "culonglong",
+            "csize",
+            "cusize"
         ),
 
         type_struct: $ => seq(
@@ -166,8 +179,10 @@ module.exports = grammar({
 
         // Precedence to make T() not T followed by paren expression but a
         // function type.
-        type_function: $ => prec(1, seq(
+        type_function: $ => prec(30, seq(
+            // Return type
             $._type,
+            // Parameters
             "(",
             repeat(
                 seq(
@@ -178,7 +193,11 @@ module.exports = grammar({
                     optional($._soft_expression_separator)
                 )
             ),
-            ")"
+            ")",
+            // Attributes
+            repeat(
+                "discardable",
+            )
         )),
 
         number_literal: $ => choice(
