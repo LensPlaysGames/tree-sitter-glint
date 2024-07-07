@@ -140,3 +140,113 @@ struct foo {
   (declaration
    (identifier)
    (type_primitive))))
+
+================
+Function Type
+================
+
+:int();
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)))
+
+
+================
+Function Type w/ Parameter
+================
+
+:int(x: int);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (declaration
+   (identifier)
+   (type_primitive))))
+
+
+================
+Function Type w/ Unnamed Parameter
+================
+
+:int(:int);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (type_primitive)))
+
+
+================
+Function Type w/ Parameters
+================
+
+:int(x: int y: int);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (declaration
+   (identifier)
+   (type_primitive))
+  (declaration
+   (identifier)
+   (type_primitive))))
+
+
+================
+Function Type w/ Soft-separated Parameters
+================
+
+:int(x: int, y: int);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (declaration
+   (identifier)
+   (type_primitive))
+  (declaration
+   (identifier)
+   (type_primitive))))
+
+
+================
+Function Type w/ Unnamed Parameters
+================
+
+:int(:int :int);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (type_primitive)
+  (type_primitive)))
+
+
+================
+Function Type w/ Soft-separated Unnamed Parameters
+================
+
+:int(:int, :int);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (type_primitive)
+  (type_primitive)))

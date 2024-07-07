@@ -30,6 +30,10 @@
             "named": true
           },
           {
+            "type": "type_function",
+            "named": true
+          },
+          {
             "type": "type_pointer",
             "named": true
           },
@@ -47,6 +51,16 @@
           }
         ]
       }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "storage_specifier",
+          "named": true
+        }
+      ]
     }
   },
   {
@@ -58,6 +72,18 @@
         "required": true,
         "types": [
           {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ":",
+            "named": false
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -66,7 +92,15 @@
             "named": true
           },
           {
+            "type": "expression_call",
+            "named": true
+          },
+          {
             "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "number_literal",
             "named": true
           },
           {
@@ -79,6 +113,10 @@
           },
           {
             "type": "type_fixed_array",
+            "named": true
+          },
+          {
+            "type": "type_function",
             "named": true
           },
           {
@@ -99,6 +137,85 @@
           }
         ]
       },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "expression_call",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "declaration_type_inferred",
+          "named": true
+        },
+        {
+          "type": "expression_call",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "type_dynamic_array",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_fixed_array",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_declaration",
+    "named": true,
+    "fields": {
       "name": {
         "multiple": false,
         "required": true,
@@ -133,7 +250,19 @@
           "named": true
         },
         {
+          "type": "expression_call",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "module_declaration",
+          "named": true
+        },
+        {
+          "type": "number_literal",
           "named": true
         },
         {
@@ -146,6 +275,10 @@
         },
         {
           "type": "type_fixed_array",
+          "named": true
+        },
+        {
+          "type": "type_function",
           "named": true
         },
         {
@@ -168,12 +301,17 @@
     }
   },
   {
+    "type": "storage_specifier",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "type_dynamic_array",
     "named": true,
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "declaration",
@@ -184,7 +322,15 @@
           "named": true
         },
         {
+          "type": "expression_call",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number_literal",
           "named": true
         },
         {
@@ -197,6 +343,10 @@
         },
         {
           "type": "type_fixed_array",
+          "named": true
+        },
+        {
+          "type": "type_function",
           "named": true
         },
         {
@@ -248,6 +398,57 @@
           "named": true
         },
         {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_function",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "type_dynamic_array",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_fixed_array",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
           "type": "type_pointer",
           "named": true
         },
@@ -284,6 +485,10 @@
         },
         {
           "type": "type_fixed_array",
+          "named": true
+        },
+        {
+          "type": "type_function",
           "named": true
         },
         {
@@ -331,6 +536,10 @@
           "named": true
         },
         {
+          "type": "type_function",
+          "named": true
+        },
+        {
           "type": "type_pointer",
           "named": true
         },
@@ -366,7 +575,15 @@
           "named": true
         },
         {
+          "type": "expression_call",
+          "named": true
+        },
+        {
           "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "number_literal",
           "named": true
         },
         {
@@ -379,6 +596,10 @@
         },
         {
           "type": "type_fixed_array",
+          "named": true
+        },
+        {
+          "type": "type_function",
           "named": true
         },
         {
@@ -399,6 +620,14 @@
         }
       ]
     }
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
   },
   {
     "type": ".ptr",
@@ -477,11 +706,23 @@
     "named": false
   },
   {
+    "type": "export",
+    "named": false
+  },
+  {
+    "type": "external",
+    "named": false
+  },
+  {
     "type": "identifier",
     "named": true
   },
   {
     "type": "int",
+    "named": false
+  },
+  {
+    "type": "module",
     "named": false
   },
   {
