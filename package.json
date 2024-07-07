@@ -39,7 +39,8 @@
     {
       "scope": "source.glint",
       "injection-regex": "^glint$",
-      "highlights": "queries/highlights.scm"
+      "highlights": "queries/highlights.scm",
+      "file-types": ["g"]
     }
   ]
 }
