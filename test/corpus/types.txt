@@ -1,0 +1,142 @@
+================
+Primitive Type
+================
+
+int;
+
+---
+
+(source_file
+ (type_primitive))
+
+
+================
+FFI Type
+================
+
+cint;
+
+---
+
+(source_file
+ (type_ffi))
+
+
+================
+Pointer Type
+================
+
+int.ptr;
+
+---
+
+(source_file
+ (type_pointer (type_primitive)))
+
+
+================
+Reference Type
+================
+
+int.ref;
+
+---
+
+(source_file
+ (type_reference (type_primitive)))
+
+
+================
+Dynamic Array Type
+================
+
+[int];
+
+---
+
+(source_file
+ (type_dynamic_array (type_primitive)))
+
+
+================
+Fixed Array Type
+================
+
+[int 8];
+
+---
+
+(source_file
+ (type_fixed_array
+  (type_primitive)
+  (number_literal)))
+
+
+================
+Sized Array Type
+================
+
+[int N];
+
+---
+
+(source_file
+ (type_dynamic_array
+  (type_primitive)
+  (identifier)))
+
+
+================
+Struct Type
+================
+
+struct foo {};
+
+---
+
+(source_file
+ (type_struct (identifier)))
+
+
+================
+Struct Type w/ Soft-separated Members
+================
+
+struct foo {
+    x: int,
+    y: int,
+};
+
+---
+
+(source_file
+ (type_struct
+  (identifier)
+  (declaration
+   (identifier)
+   (type_primitive))
+  (declaration
+   (identifier)
+   (type_primitive))))
+
+
+================
+Struct Type w/ Hard-separated Members
+================
+
+struct foo {
+    x: int;
+    y: int;
+};
+
+---
+
+(source_file
+ (type_struct
+  (identifier)
+  (declaration
+   (identifier)
+   (type_primitive))
+  (declaration
+   (identifier)
+   (type_primitive))))
