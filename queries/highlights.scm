@@ -1,4 +1,6 @@
 (number_literal) @constant
+(string) @string
+(bool_value) @constant.builtin
 
 [
   ;; Function attributes

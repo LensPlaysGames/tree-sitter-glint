@@ -1,5 +1,10 @@
 [
   {
+    "type": "bool_value",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "declaration",
     "named": true,
     "fields": {
@@ -88,6 +93,10 @@
             "named": false
           },
           {
+            "type": "bool_value",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -113,6 +122,10 @@
           },
           {
             "type": "number_literal",
+            "named": true
+          },
+          {
+            "type": "string",
             "named": true
           },
           {
@@ -174,6 +187,10 @@
       "required": false,
       "types": [
         {
+          "type": "bool_value",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -199,6 +216,10 @@
         },
         {
           "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         },
         {
@@ -249,6 +270,10 @@
       "required": false,
       "types": [
         {
+          "type": "bool_value",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -274,6 +299,10 @@
         },
         {
           "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         },
         {
@@ -324,6 +353,10 @@
       "required": false,
       "types": [
         {
+          "type": "bool_value",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -349,6 +382,10 @@
         },
         {
           "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         },
         {
@@ -420,6 +457,10 @@
       "required": false,
       "types": [
         {
+          "type": "bool_value",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -449,6 +490,10 @@
         },
         {
           "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         },
         {
@@ -496,6 +541,11 @@
     "fields": {}
   },
   {
+    "type": "string",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "type_dynamic_array",
     "named": true,
     "fields": {},
@@ -503,6 +553,10 @@
       "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "bool_value",
+          "named": true
+        },
         {
           "type": "declaration",
           "named": true
@@ -529,6 +583,10 @@
         },
         {
           "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         },
         {
@@ -800,6 +858,10 @@
       "required": true,
       "types": [
         {
+          "type": "bool_value",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -825,6 +887,10 @@
         },
         {
           "type": "number_literal",
+          "named": true
+        },
+        {
+          "type": "string",
           "named": true
         },
         {
@@ -975,6 +1041,10 @@
     "named": false
   },
   {
+    "type": "false",
+    "named": false
+  },
+  {
     "type": "identifier",
     "named": true
   },
@@ -992,6 +1062,10 @@
   },
   {
     "type": "struct",
+    "named": false
+  },
+  {
+    "type": "true",
     "named": false
   },
   {

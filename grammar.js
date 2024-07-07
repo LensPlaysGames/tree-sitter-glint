@@ -28,19 +28,39 @@ module.exports = grammar({
         )),
 
         _expression_notype: $ => prec(1, choice(
+            $.bool_value,
             $._expression_declaration,
             $._expression_paren,
-            $.expression_subscript,
             $.expression_call,
             $.expression_return,
+            $.expression_subscript,
             $.identifier,
-            $.number_literal
+            $.number_literal,
+            $.string
         )),
 
         _expression: $ => prec(1, choice(
             $._expression_notype,
             $._expression_type,
         )),
+
+        bool_value: $ => choice(
+            "true",
+            "false"
+        ),
+
+        string: $ => choice(
+            $._escapable_string,
+            $._raw_string
+        ),
+
+        _escapable_string: $ => token(
+            seq('"', repeat(choice(/[^"\\]/, seq("\\", /(.|\n)/))), '"')
+        ),
+
+        _raw_string: $ => token(
+            seq("'", repeat(/[^']/), "'")
+        ),
 
         expression_subscript: $ => seq(
             $._expression,
