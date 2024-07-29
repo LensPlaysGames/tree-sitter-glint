@@ -78,7 +78,7 @@ module.exports = grammar({
         ),
 
         type_function: $ => prec.right(seq(
-            choice($._type, $.identifier),
+            $._type, // choice($._type, $.identifier),
             "(",
             repeat($.param_decl),
             ")"
