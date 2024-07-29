@@ -1,0 +1,23 @@
+================
+Module Declaration
+================
+
+module foo;
+
+---
+
+(source_file
+ (module_declaration
+  (identifier)))
+
+================
+Module Import
+================
+
+import foo;
+
+---
+
+(source_file
+ (module_import
+  (identifier)))

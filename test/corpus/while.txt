@@ -1,0 +1,35 @@
+================
+While, Empty Block
+================
+
+while false {};
+
+---
+
+(source_file
+ (while (bool_literal)
+  (block)))
+
+================
+While, Empty Block, Soft Separator
+================
+
+while false, {};
+
+---
+
+(source_file
+ (while (bool_literal)
+  (block)))
+
+================
+While, Empty Block, Hard Separator
+================
+
+while false; {};
+
+---
+
+(source_file
+ (while (bool_literal)
+  (block)))

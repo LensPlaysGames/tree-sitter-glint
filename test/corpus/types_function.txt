@@ -1,0 +1,63 @@
+================
+void()
+================
+
+void();
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)))
+
+================
+void(a:void)
+================
+
+void(a:void);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (param_decl
+   (identifier)
+   (type_primitive))))
+
+================
+void(a:void b:void)
+================
+
+void(a:void b:void);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (param_decl
+   (identifier)
+   (type_primitive))
+  (param_decl
+   (identifier)
+   (type_primitive))))
+
+================
+void(a:void, b:void)
+================
+
+void(a:void, b:void);
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (param_decl
+   (identifier)
+   (type_primitive))
+  (param_decl
+   (identifier)
+   (type_primitive))))
+

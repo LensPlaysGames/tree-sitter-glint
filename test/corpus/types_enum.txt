@@ -1,0 +1,27 @@
+================
+Enum, empty
+================
+
+enum {};
+
+---
+
+(source_file
+ (type_enum
+  (block)))
+
+================
+Enum, Single Member (type inferred)
+================
+
+enum { x :: 0 };
+
+---
+
+(source_file
+ (type_enum
+  (block
+   (declaration
+    (identifier)
+    (integer_literal)))))
+

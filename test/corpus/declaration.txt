@@ -1,0 +1,83 @@
+================
+Variable Declaration
+================
+
+x :int;
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_primitive)))
+
+================
+Variable Declaration, with Init
+================
+
+x :int 420;
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_primitive)
+  (integer_literal)))
+
+================
+Variable Declaration, Type Inferred
+================
+
+x :: 0;
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (integer_literal)))
+
+================
+Variable Declaration, Type Inferred, Binary Init Expression
+================
+
+x :: 0 + 69;
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (add
+   (integer_literal)
+   (integer_literal))))
+
+================
+Variable Declaration, External
+================
+
+external foo :cint;
+
+---
+
+(source_file
+ (declaration
+  (storage_specifier)
+  (identifier)
+  (type_ffi)))
+
+================
+Variable Declaration, Exported
+================
+
+export foo :cint 0;
+
+---
+
+(source_file
+ (declaration
+  (storage_specifier)
+  (identifier)
+  (type_ffi)
+  (integer_literal)))

@@ -1,6 +1,1725 @@
 [
   {
-    "type": "bool_value",
+    "type": "add",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "and",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "assign",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bitand",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bitor",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bitshl",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bitshr",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bitxor",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bool_literal",
     "named": true,
     "fields": {}
   },
@@ -8,22 +1727,156 @@
     "type": "declaration",
     "named": true,
     "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
+      "init": {
+        "multiple": true,
+        "required": false,
         "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
           {
             "type": "identifier",
             "named": true
-          }
-        ]
-      },
-      "type": {
-        "multiple": false,
-        "required": true,
-        "types": [
+          },
           {
-            "type": "type_dynamic_array",
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
             "named": true
           },
           {
@@ -31,19 +1884,15 @@
             "named": true
           },
           {
-            "type": "type_fixed_array",
-            "named": true
-          },
-          {
             "type": "type_function",
             "named": true
           },
           {
-            "type": "type_identifier",
+            "type": "type_pointer",
             "named": true
           },
           {
-            "type": "type_pointer",
+            "type": "type_pointer_to_pointer",
             "named": true
           },
           {
@@ -56,6 +1905,82 @@
           },
           {
             "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
             "named": true
           }
         ]
@@ -73,295 +1998,51 @@
     }
   },
   {
-    "type": "declaration_type_inferred",
-    "named": true,
-    "fields": {
-      "init": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": ":",
-            "named": false
-          },
-          {
-            "type": "bool_value",
-            "named": true
-          },
-          {
-            "type": "declaration",
-            "named": true
-          },
-          {
-            "type": "declaration_type_inferred",
-            "named": true
-          },
-          {
-            "type": "expression_call",
-            "named": true
-          },
-          {
-            "type": "expression_return",
-            "named": true
-          },
-          {
-            "type": "expression_subscript",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "number_literal",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "type_dynamic_array",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_fixed_array",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_identifier",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "expression_call",
-    "named": true,
-    "fields": {
-      "callee": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": "(",
-            "named": false
-          },
-          {
-            "type": ")",
-            "named": false
-          },
-          {
-            "type": ":",
-            "named": false
-          },
-          {
-            "type": "bool_value",
-            "named": true
-          },
-          {
-            "type": "declaration",
-            "named": true
-          },
-          {
-            "type": "declaration_type_inferred",
-            "named": true
-          },
-          {
-            "type": "expression_call",
-            "named": true
-          },
-          {
-            "type": "expression_return",
-            "named": true
-          },
-          {
-            "type": "expression_subscript",
-            "named": true
-          },
-          {
-            "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "number_literal",
-            "named": true
-          },
-          {
-            "type": "string",
-            "named": true
-          },
-          {
-            "type": "type_dynamic_array",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_fixed_array",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_identifier",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "bool_value",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "declaration_type_inferred",
-          "named": true
-        },
-        {
-          "type": "expression_call",
-          "named": true
-        },
-        {
-          "type": "expression_return",
-          "named": true
-        },
-        {
-          "type": "expression_subscript",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "number_literal",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "type_dynamic_array",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_identifier",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "expression_return",
+    "type": "decrement",
     "named": true,
     "fields": {},
     "children": {
       "multiple": false,
-      "required": false,
+      "required": true,
       "types": [
         {
-          "type": "bool_value",
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
           "named": true
         },
         {
@@ -369,19 +2050,27 @@
           "named": true
         },
         {
-          "type": "declaration_type_inferred",
+          "type": "decrement",
           "named": true
         },
         {
-          "type": "expression_call",
+          "type": "dereference",
           "named": true
         },
         {
-          "type": "expression_return",
+          "type": "divide",
           "named": true
         },
         {
-          "type": "expression_subscript",
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
           "named": true
         },
         {
@@ -389,15 +2078,71 @@
           "named": true
         },
         {
-          "type": "number_literal",
+          "type": "if",
           "named": true
         },
         {
-          "type": "string",
+          "type": "increment",
           "named": true
         },
         {
-          "type": "type_dynamic_array",
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
           "named": true
         },
         {
@@ -405,19 +2150,15 @@
           "named": true
         },
         {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
           "type": "type_function",
           "named": true
         },
         {
-          "type": "type_identifier",
+          "type": "type_pointer",
           "named": true
         },
         {
-          "type": "type_pointer",
+          "type": "type_pointer_to_pointer",
           "named": true
         },
         {
@@ -430,21 +2171,69 @@
         },
         {
           "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
           "named": true
         }
       ]
     }
   },
   {
-    "type": "expression_subscript",
+    "type": "dereference",
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
-      "required": false,
+      "multiple": false,
+      "required": true,
       "types": [
         {
-          "type": "bool_value",
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
           "named": true
         },
         {
@@ -452,19 +2241,27 @@
           "named": true
         },
         {
-          "type": "declaration_type_inferred",
+          "type": "decrement",
           "named": true
         },
         {
-          "type": "expression_call",
+          "type": "dereference",
           "named": true
         },
         {
-          "type": "expression_return",
+          "type": "divide",
           "named": true
         },
         {
-          "type": "expression_subscript",
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
           "named": true
         },
         {
@@ -472,15 +2269,71 @@
           "named": true
         },
         {
-          "type": "number_literal",
+          "type": "if",
           "named": true
         },
         {
-          "type": "string",
+          "type": "increment",
           "named": true
         },
         {
-          "type": "type_dynamic_array",
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
           "named": true
         },
         {
@@ -488,19 +2341,15 @@
           "named": true
         },
         {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
           "type": "type_function",
           "named": true
         },
         {
-          "type": "type_identifier",
+          "type": "type_pointer",
           "named": true
         },
         {
-          "type": "type_pointer",
+          "type": "type_pointer_to_pointer",
           "named": true
         },
         {
@@ -513,6 +2362,2154 @@
         },
         {
           "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "divide",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ge",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "if",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "else": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "then": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "increment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "integer_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "le",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "logical_negate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "member_access",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
           "named": true
         }
       ]
@@ -535,20 +4532,67 @@
     }
   },
   {
-    "type": "number_literal",
+    "type": "module_import",
     "named": true,
-    "fields": {}
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
   },
   {
-    "type": "source_file",
+    "type": "multiply",
     "named": true,
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
-          "type": "bool_value",
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
           "named": true
         },
         {
@@ -556,19 +4600,27 @@
           "named": true
         },
         {
-          "type": "declaration_type_inferred",
+          "type": "decrement",
           "named": true
         },
         {
-          "type": "expression_call",
+          "type": "dereference",
           "named": true
         },
         {
-          "type": "expression_return",
+          "type": "divide",
           "named": true
         },
         {
-          "type": "expression_subscript",
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
           "named": true
         },
         {
@@ -576,19 +4628,71 @@
           "named": true
         },
         {
-          "type": "module_declaration",
+          "type": "if",
           "named": true
         },
         {
-          "type": "number_literal",
+          "type": "increment",
           "named": true
         },
         {
-          "type": "string",
+          "type": "integer_literal",
           "named": true
         },
         {
-          "type": "type_dynamic_array",
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
           "named": true
         },
         {
@@ -596,19 +4700,15 @@
           "named": true
         },
         {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
           "type": "type_function",
           "named": true
         },
         {
-          "type": "type_identifier",
+          "type": "type_pointer",
           "named": true
         },
         {
-          "type": "type_pointer",
+          "type": "type_pointer_to_pointer",
           "named": true
         },
         {
@@ -621,6 +4721,1051 @@
         },
         {
           "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ne",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "or",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_decl",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "remainder",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "return",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "module_declaration",
+          "named": true
+        },
+        {
+          "type": "module_import",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
           "named": true
         }
       ]
@@ -632,20 +5777,56 @@
     "fields": {}
   },
   {
-    "type": "string",
+    "type": "string_literal",
     "named": true,
     "fields": {}
   },
   {
-    "type": "type_dynamic_array",
+    "type": "subscript",
     "named": true,
     "fields": {},
     "children": {
       "multiple": true,
-      "required": false,
+      "required": true,
       "types": [
         {
-          "type": "bool_value",
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
           "named": true
         },
         {
@@ -653,19 +5834,27 @@
           "named": true
         },
         {
-          "type": "declaration_type_inferred",
+          "type": "decrement",
           "named": true
         },
         {
-          "type": "expression_call",
+          "type": "dereference",
           "named": true
         },
         {
-          "type": "expression_return",
+          "type": "divide",
           "named": true
         },
         {
-          "type": "expression_subscript",
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
           "named": true
         },
         {
@@ -673,15 +5862,71 @@
           "named": true
         },
         {
-          "type": "number_literal",
+          "type": "if",
           "named": true
         },
         {
-          "type": "string",
+          "type": "increment",
           "named": true
         },
         {
-          "type": "type_dynamic_array",
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
           "named": true
         },
         {
@@ -689,19 +5934,15 @@
           "named": true
         },
         {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
           "type": "type_function",
           "named": true
         },
         {
-          "type": "type_identifier",
+          "type": "type_pointer",
           "named": true
         },
         {
-          "type": "type_pointer",
+          "type": "type_pointer_to_pointer",
           "named": true
         },
         {
@@ -714,6 +5955,415 @@
         },
         {
           "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "subtract",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_array",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_enum",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
           "named": true
         }
       ]
@@ -725,57 +6375,6 @@
     "fields": {}
   },
   {
-    "type": "type_fixed_array",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "number_literal",
-          "named": true
-        },
-        {
-          "type": "type_dynamic_array",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_identifier",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
     "type": "type_function",
     "named": true,
     "fields": {},
@@ -784,11 +6383,15 @@
       "required": true,
       "types": [
         {
-          "type": "declaration",
+          "type": "param_decl",
           "named": true
         },
         {
-          "type": "type_dynamic_array",
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
           "named": true
         },
         {
@@ -796,19 +6399,15 @@
           "named": true
         },
         {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
           "type": "type_function",
           "named": true
         },
         {
-          "type": "type_identifier",
+          "type": "type_pointer",
           "named": true
         },
         {
-          "type": "type_pointer",
+          "type": "type_pointer_to_pointer",
           "named": true
         },
         {
@@ -822,20 +6421,13 @@
         {
           "type": "type_struct",
           "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "type_identifier",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
+        },
         {
-          "type": "identifier",
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
           "named": true
         }
       ]
@@ -850,7 +6442,11 @@
       "required": true,
       "types": [
         {
-          "type": "type_dynamic_array",
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
           "named": true
         },
         {
@@ -858,19 +6454,15 @@
           "named": true
         },
         {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
           "type": "type_function",
           "named": true
         },
         {
-          "type": "type_identifier",
+          "type": "type_pointer",
           "named": true
         },
         {
-          "type": "type_pointer",
+          "type": "type_pointer_to_pointer",
           "named": true
         },
         {
@@ -883,6 +6475,69 @@
         },
         {
           "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_pointer_to_pointer",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
           "named": true
         }
       ]
@@ -902,7 +6557,11 @@
       "required": true,
       "types": [
         {
-          "type": "type_dynamic_array",
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
           "named": true
         },
         {
@@ -910,19 +6569,15 @@
           "named": true
         },
         {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
           "type": "type_function",
           "named": true
         },
         {
-          "type": "type_identifier",
+          "type": "type_pointer",
           "named": true
         },
         {
-          "type": "type_pointer",
+          "type": "type_pointer_to_pointer",
           "named": true
         },
         {
@@ -935,6 +6590,14 @@
         },
         {
           "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
           "named": true
         }
       ]
@@ -945,83 +6608,455 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": true,
+      "multiple": false,
       "required": true,
       "types": [
         {
-          "type": "bool_value",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "declaration_type_inferred",
-          "named": true
-        },
-        {
-          "type": "expression_call",
-          "named": true
-        },
-        {
-          "type": "expression_return",
-          "named": true
-        },
-        {
-          "type": "expression_subscript",
-          "named": true
-        },
-        {
-          "type": "identifier",
-          "named": true
-        },
-        {
-          "type": "number_literal",
-          "named": true
-        },
-        {
-          "type": "string",
-          "named": true
-        },
-        {
-          "type": "type_dynamic_array",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_fixed_array",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_identifier",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
+          "type": "block",
           "named": true
         }
       ]
     }
+  },
+  {
+    "type": "type_sum",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "type_union",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "block",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "while",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "then": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "!",
+    "named": false
+  },
+  {
+    "type": "!=",
+    "named": false
+  },
+  {
+    "type": "%",
+    "named": false
+  },
+  {
+    "type": "&",
+    "named": false
   },
   {
     "type": "(",
@@ -1029,6 +7064,34 @@
   },
   {
     "type": ")",
+    "named": false
+  },
+  {
+    "type": "*",
+    "named": false
+  },
+  {
+    "type": "+",
+    "named": false
+  },
+  {
+    "type": "++",
+    "named": false
+  },
+  {
+    "type": "-",
+    "named": false
+  },
+  {
+    "type": "--",
+    "named": false
+  },
+  {
+    "type": ".",
+    "named": false
+  },
+  {
+    "type": ".pptr",
     "named": false
   },
   {
@@ -1040,6 +7103,10 @@
     "named": false
   },
   {
+    "type": "/",
+    "named": false
+  },
+  {
     "type": ":",
     "named": false
   },
@@ -1048,15 +7115,39 @@
     "named": false
   },
   {
-    "type": "Bool",
+    "type": ":=",
     "named": false
   },
   {
-    "type": "Boolean",
+    "type": "<",
     "named": false
   },
   {
-    "type": "Byte",
+    "type": "<<",
+    "named": false
+  },
+  {
+    "type": "<=",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": ">",
+    "named": false
+  },
+  {
+    "type": ">=",
+    "named": false
+  },
+  {
+    "type": ">>",
+    "named": false
+  },
+  {
+    "type": "@",
     "named": false
   },
   {
@@ -1068,11 +7159,19 @@
     "named": false
   },
   {
+    "type": "^",
+    "named": false
+  },
+  {
+    "type": "and",
+    "named": false
+  },
+  {
     "type": "bool",
     "named": false
   },
   {
-    "type": "boolean",
+    "type": "byte",
     "named": false
   },
   {
@@ -1120,7 +7219,11 @@
     "named": false
   },
   {
-    "type": "discardable",
+    "type": "else",
+    "named": false
+  },
+  {
+    "type": "enum",
     "named": false
   },
   {
@@ -1140,11 +7243,27 @@
     "named": true
   },
   {
+    "type": "if",
+    "named": false
+  },
+  {
+    "type": "import",
+    "named": false
+  },
+  {
     "type": "int",
     "named": false
   },
   {
     "type": "module",
+    "named": false
+  },
+  {
+    "type": "not",
+    "named": false
+  },
+  {
+    "type": "or",
     "named": false
   },
   {
@@ -1156,6 +7275,10 @@
     "named": false
   },
   {
+    "type": "sum",
+    "named": false
+  },
+  {
     "type": "true",
     "named": false
   },
@@ -1164,11 +7287,27 @@
     "named": false
   },
   {
+    "type": "union",
+    "named": false
+  },
+  {
+    "type": "view",
+    "named": false
+  },
+  {
     "type": "void",
     "named": false
   },
   {
+    "type": "while",
+    "named": false
+  },
+  {
     "type": "{",
+    "named": false
+  },
+  {
+    "type": "|",
     "named": false
   },
   {

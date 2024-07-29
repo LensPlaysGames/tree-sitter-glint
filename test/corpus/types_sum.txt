@@ -1,0 +1,27 @@
+================
+Sum, empty
+================
+
+sum {};
+
+---
+
+(source_file
+ (type_sum
+  (block)))
+
+================
+Sum, Single Member (type inferred)
+================
+
+sum { x :: 0 };
+
+---
+
+(source_file
+ (type_sum
+  (block
+   (declaration
+    (identifier)
+    (integer_literal)))))
+

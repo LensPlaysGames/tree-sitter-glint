@@ -1,0 +1,27 @@
+================
+Struct, empty
+================
+
+struct {};
+
+---
+
+(source_file
+ (type_struct
+  (block)))
+
+================
+Struct, Single Member (type inferred)
+================
+
+struct { x :: 0 };
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (integer_literal)))))
+

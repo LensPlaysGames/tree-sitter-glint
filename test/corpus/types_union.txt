@@ -1,0 +1,27 @@
+================
+Union, empty
+================
+
+union {};
+
+---
+
+(source_file
+ (type_union
+  (block)))
+
+================
+Union, Single Member (type inferred)
+================
+
+union { x :: 0 };
+
+---
+
+(source_file
+ (type_union
+  (block
+   (declaration
+    (identifier)
+    (integer_literal)))))
+

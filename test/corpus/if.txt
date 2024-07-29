@@ -1,0 +1,152 @@
+================
+If, Empty Block
+================
+
+if false {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)))
+
+================
+If, Empty Block, Soft Separator
+================
+
+if false, {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)))
+
+================
+If, Empty Block, Hard Separator
+================
+
+if false; {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)))
+
+================
+If/Else, Empty Blocks, No Separators
+================
+
+if false {} else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Soft Separator Between condition/then
+================
+
+if false, {} else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Hard Separator Between condition/then
+================
+
+if false; {} else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Soft Separator Between then/`else'
+================
+
+if false {}, else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Hard Separator Between then/`else'
+================
+
+if false {}; else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Soft Separators
+================
+
+if false, {}, else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Hard Separators
+================
+
+if false; {}; else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Soft+Hard Separator
+================
+
+if false, {}; else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))
+
+================
+If/Else, Empty Blocks, Hard+Soft Separator
+================
+
+if false; {}, else {};
+
+---
+
+(source_file
+ (if (bool_literal)
+   (block)
+   (block)))

@@ -1,0 +1,86 @@
+================
+Pointer
+================
+
+void.ptr;
+
+---
+
+(source_file
+ (type_pointer
+  (type_primitive)))
+
+================
+Pointer to Pointer Shorthand
+================
+
+void.pptr;
+
+---
+
+(source_file
+ (type_pointer_to_pointer
+  (type_primitive)))
+
+================
+Reference
+================
+
+void.ref;
+
+---
+
+(source_file
+ (type_reference
+  (type_primitive)))
+
+================
+Reference to Pointer
+================
+
+void.ptr.ref
+
+---
+
+(source_file
+ (type_reference
+  (type_pointer
+   (type_primitive))))
+
+================
+Fixed Array
+================
+
+[byte 8];
+
+---
+
+(source_file
+ (type_array
+  (type_primitive)
+  (integer_literal)))
+
+================
+Dynamic Array
+================
+
+[byte];
+
+---
+
+(source_file
+ (type_array
+  (type_primitive)))
+
+================
+Dynamic Array, Initial Size
+================
+
+[byte x];
+
+---
+
+(source_file
+ (type_array
+  (type_primitive)
+  (identifier)))

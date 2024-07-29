@@ -8,51 +8,296 @@ module.exports = grammar({
     rules: {
         source_file: $ => seq(
             optional($.module_declaration),
-            repeat($._expr)
+            repeat($.module_import),
+            repeat($._expression),
         ),
 
         module_declaration: $ => seq(
             "module",
             field("name", $.identifier),
-            $._expression_separator
+            optional($._expression_separator)
         ),
 
-        _expr: $ => seq(
-            $._expression,
-            $._expression_separator
+        module_import: $ => seq(
+            "import",
+            field("name", $.identifier),
+            optional($._expression_separator)
         ),
 
-        _expr_soft: $ => prec.left(seq(
-            $._expression,
+        // ================
+        // TYPES
+        // ================
+        _type: $ => choice(
+            $.type_array,
+            $.type_enum,
+            $.type_ffi,
+            $.type_pointer,
+            $.type_pointer_to_pointer,
+            $.type_primitive,
+            $.type_reference,
+            $.type_struct,
+            $.type_sum,
+            $.type_union,
+            $.type_function,
+        ),
+
+        type_enum: $ => seq(
+            "enum",
+            $.block
+        ),
+
+        type_sum: $ => seq(
+            "sum",
+            $.block
+        ),
+
+        type_struct: $ => seq(
+            "struct",
+            $.block
+        ),
+
+        type_union: $ => seq(
+            "union",
+            $.block
+        ),
+
+        type_primitive: $ => choice(
+            "bool",
+            "byte",
+            "int",
+            "uint",
+            "void"
+        ),
+
+        type_ffi: $ => choice(
+            "cshort", "cushort",
+            "cint", "cuint",
+            "clong", "culong",
+            "clonglong", "culonglong",
+            "csize", "cusize"
+        ),
+
+        type_function: $ => prec.right(seq(
+            $._type,
+            "(",
+            repeat($.param_decl),
+            ")"
+        )),
+
+        // Because _expression_nosep is right associative, we need to also use
+        // precedence to beat it out here.
+        param_decl: $ => prec(1, seq(
+            optional(field("name", $.identifier)),
+            ":", field("type", choice($._type, $.identifier)),
             optional($._soft_expression_separator)
         )),
 
-        // TODO: Prefix Unary Expressions
-        // TODO: Binary Expressions
-        // TODO: Member Access with "."
-        _expression_notype: $ => prec(1, choice(
-            $.bool_value,
-            $._expression_declaration,
-            $._expression_paren,
-            $.expression_call,
-            $.expression_return,
-            $.expression_subscript,
+        type_array: $ => prec.right(seq(
+            "[",
+            $._type,
+            optional(choice(
+                $._expression_nosep,
+                "view"
+            )),
+            "]",
+        )),
+        type_pointer: $ => seq($._type, ".ptr"),
+        type_pointer_to_pointer: $ => seq($._type, ".pptr"),
+        type_reference: $ => seq($._type, ".ref"),
+
+        // ================
+        // TYPES END
+        // ================
+
+
+        // ================
+        // EXPRESSIONS
+        // ================
+        _expression: $ => prec.right(seq(
+            choice(
+                $._expression_nosep,
+                $._type
+            ),
+            optional(repeat($._expression_separator))
+        )),
+
+        _expression_nosep: $ => choice(
+            $._binary_expression,
+            $._paren_expression,
+            $._unary_expression,
+            $.assign,
+            $.block,
+            $.bool_literal,
+            $.declaration,
             $.identifier,
-            $.number_literal,
-            $.string
-        )),
-
-        _expression: $ => prec(1, choice(
-            $._expression_notype,
-            $._expression_type,
-        )),
-
-        bool_value: $ => choice(
-            "true",
-            "false"
+            $.if,
+            $.integer_literal,
+            $.member_access,
+            $.return,
+            $.string_literal,
+            $.subscript,
+            $.while,
         ),
 
-        string: $ => choice(
+        _paren_expression: $ => seq(
+            "(",
+            $._expression,
+            ")"
+        ),
+
+        subscript: $ => seq(
+            $._expression_nosep,
+            "[",
+            $._expression_nosep,
+            "]"
+        ),
+
+        assign: $ => seq(
+            $._expression_nosep,
+            ":=",
+            $._expression
+        ),
+
+        _unary_expression: $ => prec.left(10000, choice(
+            // $.addressof,
+            // $.negate,
+            $.decrement,
+            $.dereference,
+            $.increment,
+            $.logical_negate,
+        )),
+
+        dereference: $ => seq("@", $._expression),
+        addressof: $ => seq("&", $._expression),
+        negate: $ => seq("-", $._expression),
+        increment: $ => seq("++", $._expression),
+        decrement: $ => seq("--", $._expression),
+        logical_negate: $ => seq(choice("!", "not"), $._expression),
+
+        declaration: $ => prec.right(seq(
+            optional($.storage_specifier),
+            choice(
+                seq(
+                    field("name", $.identifier),
+                    ":", field("type", choice($._type, $.identifier)),
+                    optional(
+                        field("init", $._expression)
+                    )
+                ),
+                seq(
+                    field("name", $.identifier),
+                    "::",
+                    field("init", $._expression),
+                )
+            ))
+        ),
+
+        // ================
+        // BINARY OPERATORS
+        // ================
+        _binary_expression: $ => choice(
+            $.add,
+            $.subtract,
+            $.multiply,
+            $.divide,
+            $.remainder,
+
+            $.eq,
+            $.ne,
+            $.gt,
+            $.ge,
+            $.lt,
+            $.le,
+
+            $.and,
+            $.or,
+
+            $.bitshl,
+            $.bitshr,
+            $.bitand,
+            $.bitor,
+            $.bitxor
+        ),
+
+        // note that + left or right precedence doesn't matter for these
+        // operators, but we pick one to be unambiguous in the grammar.
+        add:       $ => prec.left(500, seq($._expression_nosep, "+", $._expression_nosep)),
+        subtract:  $ => prec.left(500, seq($._expression_nosep, "-", $._expression_nosep)),
+        multiply:  $ => prec.left(600, seq($._expression_nosep, "*", $._expression_nosep)),
+        divide:    $ => prec.left(600, seq($._expression_nosep, "/", $._expression_nosep)),
+        remainder: $ => prec.left(600, seq($._expression_nosep, "%", $._expression_nosep)),
+
+        eq: $ => prec.left(200, seq($._expression_nosep, "=", $._expression_nosep)),
+        ne: $ => prec.left(200, seq($._expression_nosep, "!=", $._expression_nosep)),
+        gt: $ => prec.left(200, seq($._expression_nosep, ">", $._expression_nosep)),
+        ge: $ => prec.left(200, seq($._expression_nosep, ">=", $._expression_nosep)),
+        lt: $ => prec.left(200, seq($._expression_nosep, "<", $._expression_nosep)),
+        le: $ => prec.left(200, seq($._expression_nosep, "<=", $._expression_nosep)),
+
+        and: $ => prec.left(150, seq($._expression_nosep, "and", $._expression_nosep)),
+        or: $ => prec.left(145, seq($._expression_nosep, "or", $._expression_nosep)),
+
+        bitshl: $ => prec.left(400, seq($._expression_nosep, "<<", $._expression_nosep)),
+        bitshr: $ => prec.left(400, seq($._expression_nosep, ">>", $._expression_nosep)),
+        bitand: $ => prec.left(300, seq($._expression_nosep, "&", $._expression_nosep)),
+        bitor: $ => prec.left(300, seq($._expression_nosep, "|", $._expression_nosep)),
+        bitxor: $ => prec.left(300, seq($._expression_nosep, "^", $._expression_nosep)),
+        // ================
+        // BINARY OPERATORS END
+        // ================
+
+        // ================
+        // CONTROL FLOW
+        // ================
+        if: $ => prec.right(seq(
+            "if",
+            field("condition", $._expression),
+            field("then", $._expression),
+            optional(seq(
+                "else",
+                field("else", $._expression)
+            ))
+        )),
+
+        while: $ => prec.right(seq(
+            "while",
+            field("condition", $._expression),
+            field("then", $._expression)
+        )),
+        // ================
+        // CONTROL FLOW END
+        // ================
+
+
+        block: $ => seq(
+            "{",
+            repeat($._expression),
+            "}"
+        ),
+
+        return: $ => prec.right(seq(
+            "return",
+            choice($._expression, $._expression_separator)
+        )),
+
+        member_access: $ => seq(
+            $.identifier,
+            ".",
+            $.identifier
+        ),
+
+        bool_literal: $ => choice(
+            "true",
+            "false",
+        ),
+
+        integer_literal: $ => choice(
+            $._number_dec,
+            $._number_hex,
+            $._number_oct,
+        ),
+
+        string_literal: $ => choice(
             $._escapable_string,
             $._raw_string
         ),
@@ -63,182 +308,6 @@ module.exports = grammar({
 
         _raw_string: $ => token(
             seq("'", repeat(/[^']/), "'")
-        ),
-
-        expression_subscript: $ => seq(
-            $._expression,
-            "[",
-            $._expression_notype,
-            "]"
-        ),
-
-        expression_return: $ => seq(
-            "return",
-            $._expression
-        ),
-
-        _expression_paren: $ => seq(
-            "(",
-            $._expression,
-            ")"
-        ),
-
-        expression_call: $ => choice(
-            $._expression_call0,
-            $._expression_call1
-        ),
-
-        _expression_call0: $ => prec(20, seq(
-            field("callee", $._expression),
-            repeat1($._expr_soft)
-        )),
-
-        _expression_call1: $ => prec(20, seq(
-            field("callee", $._expression),
-            "(",
-            repeat($._expr_soft),
-            ")"
-        )),
-
-        _expression_declaration: $ => choice(
-            $.declaration,
-            $.declaration_type_inferred
-        ),
-
-        // Precedence to "beat" type expression
-        declaration: $ => prec(20, seq(
-            optional($.storage_specifier),
-            field("name", $.identifier),
-            ":",
-            field("type", $._type)
-        )),
-
-        declaration_type_inferred: $ => seq(
-            field("name", $.identifier),
-            "::",
-            field("init", $._expression)
-        ),
-
-        _expression_type: $ => choice(
-            $._expression_type0,
-            $._expression_type1
-        ),
-
-        _expression_type0: $ => seq(
-            ":",
-            $._type
-        ),
-
-        // Everything but type_function, basically, otherwise calls would be
-        // ambiguous.
-        _expression_type1: $ => choice(
-            $._type_array,
-            $.type_ffi,
-            $.type_identifier,
-            $.type_pointer,
-            $.type_primitive,
-            $.type_reference,
-            $.type_struct
-        ),
-
-        _type: $ => prec(10, choice(
-            $._type_array,
-            $.type_ffi,
-            $.type_function,
-            $.type_identifier,
-            $.type_pointer,
-            $.type_primitive,
-            $.type_reference,
-            $.type_struct
-        )),
-
-        type_identifier: $ => $.identifier,
-
-        type_primitive: $ => choice(
-            choice("bool", "boolean", "Bool", "Boolean"),
-            "Byte",
-            "int",
-            "uint",
-            "void"
-        ),
-
-        type_pointer: $ => seq(
-            $._type,
-            ".ptr"
-        ),
-
-        type_reference: $ => seq(
-            $._type,
-            ".ref"
-        ),
-
-        _type_array: $ => choice(
-            $.type_dynamic_array,
-            $.type_fixed_array
-        ),
-
-        type_dynamic_array: $ => prec(10, seq(
-            "[",
-            $._expression_type,
-            optional($._expression),
-            "]"
-        )),
-
-        type_fixed_array: $ => prec(10, seq(
-            "[",
-            $._expression_type,
-            $.number_literal,
-            "]"
-        )),
-
-        type_ffi: $ => choice(
-            "cshort",
-            "cushort",
-            "cint",
-            "cuint",
-            "clong",
-            "culong",
-            "clonglong",
-            "culonglong",
-            "csize",
-            "cusize"
-        ),
-
-        type_struct: $ => seq(
-            "struct",
-            $.identifier,
-            "{",
-            repeat($._expr),
-            "}"
-        ),
-
-        // Precedence to make T() not T followed by paren expression but a
-        // function type.
-        type_function: $ => prec(30, seq(
-            // Return type
-            $._type,
-            // Parameters
-            "(",
-            repeat(
-                seq(
-                    choice(
-                        $.declaration,      // x : int
-                        $._expression_type0 // :int
-                    ),
-                    optional($._soft_expression_separator)
-                )
-            ),
-            ")",
-            // Attributes
-            repeat(
-                "discardable",
-            )
-        )),
-
-        number_literal: $ => choice(
-            $._number_dec,
-            $._number_hex,
-            $._number_oct,
         ),
 
         storage_specifier: $ => choice(
@@ -256,7 +325,7 @@ module.exports = grammar({
         identifier: $ => token(/[a-z][a-z0-9_]*/i),
         _number_dec: $ => token(/\d+/),
         _number_hex: $ => token(/0x[0-9a-f]+/i),
-        _number_oct: $ => token(/0[0-7]+/),
+        _number_oct: $ => token(/0o?[0-7]+/),
         comment: $ => token(/;;.*/)
     }
 });

@@ -1,0 +1,257 @@
+================
+Empty
+================
+---
+
+(source_file)
+
+================
+Integer Literal
+================
+
+69;
+
+---
+
+(source_file
+ (integer_literal))
+
+================
+Integer Literal, Parens
+================
+
+(69);
+
+---
+
+(source_file
+ (integer_literal))
+
+================
+Empty String Literal, Escapable, No Escapes
+================
+
+"";
+
+---
+
+(source_file
+ (string_literal))
+
+================
+Empty String Literal, Inescapable
+================
+
+'';
+
+---
+
+(source_file
+ (string_literal))
+
+================
+String Literal, Escapable, No Escapes
+================
+
+"mari had a little juana whose fleece was green as steez";
+
+---
+
+(source_file
+ (string_literal))
+
+================
+String Literal, Escapable, Null Escape
+================
+
+"\0";
+
+---
+
+(source_file
+ (string_literal))
+
+================
+String Literal, Escapable, Newline Escape
+================
+
+"\n";
+
+---
+
+(source_file
+ (string_literal))
+
+================
+String Literal, Escapable, Tab Escape
+================
+
+"\t";
+
+---
+
+(source_file
+ (string_literal))
+
+================
+String Literal, Escapable, Carriage Return Escape
+================
+
+"\r";
+
+---
+
+(source_file
+ (string_literal))
+
+================
+String Literal, Escapable, Double Quote Escape
+================
+
+"\"";
+
+---
+
+(source_file
+ (string_literal))
+
+================
+Bool Literal, true
+================
+
+true;
+
+---
+
+(source_file (bool_literal))
+
+================
+Bool Literal, false
+================
+
+false;
+
+---
+
+(source_file (bool_literal))
+
+================
+Member Access
+================
+
+bar.x;
+
+---
+
+(source_file
+ (member_access
+  (identifier) (identifier)))
+
+================
+Primitive Types
+================
+
+bool;
+byte;
+int;
+uint;
+void;
+
+---
+
+(source_file
+ (type_primitive)
+ (type_primitive)
+ (type_primitive)
+ (type_primitive)
+ (type_primitive))
+
+================
+C FFI Types
+================
+
+cshort;
+cushort;
+
+cint;
+cuint;
+
+clong;
+culong;
+
+clonglong;
+culonglong;
+
+---
+
+(source_file
+ (type_ffi)
+ (type_ffi)
+ (type_ffi)
+ (type_ffi)
+ (type_ffi)
+ (type_ffi)
+ (type_ffi)
+ (type_ffi))
+
+================
+Return Nothing
+================
+
+return;
+
+---
+
+(source_file
+ (return))
+
+================
+Return Something
+================
+
+return 69;
+
+---
+
+(source_file
+ (return (integer_literal)))
+
+================
+Return Binary
+================
+
+return 34 + 35;
+
+---
+
+(source_file
+ (return
+  (add
+   (integer_literal)
+   (integer_literal))))
+
+================
+Subscript
+================
+
+foo[35];
+
+---
+
+(source_file
+ (subscript
+  (identifier)
+  (integer_literal)))
+
+================
+Subscript, Identifier
+================
+
+foo[x];
+
+---
+
+(source_file
+ (subscript
+  (identifier)
+  (identifier)))

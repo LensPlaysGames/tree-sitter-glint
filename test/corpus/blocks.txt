@@ -1,0 +1,49 @@
+================
+Empty Block Expression
+================
+
+{};
+
+---
+
+(source_file
+ (block))
+
+
+================
+Block Expression, Single Expression, Hard Separators
+================
+
+{ 69 };
+
+---
+
+(source_file
+ (block
+  (integer_literal)))
+
+================
+Block Expression, Single Expression
+================
+
+{ 69; };
+
+---
+
+(source_file
+ (block
+  (integer_literal)))
+
+================
+Block Expression, Multiple Expressions, Hard Separators
+================
+
+{ 69; 42; };
+
+---
+
+(source_file
+ (block
+  (integer_literal)
+  (integer_literal)))
+
