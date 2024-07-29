@@ -272,7 +272,7 @@ module.exports = grammar({
         block: $ => seq(
             "{",
             repeat($._expression),
-            "}"
+            field("block_close", "}")
         ),
 
         return: $ => prec.right(seq(

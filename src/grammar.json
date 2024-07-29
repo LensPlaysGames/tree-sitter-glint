@@ -1352,8 +1352,12 @@
           }
         },
         {
-          "type": "STRING",
-          "value": "}"
+          "type": "FIELD",
+          "name": "block_close",
+          "content": {
+            "type": "STRING",
+            "value": "}"
+          }
         }
       ]
     },

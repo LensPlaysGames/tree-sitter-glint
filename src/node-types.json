@@ -1530,7 +1530,18 @@
   {
     "type": "block",
     "named": true,
-    "fields": {},
+    "fields": {
+      "block_close": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "}",
+            "named": false
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
       "required": false,
