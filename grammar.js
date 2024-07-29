@@ -78,7 +78,7 @@ module.exports = grammar({
         ),
 
         type_function: $ => prec.right(seq(
-            $._type,
+            choice($._type, $.identifier),
             "(",
             repeat($.param_decl),
             ")"
@@ -125,7 +125,7 @@ module.exports = grammar({
             optional(repeat($._expression_separator))
         )),
 
-        _expression_nosep: $ => choice(
+        _expression_nosep: $ => prec.right(choice(
             $._binary_expression,
             $._paren_expression,
             $._unary_expression,
@@ -141,7 +141,7 @@ module.exports = grammar({
             $.string_literal,
             $.subscript,
             $.while,
-        ),
+        )),
 
         call: $ => prec.right(seq(
             $._expression_nosep,

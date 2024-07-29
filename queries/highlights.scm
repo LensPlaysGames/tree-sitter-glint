@@ -4,10 +4,10 @@
 (bool_literal) @constant.builtin
 (string_literal) @string
 
-;; (declaration name: (identifier) @function
-;;              type: (type_function))
-;; (declaration name: (identifier) @function
-;;              type: (type_pointer (type_function)))
+(declaration name: (identifier) @function
+             type: (type_function))
+(declaration name: (identifier) @function
+             type: (type_pointer (type_function)))
 
 ;; Highlight the type of a declaration if it's an identifier.
 (declaration type: (identifier) @type)

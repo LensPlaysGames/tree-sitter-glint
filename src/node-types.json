@@ -6706,6 +6706,10 @@
       "required": true,
       "types": [
         {
+          "type": "identifier",
+          "named": true
+        },
+        {
           "type": "param_decl",
           "named": true
         },
