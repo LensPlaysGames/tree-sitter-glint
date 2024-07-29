@@ -9,7 +9,7 @@ module.exports = grammar({
         source_file: $ => seq(
             optional($.module_declaration),
             repeat($.module_import),
-            repeat($._expression),
+            repeat($._multi_expression),
         ),
 
         module_declaration: $ => seq(
@@ -113,6 +113,10 @@ module.exports = grammar({
         // ================
         // EXPRESSIONS
         // ================
+        _multi_expression: $ => prec.right(choice(
+            $._expression,
+            $.call,
+        )),
         _expression: $ => prec.right(seq(
             choice(
                 $._expression_nosep,
@@ -139,9 +143,15 @@ module.exports = grammar({
             $.while,
         ),
 
+        call: $ => prec.right(seq(
+            $._expression_nosep,
+            repeat1(prec.left($._expression_nosep)),
+            $._expression_separator
+        )),
+
         _paren_expression: $ => seq(
             "(",
-            $._expression,
+            $._multi_expression,
             ")"
         ),
 
@@ -155,7 +165,7 @@ module.exports = grammar({
         assign: $ => seq(
             $._expression_nosep,
             ":=",
-            $._expression
+            $._multi_expression
         ),
 
         _unary_expression: $ => prec.left(10000, choice(
@@ -181,13 +191,13 @@ module.exports = grammar({
                     field("name", $.identifier),
                     ":", field("type", choice($._type, $.identifier)),
                     optional(
-                        field("init", $._expression)
+                        field("init", $._multi_expression)
                     )
                 ),
                 seq(
                     field("name", $.identifier),
                     "::",
-                    field("init", $._expression),
+                    field("init", $._multi_expression),
                 )
             ))
         ),
@@ -252,17 +262,17 @@ module.exports = grammar({
         if: $ => prec.right(seq(
             "if",
             field("condition", $._expression),
-            field("then", $._expression),
+            field("then", $._multi_expression),
             optional(seq(
                 "else",
-                field("else", $._expression)
+                field("else", $._multi_expression)
             ))
         )),
 
         while: $ => prec.right(seq(
             "while",
             field("condition", $._expression),
-            field("then", $._expression)
+            field("then", $._multi_expression)
         )),
         // ================
         // CONTROL FLOW END
@@ -271,13 +281,13 @@ module.exports = grammar({
 
         block: $ => seq(
             "{",
-            repeat($._expression),
+            repeat($._multi_expression),
             "}"
         ),
 
         return: $ => prec.right(seq(
             "return",
-            choice($._expression, $._expression_separator)
+            choice($._multi_expression, $._expression_separator)
         )),
 
         member_access: $ => seq(

@@ -48,6 +48,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -236,6 +240,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -430,6 +438,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -618,6 +630,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -812,6 +828,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1000,6 +1020,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -1194,6 +1218,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1382,6 +1410,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -1576,6 +1608,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1724,6 +1760,201 @@
     "fields": {}
   },
   {
+    "type": "call",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "declaration",
     "named": true,
     "fields": {
@@ -1777,6 +2008,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "call",
             "named": true
           },
           {
@@ -2046,6 +2281,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -2234,6 +2473,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -2428,6 +2671,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -2616,6 +2863,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -2810,6 +3061,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -2998,6 +3253,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -3200,6 +3459,10 @@
             "named": true
           },
           {
+            "type": "call",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -3391,6 +3654,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "call",
             "named": true
           },
           {
@@ -3588,6 +3855,10 @@
             "named": true
           },
           {
+            "type": "call",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -3777,6 +4048,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -3976,6 +4251,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4167,6 +4446,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4355,6 +4638,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -4596,6 +4883,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4787,6 +5078,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4975,6 +5270,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -5239,6 +5538,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -5430,6 +5733,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -5618,6 +5925,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -5830,6 +6141,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -6021,6 +6336,10 @@
           "named": true
         },
         {
+          "type": "call",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -6209,6 +6528,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "call",
           "named": true
         },
         {
@@ -6705,6 +7028,10 @@
             "named": true
           },
           {
+            "type": "call",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -6896,6 +7223,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "call",
             "named": true
           },
           {
