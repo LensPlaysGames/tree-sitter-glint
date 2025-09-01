@@ -2,7 +2,7 @@
   "name": "tree-sitter-glint",
   "version": "0.1.0",
   "description": "Glint Programming Language Tree Sitter Grammar",
-  "main": "index.js",
+  "main": "bindings/node",
   "types": "bindings/node",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -40,7 +40,9 @@
       "scope": "source.glint",
       "injection-regex": "^glint$",
       "highlights": "queries/highlights.scm",
-      "file-types": ["g"]
+      "file-types": [
+        "g"
+      ]
     }
   ]
 }

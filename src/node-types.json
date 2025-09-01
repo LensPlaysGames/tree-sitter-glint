@@ -2158,7 +2158,7 @@
       },
       "name": {
         "multiple": false,
-        "required": true,
+        "required": false,
         "types": [
           {
             "type": "identifier",
@@ -7607,6 +7607,10 @@
   },
   {
     "type": "sum",
+    "named": false
+  },
+  {
+    "type": "supplant",
     "named": false
   },
   {

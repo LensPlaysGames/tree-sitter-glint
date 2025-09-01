@@ -34,6 +34,8 @@
   ;; Storage specifiers
   "export" "external"
 
+  "supplant"
+
   "return"
 ] @keyword
 

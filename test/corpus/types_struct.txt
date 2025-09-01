@@ -11,7 +11,178 @@ struct {};
   (block)))
 
 ================
-Struct, Single Member (type inferred)
+Struct, Single Member of Primitive Type
+================
+
+struct { x : int };
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Comma Separator
+================
+
+struct { x : int, y : int };
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Comma Separator w/ Trailing
+================
+
+struct { x : int, y : int, };
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Semi-colon Separator
+================
+
+struct { x : int; y : int };
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Semi-colon Separator w/ Trailing
+================
+
+struct { x : int; y : int; };
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Multi-line, Comma Separator
+================
+
+struct {
+    x : int,
+    y : int
+};
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Multi-line, Comma Separator w/ Trailing
+================
+
+struct {
+    x : int,
+    y : int,
+};
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Multi-line, Semi-colon Separator
+================
+
+struct {
+    x : int;
+    y : int
+};
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Multiple Members of Primitive Type, Multi-line, Semi-colon Separator w/ Trailing
+================
+
+struct {
+    x : int;
+    y : int;
+};
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)
+    (type_primitive))
+   (declaration
+    (identifier)
+    (type_primitive)))))
+
+================
+Struct, Single Type-inferred Member
 ================
 
 struct { x :: 0 };
@@ -24,4 +195,18 @@ struct { x :: 0 };
    (declaration
     (identifier)
     (integer_literal)))))
+
+================
+Struct, Single Member, Supplanted Member
+================
+
+struct { supplant foo };
+
+---
+
+(source_file
+ (type_struct
+  (block
+   (declaration
+    (identifier)))))
 
