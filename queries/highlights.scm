@@ -36,6 +36,8 @@
 
   "supplant"
 
+  "match"
+
   "return"
 ] @keyword
 

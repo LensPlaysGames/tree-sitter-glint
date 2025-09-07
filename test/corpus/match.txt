@@ -1,0 +1,134 @@
+================
+Empty Match
+================
+
+match foo {};
+
+---
+
+(source_file
+ (match (identifier)))
+
+================
+Single Match
+================
+
+match foo { .x 42 };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)))
+
+================
+Single Match, Colon
+================
+
+match foo { .x : 42 };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)))
+
+================
+Multiple Match, Hard Separator
+================
+
+match foo { .x 42; .y 69 };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)
+  (identifier)
+  (integer_literal)))
+
+================
+Multiple Match, Hard Separators
+================
+
+match foo { .x 42; .y 69; };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)
+  (identifier)
+  (integer_literal)))
+
+================
+Multiple Match, Hard Separator, Colon
+================
+
+match foo { .x : 42; .y : 69; };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)
+  (identifier)
+  (integer_literal)))
+
+================
+Multiple Match, Soft Separator
+================
+
+match foo { .x 42, .y 69 };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)
+  (identifier)
+  (integer_literal)))
+
+================
+Multiple Match, Soft Separators
+================
+
+match foo { .x 42, .y 69, };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)
+  (identifier)
+  (integer_literal)))
+
+================
+Multiple Match, Soft Separator, Colon
+================
+
+match foo { .x : 42, .y : 69 };
+
+---
+
+(source_file
+ (match
+  (identifier)
+  (identifier)
+  (integer_literal)
+  (identifier)
+  (integer_literal)))

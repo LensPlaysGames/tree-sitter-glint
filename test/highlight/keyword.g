@@ -14,3 +14,9 @@
 
    export foo :void;
 ;; ^^^^^^ keyword
+
+   supplant foo;
+;; ^^^^^^^^ keyword
+
+   match foo {};
+;; ^^^^^ keyword

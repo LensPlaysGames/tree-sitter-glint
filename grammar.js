@@ -155,12 +155,26 @@ module.exports = grammar({
             $.string_literal,
             $.subscript,
             $.while,
+            $.match,
         )),
 
         _paren_expression: $ => seq(
             "(",
             $._multi_expression,
             ")"
+        ),
+
+        match: $ => seq(
+            "match",
+            field("object", $._expression_nosep),
+            "{",
+            repeat(seq(
+                ".",
+                $.identifier,
+                optional(":"),
+                $._expression
+            )),
+            "}"
         ),
 
         subscript: $ => seq(
