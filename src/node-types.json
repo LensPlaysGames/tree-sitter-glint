@@ -48,6 +48,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -244,6 +248,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -446,6 +454,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -642,6 +654,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -844,6 +860,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -1040,6 +1060,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -1242,6 +1266,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -1438,6 +1466,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -1640,6 +1672,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -1796,6 +1832,11 @@
     "fields": {}
   },
   {
+    "type": "byte_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "call",
     "named": true,
     "fields": {},
@@ -1841,6 +1882,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -2011,6 +2056,14 @@
             "named": false
           },
           {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -2048,6 +2101,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
             "named": true
           },
           {
@@ -2325,6 +2382,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -2521,6 +2582,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -2723,6 +2788,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -2919,6 +2988,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -3121,6 +3194,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -3320,6 +3397,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -3487,6 +3568,14 @@
             "named": false
           },
           {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -3524,6 +3613,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
             "named": true
           },
           {
@@ -3689,6 +3782,14 @@
             "named": false
           },
           {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -3726,6 +3827,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
             "named": true
           },
           {
@@ -3891,6 +3996,14 @@
             "named": false
           },
           {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -3928,6 +4041,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
             "named": true
           },
           {
@@ -4128,6 +4245,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -4335,6 +4456,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -4531,6 +4656,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -4733,6 +4862,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -4900,6 +5033,14 @@
             "named": false
           },
           {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -4937,6 +5078,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
             "named": true
           },
           {
@@ -5132,6 +5277,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -5381,6 +5530,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -5580,6 +5733,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -5776,6 +5933,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -6048,6 +6209,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -6247,6 +6412,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -6443,6 +6612,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -6663,6 +6836,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -6862,6 +7039,10 @@
           "named": true
         },
         {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
           "type": "call",
           "named": true
         },
@@ -7058,6 +7239,10 @@
         },
         {
           "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
           "named": true
         },
         {
@@ -7522,6 +7707,14 @@
             "named": false
           },
           {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -7559,6 +7752,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
             "named": true
           },
           {
@@ -7724,6 +7921,14 @@
             "named": false
           },
           {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -7761,6 +7966,10 @@
           },
           {
             "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
             "named": true
           },
           {
@@ -7952,6 +8161,10 @@
     "named": false
   },
   {
+    "type": ",",
+    "named": false
+  },
+  {
     "type": "-",
     "named": false
   },
@@ -7989,6 +8202,10 @@
   },
   {
     "type": ":=",
+    "named": false
+  },
+  {
+    "type": ";",
     "named": false
   },
   {
@@ -8033,6 +8250,10 @@
   },
   {
     "type": "^",
+    "named": false
+  },
+  {
+    "type": "`",
     "named": false
   },
   {
