@@ -146,6 +146,7 @@ module.exports = grammar({
             $.assign,
             $.block,
             $.bool_literal,
+            $.byte_literal,
             $.declaration,
             $.identifier,
             $.if,
@@ -325,6 +326,15 @@ module.exports = grammar({
         bool_literal: $ => choice(
             "true",
             "false",
+        ),
+
+        byte_literal: $ => seq(
+            "`",
+            choice(
+                /\\./,
+                /[^\\]/
+            ),
+            "`"
         ),
 
         integer_literal: $ => choice(

@@ -6,6 +6,28 @@ Empty
 (source_file)
 
 ================
+Byte Literal
+================
+
+`0`;
+
+---
+
+(source_file
+ (byte_literal))
+
+================
+Byte Literal, escaped
+================
+
+`\0`;
+
+---
+
+(source_file
+ (byte_literal))
+
+================
 Integer Literal
 ================
 
