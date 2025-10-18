@@ -12,12 +12,14 @@
 ;; Highlight the type of a declaration if it's an identifier.
 (declaration type: (identifier) @type)
 
+;; Keywords
 [
   ;; Header
   "import" "module"
 
   ;; Control Flow
-  "if" "else" "while" ;; "cfor"
+  "if" "else" "while"
+  "cfor" "for" "in"
 
   ;; Function attributes
   ;; "discardable"
@@ -35,8 +37,8 @@
   "export" "external"
 
   "supplant"
-
   "match"
+  "print"
 
   "return"
 ] @keyword
@@ -65,6 +67,7 @@
  "+" "-" "*" "/" "&" "|" "^" "=" "!=" "<" "<=" ">" ">="
  "::" ":" ":="
  "++" "--"
+ "+=" "-=" "*=" "/=" "%=" "~="
 ] @operator
 
 [

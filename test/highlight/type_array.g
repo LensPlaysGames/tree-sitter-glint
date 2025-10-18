@@ -1,4 +1,5 @@
 ;; SYNTAX TEST
+
    [byte];
 ;; ^^^^^^ type
 

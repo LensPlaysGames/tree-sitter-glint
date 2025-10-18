@@ -1,0 +1,19 @@
+================
+for
+================
+
+for x in y, z;
+
+---
+
+(source_file
+ (rangedfor (identifier) (identifier) (identifier)))
+
+================
+for, common bug: missing separator
+:error
+================
+
+for x in y z;
+
+---

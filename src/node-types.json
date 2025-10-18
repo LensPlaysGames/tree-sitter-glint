@@ -12,6 +12,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -56,6 +64,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -69,6 +85,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -100,6 +120,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -124,6 +148,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -132,7 +160,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -149,6 +193,524 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "add_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ampersand_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -215,6 +777,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -259,6 +829,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -272,6 +850,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -303,6 +885,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -327,6 +913,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -335,7 +925,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -352,6 +958,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -418,6 +1032,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -462,6 +1084,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -475,6 +1105,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -506,6 +1140,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -530,6 +1168,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -538,7 +1180,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -555,6 +1213,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -621,6 +1287,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -665,6 +1339,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -678,6 +1360,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -709,6 +1395,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -733,6 +1423,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -741,7 +1435,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -758,6 +1468,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -824,6 +1542,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -868,6 +1594,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -881,6 +1615,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -912,6 +1650,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -936,6 +1678,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -944,7 +1690,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -961,6 +1723,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -1027,6 +1797,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -1071,6 +1849,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1084,6 +1870,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -1115,6 +1905,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -1139,6 +1933,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -1147,7 +1945,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -1164,6 +1978,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -1230,6 +2052,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -1274,6 +2104,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1287,6 +2125,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -1318,6 +2160,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -1342,6 +2188,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -1350,7 +2200,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -1367,6 +2233,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -1433,6 +2307,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -1477,6 +2359,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1490,6 +2380,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -1521,6 +2415,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -1545,6 +2443,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -1553,7 +2455,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -1570,6 +2488,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -1636,6 +2562,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -1680,6 +2614,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1693,6 +2635,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -1724,6 +2670,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -1748,6 +2698,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -1756,7 +2710,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -1773,6 +2743,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -1849,6 +2827,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -1893,6 +2879,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -1906,6 +2900,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -1937,6 +2935,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -1961,6 +2963,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -1969,7 +2975,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -1986,6 +3008,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -2040,12 +3070,267 @@
     }
   },
   {
-    "type": "declaration",
+    "type": "caret_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cfor",
     "named": true,
     "fields": {
-      "init": {
+      "body": {
         "multiple": true,
-        "required": false,
+        "required": true,
         "types": [
           {
             "type": "(",
@@ -2065,6 +3350,14 @@
           },
           {
             "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
             "named": true
           },
           {
@@ -2112,6 +3405,14 @@
             "named": true
           },
           {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -2125,6 +3426,10 @@
           },
           {
             "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
             "named": true
           },
           {
@@ -2156,6 +3461,10 @@
             "named": true
           },
           {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
             "type": "le",
             "named": true
           },
@@ -2180,6 +3489,10 @@
             "named": true
           },
           {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
             "type": "ne",
             "named": true
           },
@@ -2188,7 +3501,23 @@
             "named": true
           },
           {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
             "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
             "named": true
           },
           {
@@ -2205,6 +3534,1084 @@
           },
           {
             "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "increment": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "init": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "declaration",
+    "named": true,
+    "fields": {
+      "init": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
             "named": true
           },
           {
@@ -2346,6 +4753,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -2390,6 +4805,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -2403,6 +4826,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -2434,6 +4861,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -2458,6 +4889,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -2466,7 +4901,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -2483,6 +4934,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -2549,6 +5008,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -2593,6 +5060,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -2606,6 +5081,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -2637,6 +5116,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -2661,6 +5144,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -2669,7 +5156,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -2686,6 +5189,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -2752,6 +5263,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -2796,6 +5315,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -2809,6 +5336,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -2840,6 +5371,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -2864,6 +5399,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -2872,7 +5411,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -2889,6 +5444,269 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "divide_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -2955,6 +5773,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -2999,6 +5825,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -3012,6 +5846,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -3043,6 +5881,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -3067,6 +5909,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -3075,7 +5921,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -3092,6 +5954,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -3158,6 +6028,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -3202,6 +6080,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -3215,6 +6101,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -3246,6 +6136,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -3270,6 +6164,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -3278,7 +6176,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -3295,6 +6209,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -3361,6 +6283,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -3405,6 +6335,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -3418,6 +6356,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -3449,6 +6391,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -3473,6 +6419,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -3481,7 +6431,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -3498,6 +6464,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -3580,6 +6554,14 @@
             "named": true
           },
           {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
             "type": "and",
             "named": true
           },
@@ -3624,6 +6606,14 @@
             "named": true
           },
           {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -3637,6 +6627,10 @@
           },
           {
             "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
             "named": true
           },
           {
@@ -3668,6 +6662,10 @@
             "named": true
           },
           {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
             "type": "le",
             "named": true
           },
@@ -3692,6 +6690,10 @@
             "named": true
           },
           {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
             "type": "ne",
             "named": true
           },
@@ -3700,7 +6702,23 @@
             "named": true
           },
           {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
             "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
             "named": true
           },
           {
@@ -3717,6 +6735,14 @@
           },
           {
             "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
             "named": true
           },
           {
@@ -3794,6 +6820,14 @@
             "named": true
           },
           {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
             "type": "and",
             "named": true
           },
@@ -3838,6 +6872,14 @@
             "named": true
           },
           {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -3851,6 +6893,10 @@
           },
           {
             "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
             "named": true
           },
           {
@@ -3882,6 +6928,10 @@
             "named": true
           },
           {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
             "type": "le",
             "named": true
           },
@@ -3906,6 +6956,10 @@
             "named": true
           },
           {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
             "type": "ne",
             "named": true
           },
@@ -3914,7 +6968,23 @@
             "named": true
           },
           {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
             "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
             "named": true
           },
           {
@@ -3931,6 +7001,14 @@
           },
           {
             "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
             "named": true
           },
           {
@@ -4008,6 +7086,14 @@
             "named": true
           },
           {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
             "type": "and",
             "named": true
           },
@@ -4052,6 +7138,14 @@
             "named": true
           },
           {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -4065,6 +7159,10 @@
           },
           {
             "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
             "named": true
           },
           {
@@ -4096,6 +7194,10 @@
             "named": true
           },
           {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
             "type": "le",
             "named": true
           },
@@ -4120,6 +7222,10 @@
             "named": true
           },
           {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
             "type": "ne",
             "named": true
           },
@@ -4128,7 +7234,23 @@
             "named": true
           },
           {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
             "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
             "named": true
           },
           {
@@ -4145,6 +7267,14 @@
           },
           {
             "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
             "named": true
           },
           {
@@ -4212,6 +7342,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -4256,6 +7394,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4269,6 +7415,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -4300,6 +7450,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -4324,6 +7478,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -4332,7 +7490,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -4349,6 +7523,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -4408,7 +7590,7 @@
     "fields": {}
   },
   {
-    "type": "le",
+    "type": "lbrack_eq",
     "named": true,
     "fields": {},
     "children": {
@@ -4417,6 +7599,14 @@
       "types": [
         {
           "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
           "named": true
         },
         {
@@ -4464,6 +7654,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4477,6 +7675,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -4508,6 +7710,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -4532,6 +7738,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -4540,7 +7750,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -4557,6 +7783,269 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "le",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -4623,6 +8112,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -4667,6 +8164,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4680,6 +8185,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -4711,6 +8220,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -4735,6 +8248,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -4743,7 +8260,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -4760,6 +8293,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -4826,6 +8367,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -4870,6 +8419,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -4883,6 +8440,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -4914,6 +8475,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -4938,6 +8503,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -4946,7 +8515,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -4963,6 +8548,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -5045,6 +8638,14 @@
             "named": true
           },
           {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
             "type": "and",
             "named": true
           },
@@ -5089,6 +8690,14 @@
             "named": true
           },
           {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -5102,6 +8711,10 @@
           },
           {
             "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
             "named": true
           },
           {
@@ -5133,6 +8746,10 @@
             "named": true
           },
           {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
             "type": "le",
             "named": true
           },
@@ -5157,6 +8774,10 @@
             "named": true
           },
           {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
             "type": "ne",
             "named": true
           },
@@ -5165,7 +8786,23 @@
             "named": true
           },
           {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
             "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
             "named": true
           },
           {
@@ -5182,6 +8819,14 @@
           },
           {
             "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
             "named": true
           },
           {
@@ -5244,6 +8889,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -5288,6 +8941,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -5301,6 +8962,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -5332,6 +8997,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -5356,6 +9025,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -5364,7 +9037,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -5381,6 +9070,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -5494,6 +9191,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -5538,6 +9243,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -5551,6 +9264,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -5582,6 +9299,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -5606,6 +9327,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -5614,7 +9339,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -5631,6 +9372,269 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "multiply_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -5697,6 +9701,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -5741,6 +9753,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -5754,6 +9774,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -5785,6 +9809,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -5809,6 +9837,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -5817,7 +9849,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -5834,6 +9882,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -5900,6 +9956,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -5944,6 +10008,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -5957,6 +10029,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -5988,6 +10064,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -6012,6 +10092,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -6020,7 +10104,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -6037,6 +10137,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -6161,7 +10269,7 @@
     }
   },
   {
-    "type": "remainder",
+    "type": "pipe_eq",
     "named": true,
     "fields": {},
     "children": {
@@ -6170,6 +10278,14 @@
       "types": [
         {
           "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
           "named": true
         },
         {
@@ -6217,6 +10333,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -6230,6 +10354,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -6261,6 +10389,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -6285,6 +10417,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -6293,7 +10429,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -6310,6 +10462,1327 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "print",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "rangedfor",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "container": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": "(",
+            "named": false
+          },
+          {
+            "type": ")",
+            "named": false
+          },
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "identifier",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_array",
+            "named": true
+          },
+          {
+            "type": "type_enum",
+            "named": true
+          },
+          {
+            "type": "type_ffi",
+            "named": true
+          },
+          {
+            "type": "type_function",
+            "named": true
+          },
+          {
+            "type": "type_pointer",
+            "named": true
+          },
+          {
+            "type": "type_pointer_to_pointer",
+            "named": true
+          },
+          {
+            "type": "type_primitive",
+            "named": true
+          },
+          {
+            "type": "type_reference",
+            "named": true
+          },
+          {
+            "type": "type_struct",
+            "named": true
+          },
+          {
+            "type": "type_sum",
+            "named": true
+          },
+          {
+            "type": "type_union",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "remainder",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "remainder_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -6376,6 +11849,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -6420,6 +11901,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -6433,6 +11922,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -6464,6 +11957,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -6488,6 +11985,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -6496,7 +11997,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -6513,6 +12030,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -6579,6 +12104,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -6623,6 +12156,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -6636,6 +12177,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -6664,6 +12209,10 @@
         },
         {
           "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
           "named": true
         },
         {
@@ -6699,6 +12248,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -6707,7 +12260,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -6724,6 +12293,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -6800,6 +12377,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -6844,6 +12429,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -6857,6 +12450,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -6888,6 +12485,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -6912,6 +12513,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -6920,7 +12525,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -6937,6 +12558,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -7003,6 +12632,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -7047,6 +12684,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -7060,6 +12705,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -7091,6 +12740,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -7115,6 +12768,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -7123,7 +12780,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -7140,6 +12813,524 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "subtract_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_array",
+          "named": true
+        },
+        {
+          "type": "type_enum",
+          "named": true
+        },
+        {
+          "type": "type_ffi",
+          "named": true
+        },
+        {
+          "type": "type_function",
+          "named": true
+        },
+        {
+          "type": "type_pointer",
+          "named": true
+        },
+        {
+          "type": "type_pointer_to_pointer",
+          "named": true
+        },
+        {
+          "type": "type_primitive",
+          "named": true
+        },
+        {
+          "type": "type_reference",
+          "named": true
+        },
+        {
+          "type": "type_struct",
+          "named": true
+        },
+        {
+          "type": "type_sum",
+          "named": true
+        },
+        {
+          "type": "type_union",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "tilde_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -7206,6 +13397,14 @@
           "named": true
         },
         {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
           "type": "and",
           "named": true
         },
@@ -7250,6 +13449,14 @@
           "named": true
         },
         {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
           "type": "declaration",
           "named": true
         },
@@ -7263,6 +13470,10 @@
         },
         {
           "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
           "named": true
         },
         {
@@ -7294,6 +13505,10 @@
           "named": true
         },
         {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
           "type": "le",
           "named": true
         },
@@ -7318,6 +13533,10 @@
           "named": true
         },
         {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
           "type": "ne",
           "named": true
         },
@@ -7326,7 +13545,23 @@
           "named": true
         },
         {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
           "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
           "named": true
         },
         {
@@ -7343,6 +13578,14 @@
         },
         {
           "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
           "named": true
         },
         {
@@ -7719,6 +13962,14 @@
             "named": true
           },
           {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
             "type": "and",
             "named": true
           },
@@ -7763,6 +14014,14 @@
             "named": true
           },
           {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -7776,6 +14035,10 @@
           },
           {
             "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
             "named": true
           },
           {
@@ -7807,6 +14070,10 @@
             "named": true
           },
           {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
             "type": "le",
             "named": true
           },
@@ -7831,6 +14098,10 @@
             "named": true
           },
           {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
             "type": "ne",
             "named": true
           },
@@ -7839,7 +14110,23 @@
             "named": true
           },
           {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
             "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
             "named": true
           },
           {
@@ -7856,6 +14143,14 @@
           },
           {
             "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
             "named": true
           },
           {
@@ -7933,6 +14228,14 @@
             "named": true
           },
           {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
             "type": "and",
             "named": true
           },
@@ -7977,6 +14280,14 @@
             "named": true
           },
           {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
             "type": "declaration",
             "named": true
           },
@@ -7990,6 +14301,10 @@
           },
           {
             "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
             "named": true
           },
           {
@@ -8021,6 +14336,10 @@
             "named": true
           },
           {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
             "type": "le",
             "named": true
           },
@@ -8045,6 +14364,10 @@
             "named": true
           },
           {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
             "type": "ne",
             "named": true
           },
@@ -8053,7 +14376,23 @@
             "named": true
           },
           {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
             "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
             "named": true
           },
           {
@@ -8070,6 +14409,14 @@
           },
           {
             "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
             "named": true
           },
           {
@@ -8137,7 +14484,15 @@
     "named": false
   },
   {
+    "type": "%=",
+    "named": false
+  },
+  {
     "type": "&",
+    "named": false
+  },
+  {
+    "type": "&=",
     "named": false
   },
   {
@@ -8153,11 +14508,19 @@
     "named": false
   },
   {
+    "type": "*=",
+    "named": false
+  },
+  {
     "type": "+",
     "named": false
   },
   {
     "type": "++",
+    "named": false
+  },
+  {
+    "type": "+=",
     "named": false
   },
   {
@@ -8170,6 +14533,10 @@
   },
   {
     "type": "--",
+    "named": false
+  },
+  {
+    "type": "-=",
     "named": false
   },
   {
@@ -8190,6 +14557,10 @@
   },
   {
     "type": "/",
+    "named": false
+  },
+  {
+    "type": "/=",
     "named": false
   },
   {
@@ -8245,11 +14616,19 @@
     "named": false
   },
   {
+    "type": "[=",
+    "named": false
+  },
+  {
     "type": "]",
     "named": false
   },
   {
     "type": "^",
+    "named": false
+  },
+  {
+    "type": "^=",
     "named": false
   },
   {
@@ -8266,6 +14645,10 @@
   },
   {
     "type": "byte",
+    "named": false
+  },
+  {
+    "type": "cfor",
     "named": false
   },
   {
@@ -8333,6 +14716,10 @@
     "named": false
   },
   {
+    "type": "for",
+    "named": false
+  },
+  {
     "type": "identifier",
     "named": true
   },
@@ -8342,6 +14729,10 @@
   },
   {
     "type": "import",
+    "named": false
+  },
+  {
+    "type": "in",
     "named": false
   },
   {
@@ -8362,6 +14753,10 @@
   },
   {
     "type": "or",
+    "named": false
+  },
+  {
+    "type": "print",
     "named": false
   },
   {
@@ -8413,7 +14808,15 @@
     "named": false
   },
   {
+    "type": "|=",
+    "named": false
+  },
+  {
     "type": "}",
+    "named": false
+  },
+  {
+    "type": "~=",
     "named": false
   }
 ]

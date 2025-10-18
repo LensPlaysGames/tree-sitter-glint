@@ -1,0 +1,112 @@
+================
+Add Equals
+================
+
+0 += 0;
+
+---
+
+(source_file
+ (add_eq (integer_literal) (integer_literal)))
+
+================
+Subtract Equals
+================
+
+0 -= 0;
+
+---
+
+(source_file
+ (subtract_eq (integer_literal) (integer_literal)))
+
+================
+Multiply Equals
+================
+
+0 *= 0;
+
+---
+
+(source_file
+ (multiply_eq (integer_literal) (integer_literal)))
+
+================
+Divide Equals
+================
+
+0 /= 0;
+
+---
+
+(source_file
+ (divide_eq (integer_literal) (integer_literal)))
+
+================
+Remainder Equals
+================
+
+0 %= 0;
+
+---
+
+(source_file
+ (remainder_eq (integer_literal) (integer_literal)))
+
+================
+Tilde Equals
+================
+
+0 ~= 0;
+
+---
+
+(source_file
+ (tilde_eq (integer_literal) (integer_literal)))
+
+================
+Ampersand Equals
+================
+
+0 &= 0;
+
+---
+
+(source_file
+ (ampersand_eq (integer_literal) (integer_literal)))
+
+
+================
+Pipe Equals
+================
+
+0 |= 0;
+
+---
+
+(source_file
+ (pipe_eq (integer_literal) (integer_literal)))
+
+================
+Caret Equals
+================
+
+0 ^= 0;
+
+---
+
+(source_file
+ (caret_eq (integer_literal) (integer_literal)))
+
+
+================
+Subscript Equals
+================
+
+0 [= 0;
+
+---
+
+(source_file
+ (lbrack_eq (integer_literal) (integer_literal)))
+

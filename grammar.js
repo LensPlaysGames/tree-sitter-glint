@@ -131,10 +131,10 @@ module.exports = grammar({
                 $._expression_nosep,
                 $._type
             ),
-            optional(repeat($._expression_separator))
+            repeat($._expression_separator)
         )),
         call: $ => prec.right(1,seq(
-            $._expression_nosep,
+            choice($._expression_nosep),
             repeat1(prec.left($._expression_nosep)),
             $._expression_separator
         )),
@@ -157,6 +157,9 @@ module.exports = grammar({
             $.subscript,
             $.while,
             $.match,
+            $.print,
+            $.cfor,
+            $.rangedfor,
         )),
 
         _paren_expression: $ => seq(
@@ -177,6 +180,11 @@ module.exports = grammar({
             )),
             "}"
         ),
+
+        print: $ => prec.right(seq(
+            "print",
+            repeat(prec.right($._multi_expression))
+        )),
 
         subscript: $ => seq(
             $._expression_nosep,
@@ -253,7 +261,18 @@ module.exports = grammar({
             $.bitshr,
             $.bitand,
             $.bitor,
-            $.bitxor
+            $.bitxor,
+
+            $.add_eq,
+            $.subtract_eq,
+            $.multiply_eq,
+            $.divide_eq,
+            $.remainder_eq,
+            $.tilde_eq,
+            $.ampersand_eq,
+            $.pipe_eq,
+            $.caret_eq,
+            $.lbrack_eq
         ),
 
         // note that + left or right precedence doesn't matter for these
@@ -279,6 +298,18 @@ module.exports = grammar({
         bitand: $ => prec.left(300, seq($._expression_nosep, "&", $._expression_nosep)),
         bitor: $ => prec.left(300, seq($._expression_nosep, "|", $._expression_nosep)),
         bitxor: $ => prec.left(300, seq($._expression_nosep, "^", $._expression_nosep)),
+
+        // TODO: We need multi_expression_nosep...
+        add_eq:       $ => prec.left(100, seq($._expression_nosep, "+=", $._expression_nosep)),
+        subtract_eq:  $ => prec.left(100, seq($._expression_nosep, "-=", $._expression_nosep)),
+        multiply_eq:  $ => prec.left(100, seq($._expression_nosep, "*=", $._expression_nosep)),
+        divide_eq:    $ => prec.left(100, seq($._expression_nosep, "/=", $._expression_nosep)),
+        remainder_eq: $ => prec.left(100, seq($._expression_nosep, "%=", $._expression_nosep)),
+        tilde_eq:     $ => prec.left(100, seq($._expression_nosep, "~=", $._expression_nosep)),
+        ampersand_eq: $ => prec.left(100, seq($._expression_nosep, "&=", $._expression_nosep)),
+        pipe_eq:      $ => prec.left(100, seq($._expression_nosep, "|=", $._expression_nosep)),
+        caret_eq:     $ => prec.left(100, seq($._expression_nosep, "^=", $._expression_nosep)),
+        lbrack_eq:    $ => prec.left(100, seq($._expression_nosep, "[=", $._expression_nosep)),
         // ================
         // BINARY OPERATORS END
         // ================
@@ -286,6 +317,32 @@ module.exports = grammar({
         // ================
         // CONTROL FLOW
         // ================
+        cfor: $ => prec.right(2, seq(
+            "cfor",
+            field("init", seq(
+                $._expression_nosep,
+                $._hard_expression_separator
+            )),
+            field("condition", seq(
+                $._expression_nosep,
+                $._hard_expression_separator
+            )),
+            field("increment", seq(
+                $._expression_nosep,
+                $._hard_expression_separator
+            )),
+            field("body", $._expression_nosep),
+        )),
+
+        rangedfor: $ => prec.right(2, seq(
+            "for",
+            $.identifier,
+            "in",
+            field("container", $._multi_expression),
+            optional($._soft_expression_separator),
+            field("body", $._expression_nosep)
+        )),
+
         if: $ => prec.right(seq(
             "if",
             field("condition", $._expression),

@@ -1,0 +1,50 @@
+================
+Print, No Arguments
+================
+
+print;
+
+---
+
+(source_file
+ (print))
+
+
+================
+Print, One Argument
+================
+
+print 0;
+
+---
+
+(source_file
+ (print (integer_literal)))
+
+
+================
+Print, Two Arguments
+================
+
+print 0, 0;
+
+---
+
+(source_file
+ (print
+  (integer_literal)
+  (integer_literal)))
+
+
+================
+Print, One Call Argument
+================
+
+print foo 0;
+
+---
+
+(source_file
+ (print (call (identifier) (integer_literal))))
+
+

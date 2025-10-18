@@ -20,3 +20,22 @@
 
    match foo {};
 ;; ^^^^^ keyword
+
+   print;
+;; ^^^^^ keyword
+
+   print 0;
+;; ^^^^^ keyword
+
+   print 0 0;
+;; ^^^^^ keyword
+
+   print 0, 0;
+;; ^^^^^ keyword
+
+   cfor 0, 0, 0, 0;
+;; ^^^^ keyword
+
+   for x in y, z;
+;; ^^^ keyword
+;;       ^^ keyword
