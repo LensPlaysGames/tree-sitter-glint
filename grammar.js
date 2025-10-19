@@ -200,8 +200,8 @@ module.exports = grammar({
         ),
 
         _unary_expression: $ => prec.left(10000, choice(
-            // $.addressof,
-            // $.negate,
+            $.addressof,
+            $.negate,
             $.decrement,
             $.dereference,
             $.increment,
@@ -228,7 +228,7 @@ module.exports = grammar({
                 seq(
                     field("name", $.identifier),
                     "::",
-                    field("init", $._multi_expression),
+                    field("init", $._expression_nosep), // has to be no separator because at end...
                 ),
                 seq(
                     "supplant",
@@ -319,18 +319,9 @@ module.exports = grammar({
         // ================
         cfor: $ => prec.right(2, seq(
             "cfor",
-            field("init", seq(
-                $._expression_nosep,
-                $._hard_expression_separator
-            )),
-            field("condition", seq(
-                $._expression_nosep,
-                $._hard_expression_separator
-            )),
-            field("increment", seq(
-                $._expression_nosep,
-                $._hard_expression_separator
-            )),
+            field("init", $._multi_expression),
+            field("condition", $._multi_expression),
+            field("increment", $._multi_expression),
             field("body", $._expression_nosep),
         )),
 

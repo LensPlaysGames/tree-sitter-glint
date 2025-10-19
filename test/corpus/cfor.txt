@@ -12,3 +12,22 @@ cfor
 
 (source_file
  (cfor (block) (block) (block) (block)))
+
+================
+cfor regression test 001
+================
+
+cfor
+    i :: 0;
+    i < foo.size;
+    i += 1;
+  print @foo[i];
+
+---
+
+(source_file
+ (cfor
+   init:      (declaration name: (identifier) init: (integer_literal))
+   condition: (lt (identifier) (member_access (identifier) (identifier)))
+   increment: (add_eq (identifier) (integer_literal))
+   body:      (print (dereference (subscript (identifier) (identifier))))))

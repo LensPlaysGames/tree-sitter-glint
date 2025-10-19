@@ -741,6 +741,14 @@
         "members": [
           {
             "type": "SYMBOL",
+            "name": "addressof"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "negate"
+          },
+          {
+            "type": "SYMBOL",
             "name": "decrement"
           },
           {
@@ -936,7 +944,7 @@
                     "name": "init",
                     "content": {
                       "type": "SYMBOL",
-                      "name": "_multi_expression"
+                      "name": "_expression_nosep"
                     }
                   }
                 ]
@@ -1691,51 +1699,24 @@
             "type": "FIELD",
             "name": "init",
             "content": {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "_expression_nosep"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "_hard_expression_separator"
-                }
-              ]
+              "type": "SYMBOL",
+              "name": "_multi_expression"
             }
           },
           {
             "type": "FIELD",
             "name": "condition",
             "content": {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "_expression_nosep"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "_hard_expression_separator"
-                }
-              ]
+              "type": "SYMBOL",
+              "name": "_multi_expression"
             }
           },
           {
             "type": "FIELD",
             "name": "increment",
             "content": {
-              "type": "SEQ",
-              "members": [
-                {
-                  "type": "SYMBOL",
-                  "name": "_expression_nosep"
-                },
-                {
-                  "type": "SYMBOL",
-                  "name": "_hard_expression_separator"
-                }
-              ]
+              "type": "SYMBOL",
+              "name": "_multi_expression"
             }
           },
           {
