@@ -47,3 +47,17 @@ Block Expression, Multiple Expressions, Hard Separators
   (integer_literal)
   (integer_literal)))
 
+
+================
+Block Expression, Call Within
+================
+
+{ 69 42; };
+
+---
+
+(source_file
+ (block
+  (call
+   (integer_literal)
+   (integer_literal))))

@@ -1,4 +1,4 @@
-================
+=================
 If, Empty Block
 ================
 
@@ -24,15 +24,13 @@ if false, {};
 
 ================
 If, Empty Block, Hard Separator
+:error
+:desc No hard separator between condition and then body.
 ================
 
 if false; {};
 
 ---
-
-(source_file
- (if (bool_literal)
-   (block)))
 
 ================
 If/Else, Empty Blocks, No Separators
@@ -62,16 +60,13 @@ if false, {} else {};
 
 ================
 If/Else, Empty Blocks, Hard Separator Between condition/then
+:error
+:desc No hard separator between condition and then body.
 ================
 
 if false; {} else {};
 
 ---
-
-(source_file
- (if (bool_literal)
-   (block)
-   (block)))
 
 ================
 If/Else, Empty Blocks, Soft Separator Between then/`else'
@@ -114,16 +109,11 @@ if false, {}, else {};
 
 ================
 If/Else, Empty Blocks, Hard Separators
+:error
+:desc No hard separator between condition and then body.
 ================
 
 if false; {}; else {};
-
----
-
-(source_file
- (if (bool_literal)
-   (block)
-   (block)))
 
 ================
 If/Else, Empty Blocks, Soft+Hard Separator
@@ -140,6 +130,8 @@ if false, {}; else {};
 
 ================
 If/Else, Empty Blocks, Hard+Soft Separator
+:error
+:desc No hard separator between condition and then body.
 ================
 
 if false; {}, else {};

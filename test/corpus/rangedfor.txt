@@ -12,6 +12,11 @@ for x in y, z;
 ================
 for, common bug: missing separator
 :error
+:desc The current implementation of Glint in LCC parses `y z` as a call
+      to `y` with one argument, `z`, leaving the `for` body completely empty.
+      This causes an issue, because the user almost definitely intended `z`
+      to be the body. Since we currently parse this correctly, I'm not sure
+      if it's a bug in this parser or a bug in the LCC Glint parser...
 ================
 
 for x in y z;

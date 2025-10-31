@@ -1,0 +1,95 @@
+================
+Multiple Declarations Is Not A Call
+================
+
+foo : int;
+bar : int;
+baz : int;
+
+---
+
+(source_file
+ (declaration (identifier) (type_primitive))
+ (declaration (identifier) (type_primitive))
+ (declaration (identifier) (type_primitive)))
+
+================
+Comma After Callee Expression Disallows Call
+================
+
+foo, 0;
+
+---
+
+(source_file
+ (identifier)
+ (integer_literal))
+
+================
+Multiple, Unseparated Expressions Is a Call
+================
+
+foo 0;
+
+---
+
+(source_file
+ (call
+  (identifier)
+  (integer_literal)))
+
+================
+Arguments Separated with Soft Separator
+================
+
+foo 0, 1, 2 , 3 ,4;
+
+---
+
+(source_file
+ (call
+  (identifier)
+  (integer_literal)
+  (integer_literal)
+  (integer_literal)
+  (integer_literal)
+  (integer_literal)))
+
+================
+Arguments Separated with Hard Separator Breaks Call
+================
+
+foo 0, 1; 2 , 3 ,4;
+
+---
+
+(source_file
+ (call
+  (identifier)
+  (integer_literal)
+  (integer_literal))
+  (integer_literal)
+  (integer_literal)
+  (integer_literal))
+
+
+================
+Invoking Integers as Argument to Function
+================
+
+foo : void(x : int) x;
+
+foo 2 24;
+
+---
+
+(source_file
+ (declaration
+  (identifier)
+  (type_function (type_primitive) (param_decl (identifier) (type_primitive)))
+  (identifier))
+ (call
+  (identifier)
+  (call
+   (integer_literal)
+   (integer_literal))))

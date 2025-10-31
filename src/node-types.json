@@ -1,12 +1,66 @@
 [
   {
+    "type": "_type",
+    "named": true,
+    "subtypes": [
+      {
+        "type": "type_array",
+        "named": true
+      },
+      {
+        "type": "type_enum",
+        "named": true
+      },
+      {
+        "type": "type_ffi",
+        "named": true
+      },
+      {
+        "type": "type_function",
+        "named": true
+      },
+      {
+        "type": "type_pointer",
+        "named": true
+      },
+      {
+        "type": "type_pointer_to_pointer",
+        "named": true
+      },
+      {
+        "type": "type_primitive",
+        "named": true
+      },
+      {
+        "type": "type_reference",
+        "named": true
+      },
+      {
+        "type": "type_struct",
+        "named": true
+      },
+      {
+        "type": "type_sum",
+        "named": true
+      },
+      {
+        "type": "type_union",
+        "named": true
+      }
+    ]
+  },
+  {
     "type": "add",
     "named": true,
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -209,50 +263,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -268,8 +278,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -472,50 +486,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -530,9 +500,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -735,50 +709,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -794,8 +724,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -998,50 +932,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -1057,8 +947,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -1261,50 +1155,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -1320,8 +1170,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -1524,50 +1378,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -1583,8 +1393,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -1787,50 +1601,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -1846,8 +1616,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -2050,50 +1824,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -2109,8 +1839,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -2313,50 +2047,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -2372,8 +2062,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -2576,50 +2270,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -2635,8 +2285,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -2839,50 +2493,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -2901,6 +2511,10 @@
       "required": false,
       "types": [
         {
+          "type": "_type",
+          "named": true
+        },
+        {
           "type": "add",
           "named": true
         },
@@ -3102,50 +2716,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -3171,8 +2741,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -3375,50 +2949,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -3434,8 +2964,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -3638,50 +3172,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -3712,8 +3202,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -3917,50 +3407,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -3990,6 +3436,10 @@
             "named": false
           },
           {
+            "type": "_type",
+            "named": true
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -4191,50 +3641,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -4264,6 +3670,10 @@
             "named": false
           },
           {
+            "type": "_type",
+            "named": true
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -4465,50 +3875,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -4538,6 +3904,10 @@
             "named": false
           },
           {
+            "type": "_type",
+            "named": true
+          },
+          {
             "type": "add",
             "named": true
           },
@@ -4739,50 +4109,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -4814,8 +4140,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -5022,50 +4348,6 @@
             "named": true
           },
           {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
-            "named": true
-          },
-          {
             "type": "while",
             "named": true
           }
@@ -5086,51 +4368,11 @@
         "required": false,
         "types": [
           {
+            "type": "_type",
+            "named": true
+          },
+          {
             "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           }
         ]
@@ -5152,9 +4394,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -5357,50 +4603,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -5415,9 +4617,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -5620,50 +4826,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -5679,8 +4841,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -5883,50 +5049,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -5942,8 +5064,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -6146,50 +5272,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -6205,8 +5287,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -6409,50 +5495,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -6468,8 +5510,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -6672,50 +5718,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -6731,8 +5733,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -6935,50 +5941,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -7009,8 +5971,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -7214,50 +6176,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -7283,8 +6201,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -7488,50 +6406,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -7557,8 +6431,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -7765,50 +6639,6 @@
             "named": true
           },
           {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
-            "named": true
-          },
-          {
             "type": "while",
             "named": true
           }
@@ -7821,9 +6651,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -8026,50 +6860,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -8090,8 +6880,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -8294,50 +7088,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -8353,8 +7103,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -8557,50 +7311,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -8615,9 +7325,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -8820,50 +7534,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -8879,8 +7549,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -9083,50 +7757,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -9157,8 +7787,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -9365,50 +7995,6 @@
             "named": true
           },
           {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
-            "named": true
-          },
-          {
             "type": "while",
             "named": true
           }
@@ -9419,6 +8005,10 @@
       "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -9621,50 +8211,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -9727,8 +8273,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -9931,50 +8481,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -9990,8 +8496,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -10194,50 +8704,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -10253,8 +8719,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -10457,50 +8927,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -10515,9 +8941,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
-      "required": true,
+      "multiple": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -10720,50 +9150,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -10779,8 +9165,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -10983,50 +9373,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -11055,51 +9401,11 @@
         "required": true,
         "types": [
           {
+            "type": "_type",
+            "named": true
+          },
+          {
             "type": "identifier",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           }
         ]
@@ -11112,8 +9418,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -11316,50 +9626,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -11378,6 +9644,10 @@
       "required": false,
       "types": [
         {
+          "type": "_type",
+          "named": true
+        },
+        {
           "type": "add",
           "named": true
         },
@@ -11579,50 +9849,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -11653,8 +9879,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -11858,50 +10084,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -11927,8 +10109,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -12132,50 +10314,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -12202,8 +10340,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -12406,50 +10548,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -12465,8 +10563,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -12669,50 +10771,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -12727,9 +10785,13 @@
     "named": true,
     "fields": {},
     "children": {
-      "multiple": false,
+      "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -12932,50 +10994,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -12993,6 +11011,10 @@
       "multiple": true,
       "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -13206,50 +11228,6 @@
           "named": true
         },
         {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
-          "named": true
-        },
-        {
           "type": "while",
           "named": true
         }
@@ -13272,8 +11250,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -13476,50 +11458,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -13535,8 +11473,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -13739,50 +11681,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -13798,8 +11696,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -14002,50 +11904,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -14061,8 +11919,12 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
         {
           "type": "add",
           "named": true
@@ -14265,50 +12127,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -14327,6 +12145,10 @@
       "required": true,
       "types": [
         {
+          "type": "_type",
+          "named": true
+        },
+        {
           "type": "add",
           "named": true
         },
@@ -14528,50 +12350,6 @@
         },
         {
           "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         },
         {
@@ -14610,51 +12388,11 @@
       "required": true,
       "types": [
         {
+          "type": "_type",
+          "named": true
+        },
+        {
           "type": "param_decl",
-          "named": true
-        },
-        {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
           "named": true
         }
       ]
@@ -14669,47 +12407,7 @@
       "required": true,
       "types": [
         {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
+          "type": "_type",
           "named": true
         }
       ]
@@ -14724,47 +12422,7 @@
       "required": true,
       "types": [
         {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
+          "type": "_type",
           "named": true
         }
       ]
@@ -14784,47 +12442,7 @@
       "required": true,
       "types": [
         {
-          "type": "type_array",
-          "named": true
-        },
-        {
-          "type": "type_enum",
-          "named": true
-        },
-        {
-          "type": "type_ffi",
-          "named": true
-        },
-        {
-          "type": "type_function",
-          "named": true
-        },
-        {
-          "type": "type_pointer",
-          "named": true
-        },
-        {
-          "type": "type_pointer_to_pointer",
-          "named": true
-        },
-        {
-          "type": "type_primitive",
-          "named": true
-        },
-        {
-          "type": "type_reference",
-          "named": true
-        },
-        {
-          "type": "type_struct",
-          "named": true
-        },
-        {
-          "type": "type_sum",
-          "named": true
-        },
-        {
-          "type": "type_union",
+          "type": "_type",
           "named": true
         }
       ]
@@ -14896,8 +12514,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -15101,50 +12719,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {
@@ -15170,8 +12744,8 @@
             "named": false
           },
           {
-            "type": ";",
-            "named": false
+            "type": "_type",
+            "named": true
           },
           {
             "type": "add",
@@ -15375,50 +12949,6 @@
           },
           {
             "type": "tilde_eq",
-            "named": true
-          },
-          {
-            "type": "type_array",
-            "named": true
-          },
-          {
-            "type": "type_enum",
-            "named": true
-          },
-          {
-            "type": "type_ffi",
-            "named": true
-          },
-          {
-            "type": "type_function",
-            "named": true
-          },
-          {
-            "type": "type_pointer",
-            "named": true
-          },
-          {
-            "type": "type_pointer_to_pointer",
-            "named": true
-          },
-          {
-            "type": "type_primitive",
-            "named": true
-          },
-          {
-            "type": "type_reference",
-            "named": true
-          },
-          {
-            "type": "type_struct",
-            "named": true
-          },
-          {
-            "type": "type_sum",
-            "named": true
-          },
-          {
-            "type": "type_union",
             "named": true
           },
           {

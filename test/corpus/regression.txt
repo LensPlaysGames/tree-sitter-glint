@@ -1,0 +1,39 @@
+================
+Regression 001
+================
+
+foo 0, 1, 2 , 3 ,4;
+
+2 - 2;
+
+foo 2 24;
+foo 2, 24;
+foo 2, 24; 3;
+
+---
+
+(source_file
+  (call
+    (identifier)
+    (integer_literal)
+    (integer_literal)
+    (integer_literal)
+    (integer_literal)
+    (integer_literal))
+  (subtract
+    (integer_literal)
+    (integer_literal))
+  (call
+    (identifier)
+    (call
+      (integer_literal)
+      (integer_literal)))
+  (call
+    (identifier)
+    (integer_literal)
+    (integer_literal))
+  (call
+    (identifier)
+    (integer_literal)
+    (integer_literal))
+  (integer_literal))

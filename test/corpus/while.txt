@@ -24,12 +24,10 @@ while false, {};
 
 ================
 While, Empty Block, Hard Separator
+:error
 ================
 
 while false; {};
 
 ---
 
-(source_file
- (while (bool_literal)
-  (block)))
