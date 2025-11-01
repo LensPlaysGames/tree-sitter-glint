@@ -153,7 +153,6 @@ module.exports = grammar({
             $._hard_expression_separator
         ),
 
-        // prec.left(0, ...) or prec(1, ...) both work.
         _single: $ => prec.dynamic(1, seq(
             $._expression_nosep
         )),
@@ -365,7 +364,7 @@ module.exports = grammar({
             $.identifier,
             "in",
             field("container", $._multi_expression_nosep),
-            optional($._soft_expression_separator),
+            $._soft_expression_separator,
             field("body", $._multi_expression_nosep)
         )),
 
@@ -376,7 +375,7 @@ module.exports = grammar({
         if: $ => seq(
             "if",
             field("condition", $._multi_expression_nosep),
-            optional($._soft_expression_separator),
+            $._soft_expression_separator,
             field("then", $._multi_expression_nosep),
             optional($._else)
         ),

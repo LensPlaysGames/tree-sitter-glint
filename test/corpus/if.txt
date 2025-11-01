@@ -1,14 +1,11 @@
 =================
 If, Empty Block
+:error
 ================
 
 if false {};
 
 ---
-
-(source_file
- (if (bool_literal)
-   (block)))
 
 ================
 If, Empty Block, Soft Separator
@@ -34,16 +31,12 @@ if false; {};
 
 ================
 If/Else, Empty Blocks, No Separators
+:error
 ================
 
 if false {} else {};
 
 ---
-
-(source_file
- (if (bool_literal)
-   (block)
-   (block)))
 
 ================
 If/Else, Empty Blocks, Soft Separator Between condition/then
@@ -77,15 +70,23 @@ if false {}, else {};
 ---
 
 (source_file
- (if (bool_literal)
-   (block)
-   (block)))
+ (if (call (bool_literal) (block))
+   (call (identifier) (block))))
 
 ================
 If/Else, Empty Blocks, Hard Separator Between then/`else'
+:error
 ================
 
 if false {}; else {};
+
+---
+
+================
+If/Else, Empty Blocks, Soft Separator Between condition/then, Hard Separator Between then/`else'
+================
+
+if false, {}; else {};
 
 ---
 
