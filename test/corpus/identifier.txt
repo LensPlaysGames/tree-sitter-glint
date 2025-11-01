@@ -1,0 +1,89 @@
+================
+Alphas
+================
+
+abc;
+
+---
+
+(source_file (identifier))
+
+================
+Alphanumerics
+================
+
+abc123;
+
+---
+
+(source_file (identifier))
+
+================
+_ Continuation
+================
+
+abc_123;
+
+---
+
+(source_file (identifier))
+
+================
+_ Begin
+================
+
+_abc123;
+
+---
+
+(source_file (identifier))
+
+================
+$ Begin
+================
+
+$abc123;
+
+---
+
+(source_file (identifier))
+
+================
+$ by itself
+================
+
+$;
+
+---
+
+(source_file (identifier))
+
+================
+$ Continuation
+================
+
+abc123$;
+
+---
+
+(source_file (identifier))
+
+================
+! Continuation
+================
+
+abc!123;
+
+---
+
+(source_file (identifier))
+
+================
+@ Continuation
+================
+
+abc@123;
+
+---
+
+(source_file (identifier))

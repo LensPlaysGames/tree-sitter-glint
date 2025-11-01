@@ -25,7 +25,7 @@ module.exports = grammar({
     // if also wants to eat that. This forces tree-sitter to explore that
     // possibility with lookahead instead of always assuming one or the other
     // based on left/right precedence.
-    conflicts: $ => [[$.if], [$.print]],
+    conflicts: $ => [[$.if], [$.print], [$._single, $.call], [$._single, $._group]],
 
     rules: {
         source_file: $ => seq(
@@ -154,13 +154,13 @@ module.exports = grammar({
         ),
 
         // prec.left(0, ...) or prec(1, ...) both work.
-        _single: $ => prec(1, seq(
+        _single: $ => prec.dynamic(1, seq(
             $._expression_nosep
         )),
-        call: $ => seq(
+        call: $ => prec.dynamic(1, seq(
             $._expression_nosep,
             $._multi_expression_nosep
-        ),
+        )),
         _group: $ => seq(
             $._expression_nosep,
             $._soft_expression_separator,
@@ -223,7 +223,7 @@ module.exports = grammar({
             "]"
         )),
 
-        assign: $ => prec.right(seq(
+        assign: $ => prec.right(1, seq(
             $._expression_nosep,
             ":=",
             $._multi_expression_nosep
@@ -245,32 +245,38 @@ module.exports = grammar({
         decrement: $ => prec.right(seq("--", $._multi_expression_nosep)),
         logical_negate: $ => prec.right(seq(choice("!", "not"), $._multi_expression_nosep)),
 
-        declaration: $ => prec.right(seq(
+        declaration: $ => seq(
             optional($.storage_specifier),
             choice(
-                seq(
-                    field("name", $.identifier),
-                    ":", field("type", choice($._type, $.identifier)),
-                    optional(
-                        field("init", $._multi_expression_nosep)
-                    )
-                ),
-                seq(
-                    field("name", $.identifier),
-                    "::",
-                    field("init", $._multi_expression_nosep),
-                ),
-                seq(
-                    "supplant",
-                    field("type", choice($._type, $.identifier))
-                )
+                $._declaration_init,
+                $._declaration_inferred,
+                $._declaration_supplanted
+            )
+        ),
+
+        _declaration_init: $ => prec.right(seq(
+            field("name", $.identifier),
+            ":", field("type", choice($._type, $.identifier)),
+            optional(
+                field("init", $._multi_expression_nosep)
             )
         )),
+
+        _declaration_inferred: $ => seq(
+            field("name", $.identifier),
+            "::",
+            field("init", $._multi_expression_nosep),
+        ),
+
+        _declaration_supplanted: $ => seq(
+            "supplant",
+            field("type", choice($._type, $.identifier))
+        ),
 
         // ================
         // BINARY OPERATORS
         // ================
-        _binary_expression: $ => prec(1, choice(
+        _binary_expression: $ => choice(
             $.add,
             $.subtract,
             $.multiply,
@@ -303,7 +309,7 @@ module.exports = grammar({
             $.pipe_eq,
             $.caret_eq,
             $.lbrack_eq
-        )),
+        ),
 
         // note that + left or right precedence doesn't matter for these
         // operators, but we pick one to be unambiguous in the grammar.
@@ -394,10 +400,9 @@ module.exports = grammar({
 
         block: $ => seq(
             "{",
-            // NOTE: Should be _hard_expression_separator and comma-separated
-            // expressions get caught by _group. The problem is trailing soft
-            // expression separators.
-            repeat(seq($._multi_expression_nosep, optional($._expression_separator))),
+            repeat($._multi_expression),
+            optional($._multi_expression_nosep),
+            optional($._soft_expression_separator),
             "}"
         ),
 
@@ -457,7 +462,7 @@ module.exports = grammar({
         _hard_expression_separator: $ => token(";"),
         _soft_expression_separator: $ => token(","),
 
-        identifier: $ => token(/[a-z][a-z0-9_]*/i),
+        identifier: $ => token(/[a-z\$_][a-z0-9_!\$@]*/i),
         _number_dec: $ => token(/\d+/),
         _number_hex: $ => token(/0x[0-9a-f]+/i),
         _number_oct: $ => token(/0o?[0-7]+/),

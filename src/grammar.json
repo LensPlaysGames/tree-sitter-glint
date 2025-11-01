@@ -476,7 +476,7 @@
       ]
     },
     "_single": {
-      "type": "PREC",
+      "type": "PREC_DYNAMIC",
       "value": 1,
       "content": {
         "type": "SEQ",
@@ -489,17 +489,21 @@
       }
     },
     "call": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "_expression_nosep"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "_multi_expression_nosep"
-        }
-      ]
+      "type": "PREC_DYNAMIC",
+      "value": 1,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "_expression_nosep"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "_multi_expression_nosep"
+          }
+        ]
+      }
     },
     "_group": {
       "type": "SEQ",
@@ -741,7 +745,7 @@
     },
     "assign": {
       "type": "PREC_RIGHT",
-      "value": 0,
+      "value": 1,
       "content": {
         "type": "SEQ",
         "members": [
@@ -901,252 +905,260 @@
       }
     },
     "declaration": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "storage_specifier"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_declaration_init"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_declaration_inferred"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_declaration_supplanted"
+            }
+          ]
+        }
+      ]
+    },
+    "_declaration_init": {
       "type": "PREC_RIGHT",
       "value": 0,
       "content": {
         "type": "SEQ",
         "members": [
           {
-            "type": "CHOICE",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "storage_specifier"
-              },
-              {
-                "type": "BLANK"
-              }
-            ]
+            "type": "FIELD",
+            "name": "name",
+            "content": {
+              "type": "SYMBOL",
+              "name": "identifier"
+            }
+          },
+          {
+            "type": "STRING",
+            "value": ":"
+          },
+          {
+            "type": "FIELD",
+            "name": "type",
+            "content": {
+              "type": "CHOICE",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "_type"
+                },
+                {
+                  "type": "SYMBOL",
+                  "name": "identifier"
+                }
+              ]
+            }
           },
           {
             "type": "CHOICE",
             "members": [
               {
-                "type": "SEQ",
-                "members": [
-                  {
-                    "type": "FIELD",
-                    "name": "name",
-                    "content": {
-                      "type": "SYMBOL",
-                      "name": "identifier"
-                    }
-                  },
-                  {
-                    "type": "STRING",
-                    "value": ":"
-                  },
-                  {
-                    "type": "FIELD",
-                    "name": "type",
-                    "content": {
-                      "type": "CHOICE",
-                      "members": [
-                        {
-                          "type": "SYMBOL",
-                          "name": "_type"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "identifier"
-                        }
-                      ]
-                    }
-                  },
-                  {
-                    "type": "CHOICE",
-                    "members": [
-                      {
-                        "type": "FIELD",
-                        "name": "init",
-                        "content": {
-                          "type": "SYMBOL",
-                          "name": "_multi_expression_nosep"
-                        }
-                      },
-                      {
-                        "type": "BLANK"
-                      }
-                    ]
-                  }
-                ]
+                "type": "FIELD",
+                "name": "init",
+                "content": {
+                  "type": "SYMBOL",
+                  "name": "_multi_expression_nosep"
+                }
               },
               {
-                "type": "SEQ",
-                "members": [
-                  {
-                    "type": "FIELD",
-                    "name": "name",
-                    "content": {
-                      "type": "SYMBOL",
-                      "name": "identifier"
-                    }
-                  },
-                  {
-                    "type": "STRING",
-                    "value": "::"
-                  },
-                  {
-                    "type": "FIELD",
-                    "name": "init",
-                    "content": {
-                      "type": "SYMBOL",
-                      "name": "_multi_expression_nosep"
-                    }
-                  }
-                ]
-              },
-              {
-                "type": "SEQ",
-                "members": [
-                  {
-                    "type": "STRING",
-                    "value": "supplant"
-                  },
-                  {
-                    "type": "FIELD",
-                    "name": "type",
-                    "content": {
-                      "type": "CHOICE",
-                      "members": [
-                        {
-                          "type": "SYMBOL",
-                          "name": "_type"
-                        },
-                        {
-                          "type": "SYMBOL",
-                          "name": "identifier"
-                        }
-                      ]
-                    }
-                  }
-                ]
+                "type": "BLANK"
               }
             ]
           }
         ]
       }
     },
-    "_binary_expression": {
-      "type": "PREC",
-      "value": 1,
-      "content": {
-        "type": "CHOICE",
-        "members": [
-          {
+    "_declaration_inferred": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "FIELD",
+          "name": "name",
+          "content": {
             "type": "SYMBOL",
-            "name": "add"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "subtract"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "multiply"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "divide"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "remainder"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "ne"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "gt"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "ge"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "lt"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "le"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "and"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "or"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "bitshl"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "bitshr"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "bitand"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "bitor"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "bitxor"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "add_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "subtract_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "multiply_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "divide_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "remainder_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "tilde_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "ampersand_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "pipe_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "caret_eq"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "lbrack_eq"
+            "name": "identifier"
           }
-        ]
-      }
+        },
+        {
+          "type": "STRING",
+          "value": "::"
+        },
+        {
+          "type": "FIELD",
+          "name": "init",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_multi_expression_nosep"
+          }
+        }
+      ]
+    },
+    "_declaration_supplanted": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "supplant"
+        },
+        {
+          "type": "FIELD",
+          "name": "type",
+          "content": {
+            "type": "CHOICE",
+            "members": [
+              {
+                "type": "SYMBOL",
+                "name": "_type"
+              },
+              {
+                "type": "SYMBOL",
+                "name": "identifier"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "_binary_expression": {
+      "type": "CHOICE",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "add"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subtract"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "multiply"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "divide"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "remainder"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ne"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "gt"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ge"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "lt"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "le"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "and"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "or"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bitshl"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bitshr"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bitand"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bitor"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bitxor"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "add_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "subtract_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "multiply_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "divide_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "remainder_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "tilde_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "ampersand_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "pipe_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "caret_eq"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "lbrack_eq"
+        }
+      ]
     },
     "add": {
       "type": "PREC_LEFT",
@@ -1959,26 +1971,33 @@
         {
           "type": "REPEAT",
           "content": {
-            "type": "SEQ",
-            "members": [
-              {
-                "type": "SYMBOL",
-                "name": "_multi_expression_nosep"
-              },
-              {
-                "type": "CHOICE",
-                "members": [
-                  {
-                    "type": "SYMBOL",
-                    "name": "_expression_separator"
-                  },
-                  {
-                    "type": "BLANK"
-                  }
-                ]
-              }
-            ]
+            "type": "SYMBOL",
+            "name": "_multi_expression"
           }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_multi_expression_nosep"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_soft_expression_separator"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "STRING",
@@ -2209,7 +2228,7 @@
       "type": "TOKEN",
       "content": {
         "type": "PATTERN",
-        "value": "[a-z][a-z0-9_]*",
+        "value": "[a-z\\$_][a-z0-9_!\\$@]*",
         "flags": "i"
       }
     },
@@ -2259,6 +2278,14 @@
     ],
     [
       "print"
+    ],
+    [
+      "_single",
+      "call"
+    ],
+    [
+      "_single",
+      "_group"
     ]
   ],
   "precedences": [],

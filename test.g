@@ -1,4 +1,17 @@
-foo : struct { x : int };
-struct { supplant foo };
+if false {};
+if false, {};
 
-lex :Token(b :[byte view], offset :int.ref) {};
+if false {
+  bar;
+} else {};
+if false, {
+  0;
+  0;
+  2;
+} else {};
+if false, {}, else {
+  0;
+};
+if false, {}; else {
+  foo;
+};
