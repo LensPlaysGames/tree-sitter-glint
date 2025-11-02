@@ -2479,55 +2479,34 @@
       ]
     },
     "_hard_expression_separator": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": ";"
-      }
+      "type": "STRING",
+      "value": ";"
     },
     "_soft_expression_separator": {
-      "type": "TOKEN",
-      "content": {
-        "type": "STRING",
-        "value": ","
-      }
+      "type": "STRING",
+      "value": ","
     },
     "identifier": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PATTERN",
-        "value": "[a-z\\$_][a-z0-9_!\\$@]*",
-        "flags": "i"
-      }
+      "type": "PATTERN",
+      "value": "[a-z\\$_][a-z0-9_!\\$@]*",
+      "flags": "i"
     },
     "_number_dec": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PATTERN",
-        "value": "\\d+"
-      }
+      "type": "PATTERN",
+      "value": "\\d+"
     },
     "_number_hex": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PATTERN",
-        "value": "0x[0-9a-f]+",
-        "flags": "i"
-      }
+      "type": "PATTERN",
+      "value": "0x[0-9a-f]+",
+      "flags": "i"
     },
     "_number_oct": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PATTERN",
-        "value": "0o?[0-7]+"
-      }
+      "type": "PATTERN",
+      "value": "0o?[0-7]+"
     },
     "comment": {
-      "type": "TOKEN",
-      "content": {
-        "type": "PATTERN",
-        "value": ";;.*"
-      }
+      "type": "PATTERN",
+      "value": ";;.*"
     }
   },
   "extras": [

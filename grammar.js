@@ -468,13 +468,13 @@ module.exports = grammar({
             $._hard_expression_separator,
             $._soft_expression_separator
         ),
-        _hard_expression_separator: $ => token(";"),
-        _soft_expression_separator: $ => token(","),
+        _hard_expression_separator: $ => ";",
+        _soft_expression_separator: $ => ",",
 
-        identifier: $ => token(/[a-z\$_][a-z0-9_!\$@]*/i),
-        _number_dec: $ => token(/\d+/),
-        _number_hex: $ => token(/0x[0-9a-f]+/i),
-        _number_oct: $ => token(/0o?[0-7]+/),
-        comment: $ => token(/;;.*/)
+        identifier: $ => /[a-z\$_][a-z0-9_!\$@]*/i,
+        _number_dec: $ => /\d+/,
+        _number_hex: $ => /0x[0-9a-f]+/i,
+        _number_oct: $ => /0o?[0-7]+/,
+        comment: $ => /;;.*/
     }
 });
