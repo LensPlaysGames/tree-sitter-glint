@@ -1,0 +1,5 @@
+* Glint Parser based on Tree Sitter
+
+If you are living under a rock: [[https://tree-sitter.github.io/tree-sitter/][https://tree-sitter.github.io/tree-sitter/]].
+
+This is a parser implementation for the Glint language, a novel language designed as part of the [[https://github.com/LensPlaysGames/LensorCompilerCollection][Lensor Compiler Collection]].
