@@ -122,9 +122,10 @@ Add Multiply, Parentheses Force Precedence
 
 (source_file
  (multiply
-  (add
-   (integer_literal)
-   (integer_literal))
+  (paren
+   (add
+    (integer_literal)
+    (integer_literal)))
   (integer_literal)))
 
 ================
@@ -576,9 +577,11 @@ Add Declaration, Declaration
 
 (source_file
  (add
-  (declaration
-   (identifier)
-   (integer_literal))
-  (declaration
-   (identifier)
-   (integer_literal))))
+  (paren
+   (declaration
+    (identifier)
+    (integer_literal)))
+  (paren
+   (declaration
+    (identifier)
+    (integer_literal)))))

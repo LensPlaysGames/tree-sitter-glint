@@ -63,6 +63,7 @@ if false; {} else {};
 
 ================
 If/Else, Empty Blocks, Soft Separator Between then/`else'
+:error
 ================
 
 if false {}, else {};
@@ -84,6 +85,8 @@ if false {}; else {};
 
 ================
 If/Else, Empty Blocks, Soft Separator Between condition/then, Hard Separator Between then/`else'
+:desc No separator is allowed between then expression and "else", but
+      we can't disallow an identifier from matching "else" in this case.
 ================
 
 if false, {}; else {};
@@ -91,12 +94,17 @@ if false, {}; else {};
 ---
 
 (source_file
- (if (bool_literal)
-   (block)
-   (block)))
+  (if
+    (bool_literal)
+    (block))
+  (call
+    (identifier)
+    (block)))
 
 ================
 If/Else, Empty Blocks, Soft Separators
+:desc No separator is allowed between then expression and "else", but
+      we can't disallow an identifier from matching "else" in this case.
 ================
 
 if false, {}, else {};
@@ -104,9 +112,12 @@ if false, {}, else {};
 ---
 
 (source_file
- (if (bool_literal)
-   (block)
-   (block)))
+  (if
+    (bool_literal)
+    (block))
+  (call
+    (identifier)
+    (block)))
 
 ================
 If/Else, Empty Blocks, Hard Separators
@@ -118,6 +129,8 @@ if false; {}; else {};
 
 ================
 If/Else, Empty Blocks, Soft+Hard Separator
+:desc No separator is allowed between then expression and "else", but
+      we can't disallow an identifier from matching "else" in this case.
 ================
 
 if false, {}; else {};
@@ -125,14 +138,18 @@ if false, {}; else {};
 ---
 
 (source_file
- (if (bool_literal)
-   (block)
-   (block)))
+  (if
+    (bool_literal)
+    (block))
+  (call
+    (identifier)
+    (block)))
 
 ================
 If/Else, Empty Blocks, Hard+Soft Separator
 :error
 :desc No hard separator between condition and then body.
+      Also no separator between then expression and "else".
 ================
 
 if false; {}, else {};

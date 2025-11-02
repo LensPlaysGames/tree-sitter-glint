@@ -239,7 +239,7 @@ module.exports = grammar({
             field("supplanted_type", $._type)
         ),
         _decl_var: $ => prec.right(seq(
-            ":", $._type,
+            ":", field("type", $._type),
             optional("="), optional(field("init", $._expr))
         )),
         _decl_inferred: $ => prec.right(seq("::", field("init", $._expr))),

@@ -47,7 +47,7 @@ Integer Literal, Parens
 ---
 
 (source_file
- (integer_literal))
+ (paren (integer_literal)))
 
 ================
 Empty String Literal, Escapable, No Escapes

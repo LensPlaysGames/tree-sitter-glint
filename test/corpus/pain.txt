@@ -1,0 +1,45 @@
+================
+Pain 1, Endure It
+================
+
+0;
+
+0 0;
+
+0, 0;
+
+0 0 0;
+
+0();
+
+0 0 + 0;
+0 0 + 0 0;
+
+---
+
+(source_file
+  (integer_literal)
+  (call
+    (integer_literal)
+    (integer_literal))
+  (integer_literal)
+  (integer_literal)
+  (call
+    (integer_literal)
+    (call
+      (integer_literal)
+      (integer_literal)))
+  (call
+    (integer_literal))
+  (call
+    (integer_literal)
+    (add
+      (integer_literal)
+      (integer_literal)))
+  (call
+    (integer_literal)
+    (call
+      (add
+        (integer_literal)
+        (integer_literal))
+      (integer_literal))))
