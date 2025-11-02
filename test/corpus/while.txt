@@ -1,5 +1,6 @@
 ================
 While, Empty Block
+:error
 ================
 
 while false {};

@@ -15,26 +15,15 @@ module.exports = grammar({
     extras: $ => [/(\s|\f)/, $.comment],
 
     supertypes: $ => [
-        $._type
+        $._expr,
+        $._type,
     ],
-
-    // This is solely due to the fact that an `else` clause may come after a
-    // HARD expression separator of the then body; this means the first "if"
-    // is technically parseable as a valid if with no else, but, if there does
-    // happen to be an `else` keyword directly beyond that hard separator, the
-    // if also wants to eat that. This forces tree-sitter to explore that
-    // possibility with lookahead instead of always assuming one or the other
-    // based on left/right precedence.
-    conflicts: $ => [[$.if], [$.print], [$._single, $.call], [$._single, $._group]],
 
     rules: {
         source_file: $ => seq(
             optional($.module_declaration),
             repeat($.module_import),
-            repeat($._multi_expression),
-            // It is not a syntax error if trailing semi-colon is missing from a
-            // Glint program, so we don't require a separator for the last expression.
-            optional($._multi_expression_nosep)
+            optional($._PTEL)
         ),
 
         module_declaration: $ => seq(
@@ -43,16 +32,16 @@ module.exports = grammar({
             optional($._expression_separator)
         ),
 
-        module_import: $ => seq(
+        module_import: $ => prec(999999999, seq(
             "import",
             field("name", $.identifier),
             optional($._expression_separator)
-        ),
+        )),
 
         // ================
         // TYPES
         // ================
-        _type: $ => choice(
+        _type: $ => prec(5, choice(
             $.type_array,
             $.type_enum,
             $.type_ffi,
@@ -63,8 +52,9 @@ module.exports = grammar({
             $.type_struct,
             $.type_sum,
             $.type_union,
-            $.type_function
-        ),
+            $.type_function,
+            $.identifier
+        )),
 
         type_enum: $ => seq(
             "enum",
@@ -102,7 +92,7 @@ module.exports = grammar({
             "csize", "cusize"
         ),
 
-        type_function: $ => prec(10, seq(
+        type_function: $ => prec(5, seq(
             $._type,
             "(",
             repeat($.param_decl),
@@ -114,14 +104,14 @@ module.exports = grammar({
         param_decl: $ => prec(10, seq(
             optional(field("name", $.identifier)),
             ":", field("type", choice($._type, $.identifier)),
-            optional($._soft_expression_separator)
+            optional(",")
         )),
 
         type_array: $ => prec(10, seq(
             "[",
             $._type,
             optional(choice(
-                $._multi_expression_nosep,
+                $._expr,
                 "view"
             )),
             "]"
@@ -139,138 +129,173 @@ module.exports = grammar({
         // EXPRESSIONS
         // ================
 
-        // e1-nosep
-        _multi_expression_nosep: $ => choice(
-            $._single,
-            $.call,
-            $._group,
-            $.print // a print gets parsed as a call unless we put it here.
-        ),
+        // Possibly Terminated Expression List
+        _PTEL: $ => repeat1(prec.right(seq($._expr, optional($._expression_separator)))),
 
-        // e1
-        _multi_expression: $ => seq(
-            $._multi_expression_nosep,
-            $._hard_expression_separator
-        ),
+        _expr_terminated: $ => seq($._expr, $._hard_expression_separator),
 
-        _single: $ => prec.dynamic(1, seq(
-            $._expression_nosep
-        )),
-        call: $ => prec.dynamic(1, seq(
-            $._expression_nosep,
-            $._multi_expression_nosep
-        )),
-        _group: $ => seq(
-            $._expression_nosep,
-            $._soft_expression_separator,
-            $._multi_expression_nosep
-        ),
+        _expr: $ => prec(5, choice($._unary_binary, $._expr_except_unary_binary)),
 
-        _expression_nosep: $ => choice(
-            $._binary_expression,
-            $._unary_expression,
-            $._paren_expression,
-            $.assign,
+        _expr_except_unary_binary: $ => choice(
+            $._binary,
+            $._type,
+            $._unary_notbinary,
             $.block,
             $.bool_literal,
             $.byte_literal,
-            $.declaration,
+            $.call,
+            $.cfor,
             $.identifier,
             $.if,
             $.integer_literal,
+            $.match,
             $.member_access,
+            $.paren,
+            $.print,
+            $.rangedfor,
             $.return,
             $.string_literal,
-            $.subscript,
-            $._type,
+            $.type_expr,
             $.while,
-            $.match,
+        ),
+
+        _expr_except_call: $ => prec(1, choice(
+            $._binary,
+            $._type,
+            $._unary_binary,
+            $._unary_notbinary,
+            $.block,
+            $.bool_literal,
+            $.byte_literal,
             $.cfor,
+            $.identifier,
+            $.if,
+            $.integer_literal,
+            $.match,
+            $.member_access,
+            $.paren,
             $.rangedfor,
+            $.return,
+            $.string_literal,
+            $.type_expr,
+            $.while,
+        )),
+
+        type_expr: $ => prec(99, seq(":", $._type)),
+
+        _binary: $ => choice(
+            $.add,
+            $.subtract,
+            $.multiply,
+            $.divide,
+            $.remainder,
+
+            $.eq,
+            $.ne,
+            $.gt,
+            $.ge,
+            $.lt,
+            $.le,
+
+            $.and,
+            $.or,
+
+            $.bitshl,
+            $.bitshr,
+            $.bitand,
+            $.bitor,
+            $.bitxor,
+
+            $.assign,
+            $.declaration,
+            $.subscript,
+
+            $.add_eq,
+            $.subtract_eq,
+            $.multiply_eq,
+            $.divide_eq,
+            $.remainder_eq,
+            $.tilde_eq,
+            $.ampersand_eq,
+            $.pipe_eq,
+            $.caret_eq,
+            $.lbrack_eq,
+
         ),
 
-        _paren_expression: $ => seq(
-            "(",
-            $._multi_expression_nosep,
-            ")"
-        ),
+        subscript: $ => prec(10010, seq($._expr_except_call, "[", $._expr, "]")),
 
-        // precedence to win out over block parsing
+        assign: $ => prec.right(100, seq($._expr, ":=", prec.right($._expr))),
+        declaration: $ => prec.right(6, choice(
+            seq(
+                optional($.storage_specifier),
+                field("name", $.identifier),
+                choice($._decl_var, $._decl_inferred)
+            ),
+            $._supplant
+        )),
+        _supplant: $ => seq(
+            "supplant",
+            field("supplanted_type", $._type)
+        ),
+        _decl_var: $ => prec.right(seq(
+            ":", $._type,
+            optional("="), optional(field("init", $._expr))
+        )),
+        _decl_inferred: $ => prec.right(seq("::", field("init", $._expr))),
+
+        // if types are expressions with no prefix, array types beginning with "[" token should go here.
+        _unary_binary: $ => choice($.negate, $.addressof),
+        _unary_notbinary: $ => choice($.dereference, $.increment, $.decrement, $.logical_negate),
+
+        dereference: $ => seq("@", prec.right(10000, $._expr)),
+        addressof: $ => seq("&", prec.right(10000, $._expr)),
+        negate: $ => seq("-", prec.right(10000, $._expr)),
+        increment: $ => seq("++", prec.right(10000, $._expr)),
+        decrement: $ => seq("--", prec.right(10000, $._expr)),
+        logical_negate: $ => seq(choice("!", "not"), prec.right(10000, $._expr)),
+
+        // Use paren to "escape" back to a grammar that accepts a unary expression as an argument
+        // call_repeat1 precedence to ensure that, if a call does apply, it is a
+        // call, and not just two expressions back-to-back.
+        call: $ => choice($._forced_call, $._multi_call),
+        _forced_call: $ => seq($._expr, "(", ")"),
+        _multi_call: $ => prec.right(seq(
+            $._expr,
+            $._expr_except_unary_binary,
+            repeat(seq($._soft_expression_separator, $._call_arg))
+        )),
+
+        // Can syntactically represent as a regular call, but, we include this for
+        // extra information purposes.
+        print: $ => prec.right(seq(
+            "print",
+            optional(seq(
+                $._expr_except_unary_binary,
+                repeat(seq($._soft_expression_separator, $._call_arg))
+            ))
+        )),
+
+        _call_arg: $ => prec(90, $._expr_except_unary_binary),
+
+        // A paren expression does not open up a new scope.
+        paren: $ => seq("(", $._PTEL, ")"),
+        // A block expression 's contained expressions are parsee within a new scope.
+        block: $ => seq("{", optional($._PTEL), "}"),
+
         match: $ => prec(1, seq(
             "match",
-            field("object", $._multi_expression_nosep),
+            field("object", $._expr),
             "{",
-            repeat(seq(
+            repeat(prec.left(seq(
                 ".",
                 $.identifier,
                 optional(":"),
-                $._multi_expression_nosep,
+                $._expr,
                 optional($._expression_separator)
-            )),
+            ))),
             "}"
         )),
-
-        print: $ => seq(
-            "print",
-            optional($._multi_expression_nosep)
-        ),
-
-        subscript: $ => prec(1, seq(
-            $._multi_expression_nosep,
-            "[",
-            $._multi_expression_nosep,
-            "]"
-        )),
-
-        assign: $ => prec.right(1, seq(
-            $._expression_nosep,
-            ":=",
-            $._multi_expression_nosep
-        )),
-
-        _unary_expression: $ => choice(
-            $.addressof,
-            $.negate,
-            $.decrement,
-            $.dereference,
-            $.increment,
-            $.logical_negate,
-        ),
-
-        dereference: $ => prec.right(seq("@", $._multi_expression_nosep)),
-        addressof: $ => prec.right(seq("&", $._multi_expression_nosep)),
-        negate: $ => prec.right(seq("-", $._multi_expression_nosep)),
-        increment: $ => prec.right(seq("++", $._multi_expression_nosep)),
-        decrement: $ => prec.right(seq("--", $._multi_expression_nosep)),
-        logical_negate: $ => prec.right(seq(choice("!", "not"), $._multi_expression_nosep)),
-
-        declaration: $ => seq(
-            optional($.storage_specifier),
-            choice(
-                $._declaration_init,
-                $._declaration_inferred,
-                $._declaration_supplanted
-            )
-        ),
-
-        _declaration_init: $ => prec.right(seq(
-            field("name", $.identifier),
-            ":", field("type", choice($._type, $.identifier)),
-            optional(
-                field("init", $._multi_expression_nosep)
-            )
-        )),
-
-        _declaration_inferred: $ => seq(
-            field("name", $.identifier),
-            "::",
-            field("init", $._multi_expression_nosep),
-        ),
-
-        _declaration_supplanted: $ => seq(
-            "supplant",
-            field("type", choice($._type, $.identifier))
-        ),
 
         // ================
         // BINARY OPERATORS
@@ -312,38 +337,38 @@ module.exports = grammar({
 
         // note that + left or right precedence doesn't matter for these
         // operators, but we pick one to be unambiguous in the grammar.
-        add:       $ => prec.left(500, seq($._multi_expression_nosep, "+", $._multi_expression_nosep)),
-        subtract:  $ => prec.left(500, seq($._multi_expression_nosep, "-", $._multi_expression_nosep)),
-        multiply:  $ => prec.left(600, seq($._multi_expression_nosep, "*", $._multi_expression_nosep)),
-        divide:    $ => prec.left(600, seq($._multi_expression_nosep, "/", $._multi_expression_nosep)),
-        remainder: $ => prec.left(600, seq($._multi_expression_nosep, "%", $._multi_expression_nosep)),
+        add:       $ => prec.left(500, seq($._expr_except_call, "+", $._expr_except_call)),
+        subtract:  $ => prec.left(500, seq($._expr_except_call, "-", $._expr_except_call)),
+        multiply:  $ => prec.left(600, seq($._expr_except_call, "*", $._expr_except_call)),
+        divide:    $ => prec.left(600, seq($._expr_except_call, "/", $._expr_except_call)),
+        remainder: $ => prec.left(600, seq($._expr_except_call, "%", $._expr_except_call)),
 
-        eq: $ => prec.left(200, seq($._multi_expression_nosep, "=", $._multi_expression_nosep)),
-        ne: $ => prec.left(200, seq($._multi_expression_nosep, "!=", $._multi_expression_nosep)),
-        gt: $ => prec.left(200, seq($._multi_expression_nosep, ">", $._multi_expression_nosep)),
-        ge: $ => prec.left(200, seq($._multi_expression_nosep, ">=", $._multi_expression_nosep)),
-        lt: $ => prec.left(200, seq($._multi_expression_nosep, "<", $._multi_expression_nosep)),
-        le: $ => prec.left(200, seq($._multi_expression_nosep, "<=", $._multi_expression_nosep)),
+        eq: $ => prec.left(200, seq($._expr_except_call, "=", $._expr_except_call)),
+        ne: $ => prec.left(200, seq($._expr_except_call, "!=", $._expr_except_call)),
+        gt: $ => prec.left(200, seq($._expr_except_call, ">", $._expr_except_call)),
+        ge: $ => prec.left(200, seq($._expr_except_call, ">=", $._expr_except_call)),
+        lt: $ => prec.left(200, seq($._expr_except_call, "<", $._expr_except_call)),
+        le: $ => prec.left(200, seq($._expr_except_call, "<=", $._expr_except_call)),
 
-        and: $ => prec.left(150, seq($._multi_expression_nosep, "and", $._multi_expression_nosep)),
-        or: $ => prec.left(145, seq($._multi_expression_nosep, "or", $._multi_expression_nosep)),
+        and: $ => prec.left(150, seq($._expr_except_call, "and", $._expr_except_call)),
+        or: $ => prec.left(145, seq($._expr_except_call, "or", $._expr_except_call)),
 
-        bitshl: $ => prec.left(400, seq($._multi_expression_nosep, "<<", $._multi_expression_nosep)),
-        bitshr: $ => prec.left(400, seq($._multi_expression_nosep, ">>", $._multi_expression_nosep)),
-        bitand: $ => prec.left(300, seq($._multi_expression_nosep, "&", $._multi_expression_nosep)),
-        bitor: $ => prec.left(300, seq($._multi_expression_nosep, "|", $._multi_expression_nosep)),
-        bitxor: $ => prec.left(300, seq($._multi_expression_nosep, "^", $._multi_expression_nosep)),
+        bitshl: $ => prec.left(400, seq($._expr_except_call, "<<", $._expr_except_call)),
+        bitshr: $ => prec.left(400, seq($._expr_except_call, ">>", $._expr_except_call)),
+        bitand: $ => prec.left(300, seq($._expr_except_call, "&", $._expr_except_call)),
+        bitor: $ => prec.left(300, seq($._expr_except_call, "|", $._expr_except_call)),
+        bitxor: $ => prec.left(300, seq($._expr_except_call, "^", $._expr_except_call)),
 
-        add_eq:       $ => prec.left(100, seq($._multi_expression_nosep, "+=", $._multi_expression_nosep)),
-        subtract_eq:  $ => prec.left(100, seq($._multi_expression_nosep, "-=", $._multi_expression_nosep)),
-        multiply_eq:  $ => prec.left(100, seq($._multi_expression_nosep, "*=", $._multi_expression_nosep)),
-        divide_eq:    $ => prec.left(100, seq($._multi_expression_nosep, "/=", $._multi_expression_nosep)),
-        remainder_eq: $ => prec.left(100, seq($._multi_expression_nosep, "%=", $._multi_expression_nosep)),
-        tilde_eq:     $ => prec.left(100, seq($._multi_expression_nosep, "~=", $._multi_expression_nosep)),
-        ampersand_eq: $ => prec.left(100, seq($._multi_expression_nosep, "&=", $._multi_expression_nosep)),
-        pipe_eq:      $ => prec.left(100, seq($._multi_expression_nosep, "|=", $._multi_expression_nosep)),
-        caret_eq:     $ => prec.left(100, seq($._multi_expression_nosep, "^=", $._multi_expression_nosep)),
-        lbrack_eq:    $ => prec.left(100, seq($._multi_expression_nosep, "[=", $._multi_expression_nosep)),
+        add_eq:       $ => prec.left(100, seq($._expr_except_call, "+=", $._expr_except_call)),
+        subtract_eq:  $ => prec.left(100, seq($._expr_except_call, "-=", $._expr_except_call)),
+        multiply_eq:  $ => prec.left(100, seq($._expr_except_call, "*=", $._expr_except_call)),
+        divide_eq:    $ => prec.left(100, seq($._expr_except_call, "/=", $._expr_except_call)),
+        remainder_eq: $ => prec.left(100, seq($._expr_except_call, "%=", $._expr_except_call)),
+        tilde_eq:     $ => prec.left(100, seq($._expr_except_call, "~=", $._expr_except_call)),
+        ampersand_eq: $ => prec.left(100, seq($._expr_except_call, "&=", $._expr_except_call)),
+        pipe_eq:      $ => prec.left(100, seq($._expr_except_call, "|=", $._expr_except_call)),
+        caret_eq:     $ => prec.left(100, seq($._expr_except_call, "^=", $._expr_except_call)),
+        lbrack_eq:    $ => prec.left(100, seq($._expr_except_call, "[=", $._expr_except_call)),
         // ================
         // BINARY OPERATORS END
         // ================
@@ -353,65 +378,50 @@ module.exports = grammar({
         // ================
         cfor: $ => prec.right(seq(
             "cfor",
-            field("init", $._multi_expression),
-            field("condition", $._multi_expression),
-            field("increment", $._multi_expression),
-            field("body", $._multi_expression_nosep),
+            field("init", $._expr_terminated),
+            field("condition", $._expr_terminated),
+            field("increment", $._expr_terminated),
+            field("body", $._expr),
         )),
 
         rangedfor: $ => prec.right(seq(
             "for",
             $.identifier,
             "in",
-            field("container", $._multi_expression_nosep),
+            field("container", $._expr),
             $._soft_expression_separator,
-            field("body", $._multi_expression_nosep)
+            field("body", $._expr)
         )),
 
-        // TODO: doesn't handle separator between then expression and else
-        // keyword, but it should. I don't know how to get it to handle that
-        // without completely breaking everything, and I don't know why it doesn't
-        // already work.
-        if: $ => seq(
+        if: $ => prec.right(seq(
             "if",
-            field("condition", $._multi_expression_nosep),
+            field("condition", $._expr),
             $._soft_expression_separator,
-            field("then", $._multi_expression_nosep),
-            optional($._else)
-        ),
-
-        _else: $ => seq(
-            optional($._expression_separator),
-            "else",
-            field("else", $._multi_expression_nosep)
-        ),
+            field("then", $._expr),
+            optional(seq(
+                "else",
+                field("otherwise", $._expr),
+            ))
+        )),
 
         while: $ => prec.right(seq(
             "while",
-            field("condition", $._multi_expression_nosep),
-            optional($._soft_expression_separator),
-            field("then", $._multi_expression_nosep)
+            field("condition", $._expr),
+            ",",
+            field("then", $._expr)
         )),
         // ================
         // CONTROL FLOW END
         // ================
 
 
-        block: $ => seq(
-            "{",
-            repeat($._multi_expression),
-            optional($._multi_expression_nosep),
-            optional($._soft_expression_separator),
-            "}"
-        ),
-
         return: $ => prec.right(seq(
             "return",
-            optional($._multi_expression_nosep)
+            optional($._expr)
         )),
 
-        member_access: $ => prec(10, seq(
-            $.identifier,
+        member_access: $ => prec(1000000000, seq(
+            $._expr_except_call,
             ".",
             $.identifier
         )),
@@ -450,8 +460,8 @@ module.exports = grammar({
         ),
 
         storage_specifier: $ => choice(
-            "external",
-            "export"
+            token("external"),
+            token("export")
         ),
 
         _expression_separator: $ => choice(
