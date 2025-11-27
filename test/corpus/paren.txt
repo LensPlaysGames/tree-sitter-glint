@@ -1,0 +1,22 @@
+================
+Paren, Ident
+================
+
+(foo);
+
+---
+
+(source_file
+ (paren (identifier)))
+
+================
+Paren, Two Ident Soft Separated
+================
+
+(foo, bar);
+
+---
+
+(source_file
+ (paren (identifier) (identifier)))
+

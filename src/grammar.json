@@ -553,6 +553,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "mapf"
+        },
+        {
+          "type": "SYMBOL",
           "name": "match"
         },
         {
@@ -638,6 +642,10 @@
           {
             "type": "SYMBOL",
             "name": "integer_literal"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "mapf"
           },
           {
             "type": "SYMBOL",
@@ -1167,21 +1175,25 @@
       ]
     },
     "_forced_call": {
-      "type": "SEQ",
-      "members": [
-        {
-          "type": "SYMBOL",
-          "name": "_expr"
-        },
-        {
-          "type": "STRING",
-          "value": "("
-        },
-        {
-          "type": "STRING",
-          "value": ")"
-        }
-      ]
+      "type": "PREC",
+      "value": 1,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "SYMBOL",
+            "name": "_expr"
+          },
+          {
+            "type": "STRING",
+            "value": "("
+          },
+          {
+            "type": "STRING",
+            "value": ")"
+          }
+        ]
+      }
     },
     "_multi_call": {
       "type": "PREC_RIGHT",
@@ -1278,8 +1290,16 @@
           "value": "("
         },
         {
-          "type": "SYMBOL",
-          "name": "_PTEL"
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "_PTEL"
+            },
+            {
+              "type": "BLANK"
+            }
+          ]
         },
         {
           "type": "STRING",
@@ -1833,7 +1853,7 @@
           },
           {
             "type": "STRING",
-            "value": "&"
+            "value": "bitand"
           },
           {
             "type": "SYMBOL",
@@ -1854,7 +1874,7 @@
           },
           {
             "type": "STRING",
-            "value": "|"
+            "value": "bitor"
           },
           {
             "type": "SYMBOL",
@@ -1875,7 +1895,7 @@
           },
           {
             "type": "STRING",
-            "value": "^"
+            "value": "bitxor"
           },
           {
             "type": "SYMBOL",
@@ -2266,6 +2286,47 @@
             "content": {
               "type": "SYMBOL",
               "name": "_expr"
+            }
+          }
+        ]
+      }
+    },
+    "mapf": {
+      "type": "PREC_RIGHT",
+      "value": 0,
+      "content": {
+        "type": "SEQ",
+        "members": [
+          {
+            "type": "STRING",
+            "value": "mapf"
+          },
+          {
+            "type": "FIELD",
+            "name": "function",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_expr"
+            }
+          },
+          {
+            "type": "REPEAT",
+            "content": {
+              "type": "SEQ",
+              "members": [
+                {
+                  "type": "SYMBOL",
+                  "name": "_soft_expression_separator"
+                },
+                {
+                  "type": "FIELD",
+                  "name": "argument_list",
+                  "content": {
+                    "type": "SYMBOL",
+                    "name": "paren"
+                  }
+                }
+              ]
             }
           }
         ]

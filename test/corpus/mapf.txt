@@ -1,0 +1,42 @@
+================
+mapf, Arity 1
+================
+
+mapf foo, (bar, baz);
+
+---
+
+(source_file
+ (mapf
+  function: (identifier)
+  argument_list: (paren (identifier) (identifier))))
+
+================
+mapf, Arity 2
+================
+
+mapf foo, (bar, baz), (goo, jaz);
+
+---
+
+(source_file
+ (mapf
+  function: (identifier)
+  argument_list: (paren (identifier) (identifier))
+  argument_list: (paren (identifier) (identifier))))
+
+================
+mapf, Arity 3
+================
+
+mapf foo, (bar, baz), (goo, jaz), (blah, blaz);
+
+---
+
+(source_file
+ (mapf
+  function: (identifier)
+  argument_list: (paren (identifier) (identifier))
+  argument_list: (paren (identifier) (identifier))
+  argument_list: (paren (identifier) (identifier))))
+

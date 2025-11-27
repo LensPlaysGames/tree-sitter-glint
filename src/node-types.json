@@ -140,6 +140,10 @@
         "named": true
       },
       {
+        "type": "mapf",
+        "named": true
+      },
+      {
         "type": "match",
         "named": true
       },
@@ -416,6 +420,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -632,6 +640,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -869,6 +881,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -1085,6 +1101,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -1322,6 +1342,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -1538,6 +1562,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -1760,6 +1788,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -1979,6 +2011,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -2195,6 +2231,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -2454,6 +2494,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -2820,6 +2864,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -3036,6 +3084,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -3258,6 +3310,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -3477,6 +3533,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -3693,6 +3753,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -3971,6 +4035,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -4187,6 +4255,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -4424,6 +4496,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -4504,6 +4580,32 @@
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "mapf",
+    "named": true,
+    "fields": {
+      "argument_list": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "paren",
+            "named": true
+          }
+        ]
+      },
+      "function": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -4666,6 +4768,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -4920,6 +5026,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -5139,6 +5249,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -5355,6 +5469,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -5592,6 +5710,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -5706,7 +5828,7 @@
     "fields": {},
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
         {
           "type": "_expr",
@@ -5849,6 +5971,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -6068,6 +6194,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -6326,6 +6456,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -6542,6 +6676,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -6827,6 +6965,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -7046,6 +7188,10 @@
           "named": true
         },
         {
+          "type": "mapf",
+          "named": true
+        },
+        {
           "type": "match",
           "named": true
         },
@@ -7262,6 +7408,10 @@
         },
         {
           "type": "lt",
+          "named": true
+        },
+        {
+          "type": "mapf",
           "named": true
         },
         {
@@ -7690,10 +7840,6 @@
     "named": false
   },
   {
-    "type": "^",
-    "named": false
-  },
-  {
     "type": "^=",
     "named": false
   },
@@ -7703,6 +7849,18 @@
   },
   {
     "type": "and",
+    "named": false
+  },
+  {
+    "type": "bitand",
+    "named": false
+  },
+  {
+    "type": "bitor",
+    "named": false
+  },
+  {
+    "type": "bitxor",
     "named": false
   },
   {
@@ -7806,6 +7964,10 @@
     "named": false
   },
   {
+    "type": "mapf",
+    "named": false
+  },
+  {
     "type": "match",
     "named": false
   },
@@ -7867,10 +8029,6 @@
   },
   {
     "type": "{",
-    "named": false
-  },
-  {
-    "type": "|",
     "named": false
   },
   {

@@ -148,6 +148,7 @@ module.exports = grammar({
             $.identifier,
             $.if,
             $.integer_literal,
+            $.mapf,
             $.match,
             $.member_access,
             $.paren,
@@ -171,6 +172,7 @@ module.exports = grammar({
             $.identifier,
             $.if,
             $.integer_literal,
+            $.mapf,
             $.match,
             $.member_access,
             $.paren,
@@ -259,7 +261,7 @@ module.exports = grammar({
         // call_repeat1 precedence to ensure that, if a call does apply, it is a
         // call, and not just two expressions back-to-back.
         call: $ => choice($._forced_call, $._multi_call),
-        _forced_call: $ => seq($._expr, "(", ")"),
+        _forced_call: $ => prec(1, seq($._expr, "(", ")")),
         _multi_call: $ => prec.right(seq(
             $._expr,
             $._expr_except_unary_binary,
@@ -279,8 +281,8 @@ module.exports = grammar({
         _call_arg: $ => prec(90, $._expr_except_unary_binary),
 
         // A paren expression does not open up a new scope.
-        paren: $ => seq("(", $._PTEL, ")"),
-        // A block expression 's contained expressions are parsee within a new scope.
+        paren: $ => seq("(", optional($._PTEL), ")"),
+        // A block expression 's contained expressions are parsed within a new scope.
         block: $ => seq("{", optional($._PTEL), "}"),
 
         match: $ => prec(1, seq(
@@ -355,9 +357,9 @@ module.exports = grammar({
 
         bitshl: $ => prec.left(400, seq($._expr_except_call, "<<", $._expr_except_call)),
         bitshr: $ => prec.left(400, seq($._expr_except_call, ">>", $._expr_except_call)),
-        bitand: $ => prec.left(300, seq($._expr_except_call, "&", $._expr_except_call)),
-        bitor: $ => prec.left(300, seq($._expr_except_call, "|", $._expr_except_call)),
-        bitxor: $ => prec.left(300, seq($._expr_except_call, "^", $._expr_except_call)),
+        bitand: $ => prec.left(300, seq($._expr_except_call, "bitand", $._expr_except_call)),
+        bitor: $ => prec.left(300, seq($._expr_except_call, "bitor", $._expr_except_call)),
+        bitxor: $ => prec.left(300, seq($._expr_except_call, "bitxor", $._expr_except_call)),
 
         add_eq:       $ => prec.left(100, seq($._expr_except_call, "+=", $._expr_except_call)),
         subtract_eq:  $ => prec.left(100, seq($._expr_except_call, "-=", $._expr_except_call)),
@@ -414,6 +416,14 @@ module.exports = grammar({
         // CONTROL FLOW END
         // ================
 
+        mapf: $ => prec.right(seq(
+            "mapf",
+            field("function", $._expr),
+            repeat(seq(
+                $._soft_expression_separator,
+                field("argument_list", $.paren)
+            ))
+        )),
 
         return: $ => prec.right(seq(
             "return",
