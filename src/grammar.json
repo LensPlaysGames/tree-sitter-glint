@@ -2426,6 +2426,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "_number_bin"
+        },
+        {
+          "type": "SYMBOL",
           "name": "_number_hex"
         },
         {
@@ -2558,16 +2562,20 @@
     },
     "_number_dec": {
       "type": "PATTERN",
-      "value": "\\d+"
+      "value": "[\\d\\']+"
+    },
+    "_number_bin": {
+      "type": "PATTERN",
+      "value": "0b[01\\']+"
     },
     "_number_hex": {
       "type": "PATTERN",
-      "value": "0x[0-9a-f]+",
+      "value": "0x[0-9a-f\\']+",
       "flags": "i"
     },
     "_number_oct": {
       "type": "PATTERN",
-      "value": "0o?[0-7]+"
+      "value": "0o?[0-7\\']+"
     },
     "comment": {
       "type": "PATTERN",

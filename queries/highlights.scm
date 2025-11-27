@@ -41,6 +41,8 @@
   "print"
 
   "return"
+
+  "mapf"
 ] @keyword
 
 [

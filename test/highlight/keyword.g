@@ -39,3 +39,12 @@
    for x in y, z;
 ;; ^^^ keyword
 ;;       ^^ keyword
+
+   mapf foo;
+;; ^^^^ keyword
+
+   mapf foo, (bar, baz);
+;; ^^^^ keyword
+
+   mapf foo, (bar, baz), (goo, jaz);
+;; ^^^^ keyword

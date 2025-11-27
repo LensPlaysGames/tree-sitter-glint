@@ -50,6 +50,61 @@ Integer Literal, Parens
  (paren (integer_literal)))
 
 ================
+Integer Literal, Digit Separator
+================
+
+6'9;
+
+---
+
+(source_file
+ (integer_literal))
+
+================
+Integer Literal, Hex
+================
+
+0x69;
+
+---
+
+(source_file
+ (integer_literal))
+
+================
+Integer Literal, Octal
+================
+
+0o67;
+
+---
+
+(source_file
+ (integer_literal))
+
+================
+Integer Literal, Binary
+================
+
+0b01000101;
+
+---
+
+(source_file
+ (integer_literal))
+
+================
+Integer Literal, Binary, Digit Separator
+================
+
+0b'0100'0101;
+
+---
+
+(source_file
+ (integer_literal))
+
+================
 Empty String Literal, Escapable, No Escapes
 ================
 

@@ -452,6 +452,7 @@ module.exports = grammar({
 
         integer_literal: $ => choice(
             $._number_dec,
+            $._number_bin,
             $._number_hex,
             $._number_oct,
         ),
@@ -482,9 +483,10 @@ module.exports = grammar({
         _soft_expression_separator: $ => ",",
 
         identifier: $ => /[a-z\$_][a-z0-9_!\$@]*/i,
-        _number_dec: $ => /\d+/,
-        _number_hex: $ => /0x[0-9a-f]+/i,
-        _number_oct: $ => /0o?[0-7]+/,
+        _number_dec: $ => /[\d\']+/,
+        _number_bin: $ => /0b[01\']+/,
+        _number_hex: $ => /0x[0-9a-f\']+/i,
+        _number_oct: $ => /0o?[0-7\']+/,
         comment: $ => /;;.*/
     }
 });
