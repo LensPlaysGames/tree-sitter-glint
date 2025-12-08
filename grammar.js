@@ -129,17 +129,35 @@ module.exports = grammar({
         // EXPRESSIONS
         // ================
 
-        // Possibly Terminated Expression List
-        _PTEL: $ => repeat1(prec.right(seq($._expr, optional($._expression_separator)))),
+        _expr: $ => prec.right(1, $._B),
+        _expr_terminated: $ => seq($._L, $._hard_expression_separator),
+        // possibly terminated expression list
+        _PTEL: $ => choice($._M, $._E),
 
-        _expr_terminated: $ => seq($._expr, $._hard_expression_separator),
 
-        _expr: $ => prec(5, choice($._unary_binary, $._expr_except_unary_binary)),
+        // multi expression
+        _M: $ => seq(
+            repeat1($._expr_terminated),
+            $._E
+        ),
 
-        _expr_except_unary_binary: $ => choice(
+        _E: $ => seq(
+            $._L,
+            optional($._hard_expression_separator)
+        ),
+
+        _L: $ => prec.right(seq(
+            $._B,
+            repeat(prec.right(seq(
+                $._soft_expression_separator,
+                $._B
+            )))
+        )),
+
+        _B: $ => choice(
             $._binary,
             $._type,
-            $._unary_notbinary,
+            $._unary,
             $.block,
             $.bool_literal,
             $.byte_literal,
@@ -148,7 +166,7 @@ module.exports = grammar({
             $.identifier,
             $.if,
             $.integer_literal,
-            $.mapf,
+            $.apply,
             $.match,
             $.member_access,
             $.paren,
@@ -159,29 +177,6 @@ module.exports = grammar({
             $.type_expr,
             $.while,
         ),
-
-        _expr_except_call: $ => prec(1, choice(
-            $._binary,
-            $._type,
-            $._unary_binary,
-            $._unary_notbinary,
-            $.block,
-            $.bool_literal,
-            $.byte_literal,
-            $.cfor,
-            $.identifier,
-            $.if,
-            $.integer_literal,
-            $.mapf,
-            $.match,
-            $.member_access,
-            $.paren,
-            $.rangedfor,
-            $.return,
-            $.string_literal,
-            $.type_expr,
-            $.while,
-        )),
 
         type_expr: $ => prec(99, seq(":", $._type)),
 
@@ -225,7 +220,7 @@ module.exports = grammar({
 
         ),
 
-        subscript: $ => prec(10010, seq($._expr_except_call, "[", $._expr, "]")),
+        subscript: $ => prec(10010, seq($._expr, "[", $._expr, "]")),
 
         assign: $ => prec.right(100, seq($._expr, ":=", prec.right($._expr))),
         declaration: $ => prec.right(6, choice(
@@ -246,9 +241,14 @@ module.exports = grammar({
         )),
         _decl_inferred: $ => prec.right(seq("::", field("init", $._expr))),
 
-        // if types are expressions with no prefix, array types beginning with "[" token should go here.
-        _unary_binary: $ => choice($.negate, $.addressof),
-        _unary_notbinary: $ => choice($.dereference, $.increment, $.decrement, $.logical_negate),
+        _unary: $ => choice(
+            $.negate,
+            $.addressof,
+            $.dereference,
+            $.increment,
+            $.decrement,
+            $.logical_negate
+        ),
 
         dereference: $ => seq("@", prec.right(10000, $._expr)),
         addressof: $ => seq("&", prec.right(10000, $._expr)),
@@ -261,31 +261,35 @@ module.exports = grammar({
         // call_repeat1 precedence to ensure that, if a call does apply, it is a
         // call, and not just two expressions back-to-back.
         call: $ => choice($._forced_call, $._multi_call),
-        _forced_call: $ => prec(1, seq($._expr, "(", ")")),
+        _forced_call: $ => prec(10, seq($._expr, "(", ")")),
         _multi_call: $ => prec.right(seq(
-            $._expr,
-            $._expr_except_unary_binary,
-            repeat(seq($._soft_expression_separator, $._call_arg))
+            $._B,
+            $._L
         )),
 
         // Can syntactically represent as a regular call, but, we include this for
         // extra information purposes.
         print: $ => prec.right(seq(
             "print",
-            optional(seq(
-                $._expr_except_unary_binary,
-                repeat(seq($._soft_expression_separator, $._call_arg))
-            ))
+            optional($._L)
         )),
 
-        _call_arg: $ => prec(90, $._expr_except_unary_binary),
+        _call_arg: $ => prec(90, $._expr),
 
         // A paren expression does not open up a new scope.
-        paren: $ => seq("(", optional($._PTEL), ")"),
+        paren: $ => seq(
+            "(",
+            optional($._PTEL),
+            ")"
+        ),
         // A block expression 's contained expressions are parsed within a new scope.
-        block: $ => seq("{", optional($._PTEL), "}"),
+        block: $ => seq(
+            "{",
+            optional($._PTEL),
+            "}"
+        ),
 
-        match: $ => prec(1, seq(
+        match: $ => prec(10, seq(
             "match",
             field("object", $._expr),
             "{",
@@ -339,38 +343,38 @@ module.exports = grammar({
 
         // note that + left or right precedence doesn't matter for these
         // operators, but we pick one to be unambiguous in the grammar.
-        add:       $ => prec.left(500, seq($._expr_except_call, "+", $._expr_except_call)),
-        subtract:  $ => prec.left(500, seq($._expr_except_call, "-", $._expr_except_call)),
-        multiply:  $ => prec.left(600, seq($._expr_except_call, "*", $._expr_except_call)),
-        divide:    $ => prec.left(600, seq($._expr_except_call, "/", $._expr_except_call)),
-        remainder: $ => prec.left(600, seq($._expr_except_call, "%", $._expr_except_call)),
+        add:       $ => prec.left(500, seq($._expr, "+", $._expr)),
+        subtract:  $ => prec.left(500, seq($._expr, "-", $._expr)),
+        multiply:  $ => prec.left(600, seq($._expr, "*", $._expr)),
+        divide:    $ => prec.left(600, seq($._expr, "/", $._expr)),
+        remainder: $ => prec.left(600, seq($._expr, "%", $._expr)),
 
-        eq: $ => prec.left(200, seq($._expr_except_call, "=", $._expr_except_call)),
-        ne: $ => prec.left(200, seq($._expr_except_call, "!=", $._expr_except_call)),
-        gt: $ => prec.left(200, seq($._expr_except_call, ">", $._expr_except_call)),
-        ge: $ => prec.left(200, seq($._expr_except_call, ">=", $._expr_except_call)),
-        lt: $ => prec.left(200, seq($._expr_except_call, "<", $._expr_except_call)),
-        le: $ => prec.left(200, seq($._expr_except_call, "<=", $._expr_except_call)),
+        eq: $ => prec.left(200, seq($._expr, "=", $._expr)),
+        ne: $ => prec.left(200, seq($._expr, "!=", $._expr)),
+        gt: $ => prec.left(200, seq($._expr, ">", $._expr)),
+        ge: $ => prec.left(200, seq($._expr, ">=", $._expr)),
+        lt: $ => prec.left(200, seq($._expr, "<", $._expr)),
+        le: $ => prec.left(200, seq($._expr, "<=", $._expr)),
 
-        and: $ => prec.left(150, seq($._expr_except_call, "and", $._expr_except_call)),
-        or: $ => prec.left(145, seq($._expr_except_call, "or", $._expr_except_call)),
+        and: $ => prec.left(150, seq($._expr, "and", $._expr)),
+        or: $ => prec.left(145, seq($._expr, "or", $._expr)),
 
-        bitshl: $ => prec.left(400, seq($._expr_except_call, "<<", $._expr_except_call)),
-        bitshr: $ => prec.left(400, seq($._expr_except_call, ">>", $._expr_except_call)),
-        bitand: $ => prec.left(300, seq($._expr_except_call, "bitand", $._expr_except_call)),
-        bitor: $ => prec.left(300, seq($._expr_except_call, "bitor", $._expr_except_call)),
-        bitxor: $ => prec.left(300, seq($._expr_except_call, "bitxor", $._expr_except_call)),
+        bitshl: $ => prec.left(400, seq($._expr, "<<", $._expr)),
+        bitshr: $ => prec.left(400, seq($._expr, ">>", $._expr)),
+        bitand: $ => prec.left(300, seq($._expr, "bitand", $._expr)),
+        bitor: $ => prec.left(300, seq($._expr, "bitor", $._expr)),
+        bitxor: $ => prec.left(300, seq($._expr, "bitxor", $._expr)),
 
-        add_eq:       $ => prec.left(100, seq($._expr_except_call, "+=", $._expr_except_call)),
-        subtract_eq:  $ => prec.left(100, seq($._expr_except_call, "-=", $._expr_except_call)),
-        multiply_eq:  $ => prec.left(100, seq($._expr_except_call, "*=", $._expr_except_call)),
-        divide_eq:    $ => prec.left(100, seq($._expr_except_call, "/=", $._expr_except_call)),
-        remainder_eq: $ => prec.left(100, seq($._expr_except_call, "%=", $._expr_except_call)),
-        tilde_eq:     $ => prec.left(100, seq($._expr_except_call, "~=", $._expr_except_call)),
-        ampersand_eq: $ => prec.left(100, seq($._expr_except_call, "&=", $._expr_except_call)),
-        pipe_eq:      $ => prec.left(100, seq($._expr_except_call, "|=", $._expr_except_call)),
-        caret_eq:     $ => prec.left(100, seq($._expr_except_call, "^=", $._expr_except_call)),
-        lbrack_eq:    $ => prec.left(100, seq($._expr_except_call, "[=", $._expr_except_call)),
+        add_eq:       $ => prec.left(100, seq($._expr, "+=", $._expr)),
+        subtract_eq:  $ => prec.left(100, seq($._expr, "-=", $._expr)),
+        multiply_eq:  $ => prec.left(100, seq($._expr, "*=", $._expr)),
+        divide_eq:    $ => prec.left(100, seq($._expr, "/=", $._expr)),
+        remainder_eq: $ => prec.left(100, seq($._expr, "%=", $._expr)),
+        tilde_eq:     $ => prec.left(100, seq($._expr, "~=", $._expr)),
+        ampersand_eq: $ => prec.left(100, seq($._expr, "&=", $._expr)),
+        pipe_eq:      $ => prec.left(100, seq($._expr, "|=", $._expr)),
+        caret_eq:     $ => prec.left(100, seq($._expr, "^=", $._expr)),
+        lbrack_eq:    $ => prec.left(100, seq($._expr, "[=", $._expr)),
         // ================
         // BINARY OPERATORS END
         // ================
@@ -416,8 +420,8 @@ module.exports = grammar({
         // CONTROL FLOW END
         // ================
 
-        mapf: $ => prec.right(seq(
-            "mapf",
+        apply: $ => prec.right(seq(
+            "apply",
             field("function", $._expr),
             repeat(seq(
                 $._soft_expression_separator,
@@ -431,7 +435,7 @@ module.exports = grammar({
         )),
 
         member_access: $ => prec(1000000000, seq(
-            $._expr_except_call,
+            $._expr,
             ".",
             $.identifier
         )),

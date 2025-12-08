@@ -28,6 +28,10 @@
         "named": true
       },
       {
+        "type": "apply",
+        "named": true
+      },
+      {
         "type": "assign",
         "named": true
       },
@@ -137,10 +141,6 @@
       },
       {
         "type": "lt",
-        "named": true
-      },
-      {
-        "type": "mapf",
         "named": true
       },
       {
@@ -292,215 +292,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -515,215 +307,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -753,215 +337,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -976,218 +352,36 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
+    }
+  },
+  {
+    "type": "apply",
+    "named": true,
+    "fields": {
+      "argument_list": {
+        "multiple": true,
+        "required": false,
+        "types": [
+          {
+            "type": "paren",
+            "named": true
+          }
+        ]
+      },
+      "function": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      }
     }
   },
   {
@@ -1214,215 +408,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -1437,215 +423,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -1660,215 +438,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -1883,215 +453,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -2106,215 +468,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -2329,46 +483,6 @@
       "required": false,
       "types": [
         {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "bool_literal",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "byte_literal",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "call",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "caret_eq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
           "type": "_type",
           "named": true
         },
@@ -2393,3699 +507,7 @@
           "named": true
         },
         {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "cfor",
-    "named": true,
-    "fields": {
-      "body": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      },
-      "condition": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": ";",
-            "named": false
-          },
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      },
-      "increment": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": ";",
-            "named": false
-          },
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      },
-      "init": {
-        "multiple": true,
-        "required": true,
-        "types": [
-          {
-            "type": ";",
-            "named": false
-          },
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "declaration",
-    "named": true,
-    "fields": {
-      "init": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      },
-      "name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
-      "supplanted_type": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_type",
-            "named": true
-          }
-        ]
-      },
-      "type": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_type",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": false,
-      "required": false,
-      "types": [
-        {
-          "type": "storage_specifier",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "decrement",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "dereference",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "divide",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "divide_eq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "eq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "ge",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "gt",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "if",
-    "named": true,
-    "fields": {
-      "condition": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      },
-      "otherwise": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      },
-      "then": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "increment",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "integer_literal",
-    "named": true,
-    "fields": {}
-  },
-  {
-    "type": "lbrack_eq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "le",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "logical_negate",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "lt",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "mapf",
-    "named": true,
-    "fields": {
-      "argument_list": {
-        "multiple": true,
-        "required": false,
-        "types": [
-          {
-            "type": "paren",
-            "named": true
-          }
-        ]
-      },
-      "function": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "match",
-    "named": true,
-    "fields": {
-      "object": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_expr",
-            "named": true
-          }
-        ]
-      }
-    },
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "member_access",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "module_declaration",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "module_import",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "multiply",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "multiply_eq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "ne",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "negate",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": false,
-      "required": true,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "or",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "param_decl",
-    "named": true,
-    "fields": {
-      "name": {
-        "multiple": false,
-        "required": false,
-        "types": [
-          {
-            "type": "identifier",
-            "named": true
-          }
-        ]
-      },
-      "type": {
-        "multiple": false,
-        "required": true,
-        "types": [
-          {
-            "type": "_type",
-            "named": true
-          }
-        ]
-      }
-    }
-  },
-  {
-    "type": "paren",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "_expr",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "pipe_eq",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": true,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
-          "named": true
-        }
-      ]
-    }
-  },
-  {
-    "type": "print",
-    "named": true,
-    "fields": {},
-    "children": {
-      "multiple": true,
-      "required": false,
-      "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
+          "type": "apply",
           "named": true
         },
         {
@@ -6197,7 +619,1443 @@
           "named": true
         },
         {
-          "type": "mapf",
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "negate",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "paren",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_expr",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "bool_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "byte_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "call",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "caret_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "cfor",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      },
+      "condition": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "_type",
+            "named": true
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "addressof",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "apply",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "paren",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_expr",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "increment": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "_type",
+            "named": true
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "addressof",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "apply",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "paren",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_expr",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      },
+      "init": {
+        "multiple": true,
+        "required": true,
+        "types": [
+          {
+            "type": ",",
+            "named": false
+          },
+          {
+            "type": ";",
+            "named": false
+          },
+          {
+            "type": "_type",
+            "named": true
+          },
+          {
+            "type": "add",
+            "named": true
+          },
+          {
+            "type": "add_eq",
+            "named": true
+          },
+          {
+            "type": "addressof",
+            "named": true
+          },
+          {
+            "type": "ampersand_eq",
+            "named": true
+          },
+          {
+            "type": "and",
+            "named": true
+          },
+          {
+            "type": "apply",
+            "named": true
+          },
+          {
+            "type": "assign",
+            "named": true
+          },
+          {
+            "type": "bitand",
+            "named": true
+          },
+          {
+            "type": "bitor",
+            "named": true
+          },
+          {
+            "type": "bitshl",
+            "named": true
+          },
+          {
+            "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitxor",
+            "named": true
+          },
+          {
+            "type": "block",
+            "named": true
+          },
+          {
+            "type": "bool_literal",
+            "named": true
+          },
+          {
+            "type": "byte_literal",
+            "named": true
+          },
+          {
+            "type": "call",
+            "named": true
+          },
+          {
+            "type": "caret_eq",
+            "named": true
+          },
+          {
+            "type": "cfor",
+            "named": true
+          },
+          {
+            "type": "declaration",
+            "named": true
+          },
+          {
+            "type": "decrement",
+            "named": true
+          },
+          {
+            "type": "dereference",
+            "named": true
+          },
+          {
+            "type": "divide",
+            "named": true
+          },
+          {
+            "type": "divide_eq",
+            "named": true
+          },
+          {
+            "type": "eq",
+            "named": true
+          },
+          {
+            "type": "ge",
+            "named": true
+          },
+          {
+            "type": "gt",
+            "named": true
+          },
+          {
+            "type": "if",
+            "named": true
+          },
+          {
+            "type": "increment",
+            "named": true
+          },
+          {
+            "type": "integer_literal",
+            "named": true
+          },
+          {
+            "type": "lbrack_eq",
+            "named": true
+          },
+          {
+            "type": "le",
+            "named": true
+          },
+          {
+            "type": "logical_negate",
+            "named": true
+          },
+          {
+            "type": "lt",
+            "named": true
+          },
+          {
+            "type": "match",
+            "named": true
+          },
+          {
+            "type": "member_access",
+            "named": true
+          },
+          {
+            "type": "multiply",
+            "named": true
+          },
+          {
+            "type": "multiply_eq",
+            "named": true
+          },
+          {
+            "type": "ne",
+            "named": true
+          },
+          {
+            "type": "negate",
+            "named": true
+          },
+          {
+            "type": "or",
+            "named": true
+          },
+          {
+            "type": "paren",
+            "named": true
+          },
+          {
+            "type": "pipe_eq",
+            "named": true
+          },
+          {
+            "type": "print",
+            "named": true
+          },
+          {
+            "type": "rangedfor",
+            "named": true
+          },
+          {
+            "type": "remainder",
+            "named": true
+          },
+          {
+            "type": "remainder_eq",
+            "named": true
+          },
+          {
+            "type": "return",
+            "named": true
+          },
+          {
+            "type": "string_literal",
+            "named": true
+          },
+          {
+            "type": "subscript",
+            "named": true
+          },
+          {
+            "type": "subtract",
+            "named": true
+          },
+          {
+            "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "tilde_eq",
+            "named": true
+          },
+          {
+            "type": "type_expr",
+            "named": true
+          },
+          {
+            "type": "while",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "declaration",
+    "named": true,
+    "fields": {
+      "init": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      },
+      "name": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "supplanted_type": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_type",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_type",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "storage_specifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "decrement",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "dereference",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "divide",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "divide_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ge",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "gt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "if",
+    "named": true,
+    "fields": {
+      "condition": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      },
+      "otherwise": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      },
+      "then": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "increment",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "integer_literal",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "lbrack_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "le",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "logical_negate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "lt",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "match",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "member_access",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "module_declaration",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "module_import",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "multiply",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "multiply_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "ne",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "negate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "or",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "param_decl",
+    "named": true,
+    "fields": {
+      "name": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
+      "type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_type",
+            "named": true
+          }
+        ]
+      }
+    }
+  },
+  {
+    "type": "paren",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "addressof",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "apply",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
           "named": true
         },
         {
@@ -6218,6 +2076,256 @@
         },
         {
           "type": "ne",
+          "named": true
+        },
+        {
+          "type": "negate",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "paren",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_expr",
+          "named": true
+        },
+        {
+          "type": "while",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "pipe_eq",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "print",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "_type",
+          "named": true
+        },
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "addressof",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "apply",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "negate",
           "named": true
         },
         {
@@ -6328,215 +2436,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -6551,215 +2451,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -6789,7 +2481,147 @@
       "required": false,
       "types": [
         {
-          "type": "_expr",
+          "type": "_type",
+          "named": true
+        },
+        {
+          "type": "add",
+          "named": true
+        },
+        {
+          "type": "add_eq",
+          "named": true
+        },
+        {
+          "type": "addressof",
+          "named": true
+        },
+        {
+          "type": "ampersand_eq",
+          "named": true
+        },
+        {
+          "type": "and",
+          "named": true
+        },
+        {
+          "type": "apply",
+          "named": true
+        },
+        {
+          "type": "assign",
+          "named": true
+        },
+        {
+          "type": "bitand",
+          "named": true
+        },
+        {
+          "type": "bitor",
+          "named": true
+        },
+        {
+          "type": "bitshl",
+          "named": true
+        },
+        {
+          "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitxor",
+          "named": true
+        },
+        {
+          "type": "block",
+          "named": true
+        },
+        {
+          "type": "bool_literal",
+          "named": true
+        },
+        {
+          "type": "byte_literal",
+          "named": true
+        },
+        {
+          "type": "call",
+          "named": true
+        },
+        {
+          "type": "caret_eq",
+          "named": true
+        },
+        {
+          "type": "cfor",
+          "named": true
+        },
+        {
+          "type": "declaration",
+          "named": true
+        },
+        {
+          "type": "decrement",
+          "named": true
+        },
+        {
+          "type": "dereference",
+          "named": true
+        },
+        {
+          "type": "divide",
+          "named": true
+        },
+        {
+          "type": "divide_eq",
+          "named": true
+        },
+        {
+          "type": "eq",
+          "named": true
+        },
+        {
+          "type": "ge",
+          "named": true
+        },
+        {
+          "type": "gt",
+          "named": true
+        },
+        {
+          "type": "if",
+          "named": true
+        },
+        {
+          "type": "increment",
+          "named": true
+        },
+        {
+          "type": "integer_literal",
+          "named": true
+        },
+        {
+          "type": "lbrack_eq",
+          "named": true
+        },
+        {
+          "type": "le",
+          "named": true
+        },
+        {
+          "type": "logical_negate",
+          "named": true
+        },
+        {
+          "type": "lt",
+          "named": true
+        },
+        {
+          "type": "match",
+          "named": true
+        },
+        {
+          "type": "member_access",
           "named": true
         },
         {
@@ -6798,6 +2630,82 @@
         },
         {
           "type": "module_import",
+          "named": true
+        },
+        {
+          "type": "multiply",
+          "named": true
+        },
+        {
+          "type": "multiply_eq",
+          "named": true
+        },
+        {
+          "type": "ne",
+          "named": true
+        },
+        {
+          "type": "negate",
+          "named": true
+        },
+        {
+          "type": "or",
+          "named": true
+        },
+        {
+          "type": "paren",
+          "named": true
+        },
+        {
+          "type": "pipe_eq",
+          "named": true
+        },
+        {
+          "type": "print",
+          "named": true
+        },
+        {
+          "type": "rangedfor",
+          "named": true
+        },
+        {
+          "type": "remainder",
+          "named": true
+        },
+        {
+          "type": "remainder_eq",
+          "named": true
+        },
+        {
+          "type": "return",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "subscript",
+          "named": true
+        },
+        {
+          "type": "subtract",
+          "named": true
+        },
+        {
+          "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "tilde_eq",
+          "named": true
+        },
+        {
+          "type": "type_expr",
+          "named": true
+        },
+        {
+          "type": "while",
           "named": true
         }
       ]
@@ -6837,215 +2745,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -7060,215 +2760,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -7283,215 +2775,7 @@
       "required": true,
       "types": [
         {
-          "type": "_type",
-          "named": true
-        },
-        {
-          "type": "add",
-          "named": true
-        },
-        {
-          "type": "add_eq",
-          "named": true
-        },
-        {
-          "type": "addressof",
-          "named": true
-        },
-        {
-          "type": "ampersand_eq",
-          "named": true
-        },
-        {
-          "type": "and",
-          "named": true
-        },
-        {
-          "type": "assign",
-          "named": true
-        },
-        {
-          "type": "bitand",
-          "named": true
-        },
-        {
-          "type": "bitor",
-          "named": true
-        },
-        {
-          "type": "bitshl",
-          "named": true
-        },
-        {
-          "type": "bitshr",
-          "named": true
-        },
-        {
-          "type": "bitxor",
-          "named": true
-        },
-        {
-          "type": "block",
-          "named": true
-        },
-        {
-          "type": "bool_literal",
-          "named": true
-        },
-        {
-          "type": "byte_literal",
-          "named": true
-        },
-        {
-          "type": "caret_eq",
-          "named": true
-        },
-        {
-          "type": "cfor",
-          "named": true
-        },
-        {
-          "type": "declaration",
-          "named": true
-        },
-        {
-          "type": "decrement",
-          "named": true
-        },
-        {
-          "type": "dereference",
-          "named": true
-        },
-        {
-          "type": "divide",
-          "named": true
-        },
-        {
-          "type": "divide_eq",
-          "named": true
-        },
-        {
-          "type": "eq",
-          "named": true
-        },
-        {
-          "type": "ge",
-          "named": true
-        },
-        {
-          "type": "gt",
-          "named": true
-        },
-        {
-          "type": "if",
-          "named": true
-        },
-        {
-          "type": "increment",
-          "named": true
-        },
-        {
-          "type": "integer_literal",
-          "named": true
-        },
-        {
-          "type": "lbrack_eq",
-          "named": true
-        },
-        {
-          "type": "le",
-          "named": true
-        },
-        {
-          "type": "logical_negate",
-          "named": true
-        },
-        {
-          "type": "lt",
-          "named": true
-        },
-        {
-          "type": "mapf",
-          "named": true
-        },
-        {
-          "type": "match",
-          "named": true
-        },
-        {
-          "type": "member_access",
-          "named": true
-        },
-        {
-          "type": "multiply",
-          "named": true
-        },
-        {
-          "type": "multiply_eq",
-          "named": true
-        },
-        {
-          "type": "ne",
-          "named": true
-        },
-        {
-          "type": "negate",
-          "named": true
-        },
-        {
-          "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
-          "named": true
-        },
-        {
-          "type": "pipe_eq",
-          "named": true
-        },
-        {
-          "type": "rangedfor",
-          "named": true
-        },
-        {
-          "type": "remainder",
-          "named": true
-        },
-        {
-          "type": "remainder_eq",
-          "named": true
-        },
-        {
-          "type": "return",
-          "named": true
-        },
-        {
-          "type": "string_literal",
-          "named": true
-        },
-        {
-          "type": "subscript",
-          "named": true
-        },
-        {
-          "type": "subtract",
-          "named": true
-        },
-        {
-          "type": "subtract_eq",
-          "named": true
-        },
-        {
-          "type": "tilde_eq",
-          "named": true
-        },
-        {
-          "type": "type_expr",
-          "named": true
-        },
-        {
-          "type": "while",
+          "type": "_expr",
           "named": true
         }
       ]
@@ -7852,6 +3136,10 @@
     "named": false
   },
   {
+    "type": "apply",
+    "named": false
+  },
+  {
     "type": "bitand",
     "named": false
   },
@@ -7961,10 +3249,6 @@
   },
   {
     "type": "int",
-    "named": false
-  },
-  {
-    "type": "mapf",
     "named": false
   },
   {
