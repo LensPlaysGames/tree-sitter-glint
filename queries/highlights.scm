@@ -42,7 +42,7 @@
 
   "return"
 
-  "mapf"
+  "apply"
 ] @keyword
 
 [
