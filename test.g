@@ -1,2 +1,2 @@
-mapf foo, (bar, baz);
-mapf foo, (bar, baz) (goo, jaz);
+apply foo, (bar, baz);
+apply foo, (bar, baz), (goo, jaz);
