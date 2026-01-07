@@ -505,7 +505,7 @@ Or
 Bitwise Conjunction
 ================
 
-341 bitand 69;
+341 bit& 69;
 
 ---
 
@@ -518,7 +518,7 @@ Bitwise Conjunction
 Bitwise Disjunction
 ================
 
-1 bitor 68;
+1 bit| 68;
 
 ---
 
@@ -531,7 +531,7 @@ Bitwise Disjunction
 Bitwise Exclusive Conjunction
 ================
 
-338 bitxor 279;
+338 bit^ 279;
 
 ---
 

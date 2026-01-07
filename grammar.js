@@ -247,7 +247,8 @@ export default grammar({
             $.dereference,
             $.increment,
             $.decrement,
-            $.logical_negate
+            $.logical_negate,
+            $.bitwise_negate
         ),
 
         dereference: $ => seq("@", prec.right(10000, $._expr)),
@@ -256,6 +257,7 @@ export default grammar({
         increment: $ => seq("++", prec.right(10000, $._expr)),
         decrement: $ => seq("--", prec.right(10000, $._expr)),
         logical_negate: $ => seq(choice("!", "not"), prec.right(10000, $._expr)),
+        bitwise_negate: $ => seq("bit~", prec.right(10000, $._expr)),
 
         // Use paren to "escape" back to a grammar that accepts a unary expression as an argument
         // call_repeat1 precedence to ensure that, if a call does apply, it is a
@@ -361,9 +363,9 @@ export default grammar({
 
         bitshl: $ => prec.left(400, seq($._expr, "<<", $._expr)),
         bitshr: $ => prec.left(400, seq($._expr, ">>", $._expr)),
-        bitand: $ => prec.left(300, seq($._expr, "bitand", $._expr)),
-        bitor: $ => prec.left(300, seq($._expr, "bitor", $._expr)),
-        bitxor: $ => prec.left(300, seq($._expr, "bitxor", $._expr)),
+        bitand: $ => prec.left(300, seq($._expr, "bit&", $._expr)),
+        bitor: $ => prec.left(300, seq($._expr, "bit|", $._expr)),
+        bitxor: $ => prec.left(300, seq($._expr, "bit^", $._expr)),
 
         add_eq:       $ => prec.left(100, seq($._expr, "+=", $._expr)),
         subtract_eq:  $ => prec.left(100, seq($._expr, "-=", $._expr)),

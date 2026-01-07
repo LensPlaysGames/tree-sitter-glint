@@ -1000,6 +1000,10 @@
         {
           "type": "SYMBOL",
           "name": "logical_negate"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "bitwise_negate"
         }
       ]
     },
@@ -1103,6 +1107,23 @@
               "value": "not"
             }
           ]
+        },
+        {
+          "type": "PREC_RIGHT",
+          "value": 10000,
+          "content": {
+            "type": "SYMBOL",
+            "name": "_expr"
+          }
+        }
+      ]
+    },
+    "bitwise_negate": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "bit~"
         },
         {
           "type": "PREC_RIGHT",
@@ -1769,7 +1790,7 @@
           },
           {
             "type": "STRING",
-            "value": "bitand"
+            "value": "bit&"
           },
           {
             "type": "SYMBOL",
@@ -1790,7 +1811,7 @@
           },
           {
             "type": "STRING",
-            "value": "bitor"
+            "value": "bit|"
           },
           {
             "type": "SYMBOL",
@@ -1811,7 +1832,7 @@
           },
           {
             "type": "STRING",
-            "value": "bitxor"
+            "value": "bit^"
           },
           {
             "type": "SYMBOL",

@@ -1,0 +1,98 @@
+================
+Negate
+================
+
+-0;
+
+---
+
+(source_file
+ (negate (integer_literal)))
+
+================
+Negate, Logical (!)
+================
+
+!x;
+
+---
+
+(source_file
+ (logical_negate (identifier)))
+
+================
+Negate, Logical (not)
+================
+
+not x;
+
+---
+
+(source_file
+ (logical_negate (identifier)))
+
+================
+NOT Negate, Logical (not)
+================
+
+notx;
+
+---
+
+(source_file
+ (identifier))
+
+================
+Negate, Bitwise
+================
+
+bit~ 0;
+
+---
+
+(source_file
+ (bitwise_negate (integer_literal)))
+
+================
+Address Of
+================
+
+&x;
+
+---
+
+(source_file
+ (addressof (identifier)))
+
+================
+At (Dereference/Load)
+================
+
+@x;
+
+---
+
+(source_file
+ (dereference (identifier)))
+
+================
+Prefix Increment
+================
+
+++x;
+
+---
+
+(source_file
+ (increment (identifier)))
+
+================
+Prefix Decrement
+================
+
+--x;
+
+---
+
+(source_file
+ (decrement (identifier)))

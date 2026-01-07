@@ -52,6 +52,10 @@
         "named": true
       },
       {
+        "type": "bitwise_negate",
+        "named": true
+      },
+      {
         "type": "bitxor",
         "named": true
       },
@@ -460,6 +464,21 @@
     }
   },
   {
+    "type": "bitwise_negate",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "bitxor",
     "named": true,
     "fields": {},
@@ -528,6 +547,10 @@
         },
         {
           "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitwise_negate",
           "named": true
         },
         {
@@ -820,6 +843,10 @@
             "named": true
           },
           {
+            "type": "bitwise_negate",
+            "named": true
+          },
+          {
             "type": "bitxor",
             "named": true
           },
@@ -1054,6 +1081,10 @@
             "named": true
           },
           {
+            "type": "bitwise_negate",
+            "named": true
+          },
+          {
             "type": "bitxor",
             "named": true
           },
@@ -1285,6 +1316,10 @@
           },
           {
             "type": "bitshr",
+            "named": true
+          },
+          {
+            "type": "bitwise_negate",
             "named": true
           },
           {
@@ -1971,6 +2006,10 @@
           "named": true
         },
         {
+          "type": "bitwise_negate",
+          "named": true
+        },
+        {
           "type": "bitxor",
           "named": true
         },
@@ -2214,6 +2253,10 @@
         },
         {
           "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitwise_negate",
           "named": true
         },
         {
@@ -2527,6 +2570,10 @@
         },
         {
           "type": "bitshr",
+          "named": true
+        },
+        {
+          "type": "bitwise_negate",
           "named": true
         },
         {
@@ -3141,15 +3188,19 @@
     "named": false
   },
   {
-    "type": "bitand",
+    "type": "bit&",
     "named": false
   },
   {
-    "type": "bitor",
+    "type": "bit^",
     "named": false
   },
   {
-    "type": "bitxor",
+    "type": "bit|",
+    "named": false
+  },
+  {
+    "type": "bit~",
     "named": false
   },
   {
