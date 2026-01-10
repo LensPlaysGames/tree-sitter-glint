@@ -92,11 +92,21 @@ export default grammar({
             "csize", "cusize"
         ),
 
+        // TODO: All the attributes
+        function_attribute: $ => choice(
+            "nomangle",
+            "discardable",
+            "pure",
+            "used",
+            "maps_arguments"
+        ),
+
         type_function: $ => prec(5, seq(
             $._type,
             "(",
             repeat($.param_decl),
-            ")"
+            ")",
+            repeat($.function_attribute)
         )),
 
         // precedence to beat out regular declaration (so that type_function rule

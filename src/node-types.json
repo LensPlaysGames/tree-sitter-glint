@@ -1630,6 +1630,11 @@
     }
   },
   {
+    "type": "function_attribute",
+    "named": true,
+    "fields": {}
+  },
+  {
     "type": "ge",
     "named": true,
     "fields": {},
@@ -2892,6 +2897,10 @@
           "named": true
         },
         {
+          "type": "function_attribute",
+          "named": true
+        },
+        {
           "type": "param_decl",
           "named": true
         }
@@ -3261,6 +3270,10 @@
     "named": false
   },
   {
+    "type": "discardable",
+    "named": false
+  },
+  {
     "type": "else",
     "named": false
   },
@@ -3305,11 +3318,19 @@
     "named": false
   },
   {
+    "type": "maps_arguments",
+    "named": false
+  },
+  {
     "type": "match",
     "named": false
   },
   {
     "type": "module",
+    "named": false
+  },
+  {
+    "type": "nomangle",
     "named": false
   },
   {
@@ -3322,6 +3343,10 @@
   },
   {
     "type": "print",
+    "named": false
+  },
+  {
+    "type": "pure",
     "named": false
   },
   {
@@ -3350,6 +3375,10 @@
   },
   {
     "type": "union",
+    "named": false
+  },
+  {
+    "type": "used",
     "named": false
   },
   {

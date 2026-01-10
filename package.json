@@ -1,6 +1,6 @@
 {
   "name": "tree-sitter-glint",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Parser for the Glint Programming Language (LCC)",
   "repository": "https://github.com/lensplaysgames/tree-sitter-glint",
   "funding": "https://www.paypal.com/donate/?hosted_button_id=62KQ4GX6HFTNG",

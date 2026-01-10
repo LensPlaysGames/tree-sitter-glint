@@ -11,6 +11,72 @@ void();
   (type_primitive)))
 
 ================
+void() pure
+================
+
+void() pure;
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (function_attribute)))
+
+================
+void() used
+================
+
+void() used;
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (function_attribute)))
+
+================
+void() discardable
+================
+
+void() discardable;
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (function_attribute)))
+
+================
+void() nomangle
+================
+
+void() nomangle;
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (function_attribute)))
+
+================
+void() nomangle discardable
+================
+
+void() nomangle discardable;
+
+---
+
+(source_file
+ (type_function
+  (type_primitive)
+  (function_attribute)
+  (function_attribute)))
+
+================
 void(a:void)
 ================
 
