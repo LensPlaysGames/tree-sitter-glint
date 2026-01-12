@@ -87,3 +87,33 @@ abc@123;
 ---
 
 (source_file (identifier))
+
+================
+All Continuations
+================
+
+_!$&+-/?@^_|~;
+
+---
+
+(source_file (identifier))
+
+================
+? Begin
+================
+
+?abc;
+
+---
+
+(source_file (identifier))
+
+================
+? By Itself
+================
+
+?;
+
+---
+
+(source_file (identifier))

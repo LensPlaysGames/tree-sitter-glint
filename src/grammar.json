@@ -2526,7 +2526,7 @@
     },
     "identifier": {
       "type": "PATTERN",
-      "value": "[a-z\\$_][a-z0-9_!\\$@]*",
+      "value": "[a-z\\$_?][a-z0-9_!\\$@\\-\\/&+?^|~]*",
       "flags": "i"
     },
     "_number_dec": {

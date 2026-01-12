@@ -498,7 +498,7 @@ export default grammar({
         _hard_expression_separator: $ => ";",
         _soft_expression_separator: $ => ",",
 
-        identifier: $ => /[a-z\$_][a-z0-9_!\$@]*/i,
+        identifier: $ => /[a-z\$_?][a-z0-9_!\$@\-\/&+?^|~]*/i,
         _number_dec: $ => /[\d\']+/,
         _number_bin: $ => /0b[01\']+/,
         _number_hex: $ => /0x[0-9a-f\']+/i,
