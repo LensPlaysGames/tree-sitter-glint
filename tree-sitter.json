@@ -14,11 +14,13 @@
         "glint"
       ],
       "injection-regex": "^glint$",
-      "class-name": "TreeSitterGlint"
+      "class-name": "TreeSitterGlint",
+      "highlights": "queries/highlights.scm",
+      "locals": "queries/locals.scm"
     }
   ],
   "metadata": {
-    "version": "0.2.5",
+    "version": "0.2.6",
     "license": "MIT",
     "description": "Parser for the Glint Programming Language (LCC)",
     "authors": [

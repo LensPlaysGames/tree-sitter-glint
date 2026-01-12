@@ -1,16 +1,54 @@
+; https://tree-sitter.github.io/tree-sitter/3-syntax-highlighting.html#highlights
+; Used highlight names:
+; comment, variable, number, constant, string, function, type, keyword, operator, punctuation.bracket, module
+
+; Modules
+(module_declaration name: (_) @module)
+
+; Comments
 (comment) @comment
 
-(integer_literal) @constant
-(bool_literal) @constant.builtin
+; Variables
+(identifier) @variable
+
+; Numbers
+(integer_literal) @number
+
+; Constants
+; Bool literals like 'true' and 'false' are built-in constants.
+(bool_literal) @constant
+(byte_literal) @constant
+
+; Strings
 (string_literal) @string
 
-(declaration name: (identifier) @function
-             type: (type_function))
-(declaration name: (identifier) @function
-             type: (type_pointer (type_function)))
+; Declarations with names are variables.
+(declaration name: (identifier) @variable)
+; Declarations of function type, function pointer type, and function
+; reference type are functions.
+(declaration
+ name: (identifier) @function
+ type:
+ [(type_function)
+  (type_pointer (type_function))
+  (type_reference (type_function))])
+
+;; Parameter Declarations
+(param_decl name: (identifier) @variable.parameter)
 
 ;; Highlight the type of a declaration if it's an identifier.
-(declaration type: (identifier) @type)
+(declaration
+ name: (identifier) @variable
+ type: _ @type)
+
+(declaration
+ name: (identifier) @type
+ init: [(type_array) (type_enum)
+        (type_ffi) (type_pointer)
+        (type_pointer_to_pointer)
+        (type_primitive) (type_reference)
+        (type_struct) (type_sum)
+        (type_union) (type_function)])
 
 ;; Keywords
 [
@@ -22,7 +60,9 @@
   "cfor" "for" "in"
 
   ;; Function attributes
-  ;; "discardable"
+  "nomangle" "discardable"
+  "pure" "used"
+  "maps_arguments"
 
   ;; Unary Operators
   "not"
@@ -60,8 +100,16 @@
   "csize" "cusize"
 
   (type_array)
+  (type_enum)
+  (type_ffi)
   (type_pointer)
+  (type_pointer_to_pointer)
+  (type_primitive)
   (type_reference)
+  (type_struct)
+  (type_sum)
+  (type_union)
+  (type_function)
 ] @type
 
 [
@@ -70,7 +118,7 @@
  "::" ":" ":="
  "++" "--"
  "+=" "-=" "*=" "/=" "%=" "~="
- "bitand" "bitor" "bitxor"
+ "bit&" "bit|" "bit^" "bit~"
 ] @operator
 
 [
@@ -78,4 +126,3 @@
   "{" "}"
   ;; "[" "]"
 ] @punctuation.bracket
-
