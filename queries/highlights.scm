@@ -70,9 +70,6 @@
   ;; Binary Operators
   "and" "or"
 
-  ;; Types
-  "enum" "struct" "sum" "union"
-
   ;; Storage specifiers
   "export" "external"
 
@@ -99,6 +96,9 @@
   "clonglong" "culonglong"
   "csize" "cusize"
 
+  ;; Composite Types
+  "enum" "struct" "sum" "union"
+
   (type_array)
   (type_enum)
   (type_ffi)
@@ -111,6 +111,8 @@
   (type_union)
   (type_function)
 ] @type
+
+(type_enum underlying: (_) @type)
 
 [
  "@" "!" ;; "~"

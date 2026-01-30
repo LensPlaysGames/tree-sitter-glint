@@ -37,3 +37,25 @@
 
    [byte view].ref;
 ;; ^^^^^^^^^^^^^^^ type
+
+
+;; ================
+;; Composite Types
+;; ================
+
+   enum {};
+;; ^^^^ type
+
+   enum(u32) {};
+;; ^^^^ type
+;;     ^ !type
+;;      ^^^ type
+
+   struct {};
+;; ^^^^^^ type
+
+   union {};
+;; ^^^^^ type
+
+   sum {};
+;; ^^^ type

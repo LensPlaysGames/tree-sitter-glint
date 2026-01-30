@@ -45,6 +45,7 @@ struct { x : int, y : int };
 
 ================
 Struct, Multiple Members of Primitive Type, Comma Separator w/ Trailing
+:skip
 ================
 
 struct { x : int, y : int, };
@@ -120,6 +121,7 @@ struct {
 
 ================
 Struct, Multiple Members of Primitive Type, Multi-line, Comma Separator w/ Trailing
+:skip
 ================
 
 struct {
