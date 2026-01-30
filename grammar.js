@@ -33,8 +33,15 @@ export default grammar({
         ),
 
         module_import: $ => prec(999999999, seq(
-            "import",
+            choice(
+                "import",
+                seq("export", "import")
+            ),
             field("name", $.identifier),
+            optional(seq(
+                "as",
+                field("declared_name", $.identifier)
+            )),
             optional($._expression_separator)
         )),
 
@@ -58,6 +65,11 @@ export default grammar({
 
         type_enum: $ => seq(
             "enum",
+            optional(seq(
+                "(",
+                field("underlying", $._type),
+                ")"
+            )),
             $.block
         ),
 

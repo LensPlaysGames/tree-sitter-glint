@@ -11,6 +11,19 @@ enum {};
   (block)))
 
 ================
+Enum, Explicit Underlying
+================
+
+enum(int) {};
+
+---
+
+(source_file
+ (type_enum
+  underlying: (type_primitive)
+  (block)))
+
+================
 Enum, Single Member (type inferred)
 ================
 

@@ -1841,6 +1841,16 @@
     "type": "module_import",
     "named": true,
     "fields": {
+      "declared_name": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "identifier",
+            "named": true
+          }
+        ]
+      },
       "name": {
         "multiple": false,
         "required": true,
@@ -2852,7 +2862,18 @@
   {
     "type": "type_enum",
     "named": true,
-    "fields": {},
+    "fields": {
+      "underlying": {
+        "multiple": false,
+        "required": false,
+        "types": [
+          {
+            "type": "_type",
+            "named": true
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": false,
       "required": true,
@@ -3194,6 +3215,10 @@
   },
   {
     "type": "apply",
+    "named": false
+  },
+  {
+    "type": "as",
     "named": false
   },
   {

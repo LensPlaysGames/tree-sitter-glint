@@ -1,4 +1,4 @@
-VERSION := 0.2.10
+VERSION := 0.2.11
 
 LANGUAGE_NAME := tree-sitter-glint
 

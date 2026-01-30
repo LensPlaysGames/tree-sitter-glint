@@ -21,3 +21,17 @@ import foo;
 (source_file
  (module_import
   (identifier)))
+
+================
+Module Import with "as"
+================
+
+import foo as bar;
+
+---
+
+(source_file
+ (module_import
+  (identifier)
+  (identifier)))
+

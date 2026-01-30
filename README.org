@@ -3,3 +3,36 @@
 If you are living under a rock: [[https://tree-sitter.github.io/tree-sitter/][https://tree-sitter.github.io/tree-sitter/]].
 
 This is a parser implementation for the Glint language, a novel language designed as part of the [[https://github.com/LensPlaysGames/LensorCompilerCollection][Lensor Compiler Collection]].
+
+** For Devs: To Update Grammar
+
+If you've updated =grammar.js=, and have written sufficient (passing) tests for your new feature, the following steps will update the git repo with the new changes.
+
+#+begin_src shell
+  tree-sitter generate
+  tree-sitter build
+  tree-sitter test
+#+end_src
+
+*Make sure you have written tests for your new feature, and that they are passing!*
+
+#+begin_src shell
+  tree-sitter version MAJOR.MINOR.PATCH
+  tree-sitter generate
+  tree-sitter build
+  tree-sitter test
+#+end_src
+
+Obviously, update MAJOR, MINOR, and PATCH to something reasonable.
+
+Next, stage *everything* and commit it.
+DO NOT FORGET TO TAG THE COMMIT (please).
+#+begin_src shell
+  git commit -am "Release MAJOR.MINOR.PATCH"
+  git tag -- vMAJOR.MINOR.PATCH
+#+end_src
+
+Push commit *and tags*.
+#+begin_src shell
+  git push --tags origin main
+#+end_src
