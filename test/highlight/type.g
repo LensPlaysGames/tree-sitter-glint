@@ -16,6 +16,9 @@
    uint
 ;; ^^^^ type
 
+   float
+;; ^^^^^ type
+
    void
 ;; ^^^^ type
 

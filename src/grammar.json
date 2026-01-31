@@ -303,6 +303,10 @@
         },
         {
           "type": "STRING",
+          "value": "float"
+        },
+        {
+          "type": "STRING",
           "value": "void"
         }
       ]
@@ -701,6 +705,10 @@
         {
           "type": "SYMBOL",
           "name": "integer_literal"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "fractional_literal"
         },
         {
           "type": "SYMBOL",
@@ -2479,6 +2487,10 @@
         }
       ]
     },
+    "fractional_literal": {
+      "type": "SYMBOL",
+      "name": "_fractional"
+    },
     "string_literal": {
       "type": "CHOICE",
       "members": [
@@ -2600,6 +2612,10 @@
       "type": "PATTERN",
       "value": "[a-z\\$_?][a-z0-9_!\\$@\\-\\/&+?^|~]*",
       "flags": "i"
+    },
+    "_fractional": {
+      "type": "PATTERN",
+      "value": "[\\d\\']+\\.[\\d\\']*"
     },
     "_number_dec": {
       "type": "PATTERN",

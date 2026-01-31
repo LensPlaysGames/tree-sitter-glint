@@ -105,6 +105,61 @@ Integer Literal, Binary, Digit Separator
  (integer_literal))
 
 ================
+Fractional Literal 0.0
+================
+
+0.0;
+
+---
+
+(source_file
+ (fractional_literal))
+
+================
+Fractional Literal 0.
+================
+
+0.;
+
+---
+
+(source_file
+ (fractional_literal))
+
+================
+Fractional Literal 1.0
+================
+
+1.0;
+
+---
+
+(source_file
+ (fractional_literal))
+
+================
+Fractional Literal 1.0003
+================
+
+1.0003;
+
+---
+
+(source_file
+ (fractional_literal))
+
+================
+Fractional Literal 100.9
+================
+
+100.9;
+
+---
+
+(source_file
+ (fractional_literal))
+
+================
 Empty String Literal, Escapable, No Escapes
 ================
 

@@ -93,6 +93,7 @@ export default grammar({
             "byte",
             "int",
             "uint",
+            "float",
             "void"
         ),
 
@@ -188,6 +189,7 @@ export default grammar({
             $.identifier,
             $.if,
             $.integer_literal,
+            $.fractional_literal,
             $.apply,
             $.match,
             $.member_access,
@@ -485,6 +487,8 @@ export default grammar({
             $._number_oct,
         ),
 
+        fractional_literal: $ => $._fractional,
+
         string_literal: $ => choice(
             $._escapable_string,
             $._raw_string
@@ -511,6 +515,7 @@ export default grammar({
         _soft_expression_separator: $ => ",",
 
         identifier: $ => /[a-z\$_?][a-z0-9_!\$@\-\/&+?^|~]*/i,
+        _fractional: $ => /[\d\']+\.[\d\']*/,
         _number_dec: $ => /[\d\']+/,
         _number_bin: $ => /0b[01\']+/,
         _number_hex: $ => /0x[0-9a-f\']+/i,
