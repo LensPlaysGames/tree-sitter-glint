@@ -35,12 +35,14 @@
 
 ;; Parameter Declarations
 (param_decl name: (identifier) @variable.parameter)
+(param_decl type: (identifier) @type)
 
 ;; Highlight the type of a declaration if it's an identifier.
 (declaration
  name: (identifier) @variable
  type: _ @type)
 
+;; Highlight the name of a declaration if it's a type declaration.
 (declaration
  name: (identifier) @type
  init: [(type_array) (type_enum)
@@ -113,6 +115,7 @@
 ] @type
 
 (type_enum underlying: (_) @type)
+(type_function return_type: (_) @type)
 
 [
  "@" "!" ;; "~"

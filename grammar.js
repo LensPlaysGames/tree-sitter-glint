@@ -49,18 +49,19 @@ export default grammar({
         // TYPES
         // ================
         _type: $ => prec(5, choice(
+            $.identifier,
+            $.paren,
             $.type_array,
             $.type_enum,
             $.type_ffi,
+            $.type_function,
             $.type_pointer,
             $.type_pointer_to_pointer,
             $.type_primitive,
             $.type_reference,
             $.type_struct,
             $.type_sum,
-            $.type_union,
-            $.type_function,
-            $.identifier
+            $.type_union
         )),
 
         type_enum: $ => seq(
@@ -115,7 +116,7 @@ export default grammar({
         ),
 
         type_function: $ => prec(5, seq(
-            $._type,
+            field("return_type", $._type),
             "(",
             repeat($.param_decl),
             ")",

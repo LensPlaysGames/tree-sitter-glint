@@ -246,6 +246,10 @@
         "named": true
       },
       {
+        "type": "paren",
+        "named": true
+      },
+      {
         "type": "type_array",
         "named": true
       },
@@ -678,10 +682,6 @@
           "named": true
         },
         {
-          "type": "paren",
-          "named": true
-        },
-        {
           "type": "pipe_eq",
           "named": true
         },
@@ -975,10 +975,6 @@
             "named": true
           },
           {
-            "type": "paren",
-            "named": true
-          },
-          {
             "type": "pipe_eq",
             "named": true
           },
@@ -1217,10 +1213,6 @@
             "named": true
           },
           {
-            "type": "paren",
-            "named": true
-          },
-          {
             "type": "pipe_eq",
             "named": true
           },
@@ -1456,10 +1448,6 @@
           },
           {
             "type": "or",
-            "named": true
-          },
-          {
-            "type": "paren",
             "named": true
           },
           {
@@ -2170,10 +2158,6 @@
           "named": true
         },
         {
-          "type": "paren",
-          "named": true
-        },
-        {
           "type": "pipe_eq",
           "named": true
         },
@@ -2421,10 +2405,6 @@
         },
         {
           "type": "or",
-          "named": true
-        },
-        {
-          "type": "paren",
           "named": true
         },
         {
@@ -2753,10 +2733,6 @@
           "named": true
         },
         {
-          "type": "paren",
-          "named": true
-        },
-        {
           "type": "pipe_eq",
           "named": true
         },
@@ -2945,15 +2921,22 @@
   {
     "type": "type_function",
     "named": true,
-    "fields": {},
+    "fields": {
+      "return_type": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_type",
+            "named": true
+          }
+        ]
+      }
+    },
     "children": {
       "multiple": true,
-      "required": true,
+      "required": false,
       "types": [
-        {
-          "type": "_type",
-          "named": true
-        },
         {
           "type": "function_attribute",
           "named": true

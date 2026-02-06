@@ -48,6 +48,32 @@ void.ptr.ref
    (type_primitive))))
 
 ================
+(void.ptr)
+================
+
+(void.ptr);
+
+---
+
+(source_file
+ (paren
+  (type_pointer
+   (type_primitive))))
+
+================
+(void).ptr
+================
+
+(void).ptr;
+
+---
+
+(source_file
+ (type_pointer
+  (paren
+   (type_primitive))))
+
+================
 Fixed Array
 ================
 

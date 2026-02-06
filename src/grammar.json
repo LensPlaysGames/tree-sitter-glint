@@ -152,6 +152,14 @@
         "members": [
           {
             "type": "SYMBOL",
+            "name": "identifier"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "paren"
+          },
+          {
+            "type": "SYMBOL",
             "name": "type_array"
           },
           {
@@ -161,6 +169,10 @@
           {
             "type": "SYMBOL",
             "name": "type_ffi"
+          },
+          {
+            "type": "SYMBOL",
+            "name": "type_function"
           },
           {
             "type": "SYMBOL",
@@ -189,14 +201,6 @@
           {
             "type": "SYMBOL",
             "name": "type_union"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "type_function"
-          },
-          {
-            "type": "SYMBOL",
-            "name": "identifier"
           }
         ]
       }
@@ -388,8 +392,12 @@
         "type": "SEQ",
         "members": [
           {
-            "type": "SYMBOL",
-            "name": "_type"
+            "type": "FIELD",
+            "name": "return_type",
+            "content": {
+              "type": "SYMBOL",
+              "name": "_type"
+            }
           },
           {
             "type": "STRING",
