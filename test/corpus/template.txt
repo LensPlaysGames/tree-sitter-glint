@@ -1,0 +1,26 @@
+================
+Template Expression, Single Parameter
+================
+
+template(e : expr) e;
+
+---
+
+(source_file
+ (template_expr
+  (param_decl (identifier) (identifier))
+  (identifier)))
+
+================
+Template Expression, Two Parameters
+================
+
+template(a : expr, b : expr) a + b;
+
+---
+
+(source_file
+ (template_expr
+  (param_decl (identifier) (identifier))
+  (param_decl (identifier) (identifier))
+  (add (identifier) (identifier))))

@@ -182,16 +182,16 @@ export default grammar({
             $._binary,
             $._type,
             $._unary,
+            $.apply,
             $.block,
             $.bool_literal,
             $.byte_literal,
             $.call,
             $.cfor,
+            $.fractional_literal,
             $.identifier,
             $.if,
             $.integer_literal,
-            $.fractional_literal,
-            $.apply,
             $.match,
             $.member_access,
             $.paren,
@@ -199,6 +199,7 @@ export default grammar({
             $.rangedfor,
             $.return,
             $.string_literal,
+            $.template_expr,
             $.type_expr,
             $.while,
         ),
@@ -242,7 +243,6 @@ export default grammar({
             $.pipe_eq,
             $.caret_eq,
             $.lbrack_eq,
-
         ),
 
         subscript: $ => prec(10010, seq($._expr, "[", $._expr, "]")),
@@ -302,6 +302,14 @@ export default grammar({
         )),
 
         _call_arg: $ => prec(90, $._expr),
+
+        template_expr: $ => seq(
+            "template",
+            "(",
+            repeat($.param_decl),
+            ")",
+            field("body", $._expr)
+        ),
 
         // A paren expression does not open up a new scope.
         paren: $ => seq(

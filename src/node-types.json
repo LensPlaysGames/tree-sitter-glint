@@ -224,6 +224,10 @@
         "named": true
       },
       {
+        "type": "template_expr",
+        "named": true
+      },
+      {
         "type": "tilde_eq",
         "named": true
       },
@@ -722,6 +726,10 @@
           "named": true
         },
         {
+          "type": "template_expr",
+          "named": true
+        },
+        {
           "type": "tilde_eq",
           "named": true
         },
@@ -1015,6 +1023,10 @@
             "named": true
           },
           {
+            "type": "template_expr",
+            "named": true
+          },
+          {
             "type": "tilde_eq",
             "named": true
           },
@@ -1253,6 +1265,10 @@
             "named": true
           },
           {
+            "type": "template_expr",
+            "named": true
+          },
+          {
             "type": "tilde_eq",
             "named": true
           },
@@ -1488,6 +1504,10 @@
           },
           {
             "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "template_expr",
             "named": true
           },
           {
@@ -2198,6 +2218,10 @@
           "named": true
         },
         {
+          "type": "template_expr",
+          "named": true
+        },
+        {
           "type": "tilde_eq",
           "named": true
         },
@@ -2445,6 +2469,10 @@
         },
         {
           "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "template_expr",
           "named": true
         },
         {
@@ -2773,6 +2801,10 @@
           "named": true
         },
         {
+          "type": "template_expr",
+          "named": true
+        },
+        {
           "type": "tilde_eq",
           "named": true
         },
@@ -2837,6 +2869,32 @@
       "types": [
         {
           "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "template_expr",
+    "named": true,
+    "fields": {
+      "body": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "param_decl",
           "named": true
         }
       ]
@@ -3412,6 +3470,10 @@
   },
   {
     "type": "supplant",
+    "named": false
+  },
+  {
+    "type": "template",
     "named": false
   },
   {

@@ -684,6 +684,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "apply"
+        },
+        {
+          "type": "SYMBOL",
           "name": "block"
         },
         {
@@ -704,6 +708,10 @@
         },
         {
           "type": "SYMBOL",
+          "name": "fractional_literal"
+        },
+        {
+          "type": "SYMBOL",
           "name": "identifier"
         },
         {
@@ -713,14 +721,6 @@
         {
           "type": "SYMBOL",
           "name": "integer_literal"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "fractional_literal"
-        },
-        {
-          "type": "SYMBOL",
-          "name": "apply"
         },
         {
           "type": "SYMBOL",
@@ -749,6 +749,10 @@
         {
           "type": "SYMBOL",
           "name": "string_literal"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "template_expr"
         },
         {
           "type": "SYMBOL",
@@ -1338,6 +1342,38 @@
         "type": "SYMBOL",
         "name": "_expr"
       }
+    },
+    "template_expr": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "STRING",
+          "value": "template"
+        },
+        {
+          "type": "STRING",
+          "value": "("
+        },
+        {
+          "type": "REPEAT",
+          "content": {
+            "type": "SYMBOL",
+            "name": "param_decl"
+          }
+        },
+        {
+          "type": "STRING",
+          "value": ")"
+        },
+        {
+          "type": "FIELD",
+          "name": "body",
+          "content": {
+            "type": "SYMBOL",
+            "name": "_expr"
+          }
+        }
+      ]
     },
     "paren": {
       "type": "SEQ",

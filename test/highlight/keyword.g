@@ -7,40 +7,40 @@
 ;; ^^^^^^ keyword
 
    xmodule;
-;; ^^^^^^^ !keyword
+;;  ^^^^^^ !keyword
 
    ximport;
-;; ^^^^^^^ !keyword
+;;  ^^^^^^ !keyword
 
    return;
 ;; ^^^^^^ keyword
 
    xreturn;
-;; ^^^^^^^ !keyword
+;;  ^^^^^^ !keyword
 
    external foo :void;
 ;; ^^^^^^^^ keyword
 
    xexternal;
-;; ^^^^^^^^^ !keyword
+;;  ^^^^^^^^ !keyword
 
    export foo :void;
 ;; ^^^^^^ keyword
 
    xexport;
-;; ^^^^^^^ !keyword
+;;  ^^^^^^ !keyword
 
    supplant foo;
 ;; ^^^^^^^^ keyword
 
    xsupplant;
-;; ^^^^^^ !keyword
+;;  ^^^^^ !keyword
 
    match foo {};
 ;; ^^^^^ keyword
 
    xmatch;
-;; ^^^^^^ !keyword
+;;  ^^^^^ !keyword
 
    print;
 ;; ^^^^^ keyword
@@ -55,20 +55,20 @@
 ;; ^^^^^ keyword
 
    xprint;
-;; ^^^^^^ !keyword
+;;  ^^^^^ !keyword
 
    cfor 0, 0, 0, 0;
 ;; ^^^^ keyword
 
    xcfor;
-;; ^^^^^ !keyword
+;;  ^^^^ !keyword
 
    for x in y, z;
 ;; ^^^ keyword
 ;;       ^^ keyword
 
    xfor;
-;; ^^^^ !keyword
+;;  ^^^ !keyword
 
    apply foo;
 ;; ^^^^^ keyword
@@ -80,5 +80,11 @@
 ;; ^^^^^ keyword
 
    xapply;
-;; ^^^^^^ !keyword
+;;  ^^^^^ !keyword
+
+   template (e : expr) e;
+;; ^^^^^^^^ keyword
+
+   xtemplate;
+;;  ^^^^^^^^ !keyword
 

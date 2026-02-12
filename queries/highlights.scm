@@ -78,6 +78,7 @@
   "supplant"
   "match"
   "print"
+  "template"
 
   "return"
 
