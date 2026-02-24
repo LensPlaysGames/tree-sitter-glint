@@ -77,6 +77,7 @@
 
   "supplant"
   "match"
+  "switch"
   "print"
   "template"
 

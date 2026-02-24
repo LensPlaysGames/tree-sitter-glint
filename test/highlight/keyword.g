@@ -36,11 +36,17 @@
    xsupplant;
 ;;  ^^^^^ !keyword
 
-   match foo {};
+   match foo, {};
 ;; ^^^^^ keyword
 
    xmatch;
 ;;  ^^^^^ !keyword
+
+   switch foo, {};
+;; ^^^^^^ keyword
+
+   xswitch;
+;;  ^^^^^^ !keyword
 
    print;
 ;; ^^^^^ keyword
