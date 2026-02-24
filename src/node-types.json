@@ -224,6 +224,10 @@
         "named": true
       },
       {
+        "type": "switch",
+        "named": true
+      },
+      {
         "type": "template_expr",
         "named": true
       },
@@ -726,6 +730,10 @@
           "named": true
         },
         {
+          "type": "switch",
+          "named": true
+        },
+        {
           "type": "template_expr",
           "named": true
         },
@@ -1023,6 +1031,10 @@
             "named": true
           },
           {
+            "type": "switch",
+            "named": true
+          },
+          {
             "type": "template_expr",
             "named": true
           },
@@ -1265,6 +1277,10 @@
             "named": true
           },
           {
+            "type": "switch",
+            "named": true
+          },
+          {
             "type": "template_expr",
             "named": true
           },
@@ -1504,6 +1520,10 @@
           },
           {
             "type": "subtract_eq",
+            "named": true
+          },
+          {
+            "type": "switch",
             "named": true
           },
           {
@@ -2218,6 +2238,10 @@
           "named": true
         },
         {
+          "type": "switch",
+          "named": true
+        },
+        {
           "type": "template_expr",
           "named": true
         },
@@ -2469,6 +2493,10 @@
         },
         {
           "type": "subtract_eq",
+          "named": true
+        },
+        {
+          "type": "switch",
           "named": true
         },
         {
@@ -2801,6 +2829,10 @@
           "named": true
         },
         {
+          "type": "switch",
+          "named": true
+        },
+        {
           "type": "template_expr",
           "named": true
         },
@@ -2866,6 +2898,32 @@
     "children": {
       "multiple": true,
       "required": true,
+      "types": [
+        {
+          "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "switch",
+    "named": true,
+    "fields": {
+      "object": {
+        "multiple": false,
+        "required": true,
+        "types": [
+          {
+            "type": "_expr",
+            "named": true
+          }
+        ]
+      }
+    },
+    "children": {
+      "multiple": true,
+      "required": false,
       "types": [
         {
           "type": "_expr",
@@ -3470,6 +3528,10 @@
   },
   {
     "type": "supplant",
+    "named": false
+  },
+  {
+    "type": "switch",
     "named": false
   },
   {

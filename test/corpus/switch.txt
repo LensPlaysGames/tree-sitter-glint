@@ -1,38 +1,38 @@
 ================
-Empty Match
+Empty Switch
 ================
 
-match foo, {};
+switch foo, {};
 
 ---
 
 (source_file
- (match (identifier)))
+ (switch (identifier)))
 
 ================
-Single Match
+Single Switch
 ================
 
-match foo, { .x 42 };
+switch foo, { .x 42 };
 
 ---
 
 (source_file
- (match
+ (switch
   (identifier)
   (identifier)
   (integer_literal)))
 
 ================
-Multiple Match, Hard Separator
+Multiple Switch, Hard Separator
 ================
 
-match foo, { .x 42; .y 69 };
+switch foo, { .x 42; .y 69 };
 
 ---
 
 (source_file
- (match
+ (switch
   (identifier)
   (identifier)
   (integer_literal)
@@ -40,15 +40,15 @@ match foo, { .x 42; .y 69 };
   (integer_literal)))
 
 ================
-Multiple Match, Hard Separators
+Multiple Switch, Hard Separators
 ================
 
-match foo, { .x 42; .y 69; };
+switch foo, { .x 42; .y 69; };
 
 ---
 
 (source_file
- (match
+ (switch
   (identifier)
   (identifier)
   (integer_literal)
@@ -56,15 +56,15 @@ match foo, { .x 42; .y 69; };
   (integer_literal)))
 
 ================
-Multiple Match, Soft Separator
+Multiple Switch, Soft Separator
 ================
 
-match foo, { .x 42, .y 69 };
+switch foo, { .x 42, .y 69 };
 
 ---
 
 (source_file
- (match
+ (switch
   (identifier)
   (identifier)
   (integer_literal)
@@ -72,15 +72,15 @@ match foo, { .x 42, .y 69 };
   (integer_literal)))
 
 ================
-Multiple Match, Soft Separators
+Multiple Switch, Soft Separators
 ================
 
-match foo, { .x 42, .y 69, };
+switch foo, { .x 42, .y 69, };
 
 ---
 
 (source_file
- (match
+ (switch
   (identifier)
   (identifier)
   (integer_literal)

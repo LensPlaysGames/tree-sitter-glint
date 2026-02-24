@@ -193,6 +193,7 @@ export default grammar({
             $.if,
             $.integer_literal,
             $.match,
+            $.switch,
             $.member_access,
             $.paren,
             $.print,
@@ -327,11 +328,25 @@ export default grammar({
         match: $ => prec(10, seq(
             "match",
             field("object", $._expr),
+            $._soft_expression_separator,
             "{",
             repeat(prec.left(seq(
                 ".",
                 $.identifier,
-                optional(":"),
+                $._expr,
+                optional($._expression_separator)
+            ))),
+            "}"
+        )),
+
+        switch: $ => prec(10, seq(
+            "switch",
+            field("object", $._expr),
+            $._soft_expression_separator,
+            "{",
+            repeat(prec.left(seq(
+                ".",
+                $.identifier,
                 $._expr,
                 optional($._expression_separator)
             ))),
