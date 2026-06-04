@@ -3000,7 +3000,9 @@ static bool ts_lex(TSLexer *lexer, TSStateId state) {
       END_STATE();
     case 120:
       ACCEPT_TOKEN(anon_sym_LBRACK_DASH);
-      if (lookahead == '-') ADVANCE(30);
+      if (lookahead == '!' ||
+          lookahead == '-' ||
+          lookahead == '>') ADVANCE(30);
       END_STATE();
     case 121:
       ACCEPT_TOKEN(anon_sym_DASH_RBRACK);
@@ -53956,7 +53958,7 @@ TS_PUBLIC const TSLanguage *tree_sitter_glint(void) {
     .metadata = {
       .major_version = 0,
       .minor_version = 3,
-      .patch_version = 0,
+      .patch_version = 1,
     },
   };
   return &language;

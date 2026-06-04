@@ -553,7 +553,7 @@ export default grammar({
             "-]"
         ),
         notice: $ => prec(1, seq(
-            /\[--[^\]]/,
+            /\[-[->!][^\]]/,
             optional($.block_comment_text),
             "-]"
         ))
