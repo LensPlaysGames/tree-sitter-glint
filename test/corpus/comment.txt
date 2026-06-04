@@ -1,0 +1,86 @@
+================
+Line Comment
+================
+
+;; Line Comment
+
+---
+
+(source_file
+ (comment))
+
+================
+Block Comment (one line)
+================
+
+[- Block Comment -]
+
+---
+
+(source_file
+ (block_comment (block_comment_text)))
+
+
+================
+Block Comment (empty)
+================
+
+[--]
+
+---
+
+(source_file
+ (block_comment))
+
+
+================
+Block Comment (don't merge)
+================
+
+[- Block Comment -]
+[- Block Comment -]
+
+---
+
+(source_file
+ (block_comment (block_comment_text))
+ (block_comment (block_comment_text)))
+
+================
+Block Comment (multiple lines)
+================
+
+[- Block
+ Comment -]
+
+---
+
+(source_file
+ (block_comment (block_comment_text)))
+
+================
+Block Comment (multiple lines, some empty)
+================
+
+[-
+Block
+
+    Comment
+
+  -]
+
+---
+
+(source_file
+ (block_comment (block_comment_text)))
+
+================
+Notice (highlighted comment)
+================
+
+[-- Notice -]
+
+---
+
+(source_file
+ (notice (block_comment_text)))
