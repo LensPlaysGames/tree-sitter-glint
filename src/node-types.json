@@ -753,6 +753,22 @@
     }
   },
   {
+    "type": "block_comment",
+    "named": true,
+    "extra": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "block_comment_text",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
     "type": "bool_literal",
     "named": true,
     "fields": {}
@@ -1971,6 +1987,22 @@
       "types": [
         {
           "type": "_expr",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "notice",
+    "named": true,
+    "extra": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": false,
+      "types": [
+        {
+          "type": "block_comment_text",
           "named": true
         }
       ]
@@ -3254,6 +3286,10 @@
     "named": false
   },
   {
+    "type": "-]",
+    "named": false
+  },
+  {
     "type": ".",
     "named": false
   },
@@ -3330,6 +3366,10 @@
     "named": false
   },
   {
+    "type": "[-",
+    "named": false
+  },
+  {
     "type": "[=",
     "named": false
   },
@@ -3372,6 +3412,10 @@
   {
     "type": "bit~",
     "named": false
+  },
+  {
+    "type": "block_comment_text",
+    "named": true
   },
   {
     "type": "bool",

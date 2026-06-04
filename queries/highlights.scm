@@ -6,7 +6,8 @@
 (module_declaration name: (_) @module)
 
 ; Comments
-(comment) @comment
+[(comment) (block_comment) (notice)] @comment
+(notice (_) @string)
 
 ; Variables
 (identifier) @variable

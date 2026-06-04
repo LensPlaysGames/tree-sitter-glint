@@ -20,7 +20,7 @@
     }
   ],
   "metadata": {
-    "version": "0.2.15",
+    "version": "0.3.0",
     "license": "MIT",
     "description": "Parser for the Glint Programming Language (LCC)",
     "authors": [

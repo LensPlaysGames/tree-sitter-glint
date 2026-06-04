@@ -12,7 +12,7 @@ export default grammar({
 
     word: $ => $.identifier,
 
-    extras: $ => [/(\s|\f)/, $.comment],
+    extras: $ => [/(\s|\f)/, $.comment, $.block_comment, $.notice],
 
     supertypes: $ => [
         $._expr,
@@ -544,6 +544,18 @@ export default grammar({
         _number_bin: $ => /0b[01\']+/,
         _number_hex: $ => /0x[0-9a-f\']+/i,
         _number_oct: $ => /0o?[0-7\']+/,
-        comment: $ => /;;.*/
+        comment: $ => /;;.*/,
+        // Inspired by (MIT): https://github.com/tlaplus-community/tree-sitter-tlaplus/blob/add40814fda369f6efd989977b2c498aaddde984/grammar.js#L193
+        block_comment_text: $ => token(repeat1(/[^-\[\]]|[-][^\]]|[\[][^-]|[^-][\]]|[\]][-]/)),
+        block_comment: $ => seq(
+            "[-",
+            optional($.block_comment_text),
+            "-]"
+        ),
+        notice: $ => prec(1, seq(
+            /\[--[^\]]/,
+            optional($.block_comment_text),
+            "-]"
+        ))
     }
 });
